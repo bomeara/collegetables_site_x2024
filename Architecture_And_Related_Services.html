@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+
+    
+    
+    <title>Architecture And Related Services</title>
+
+        <script src="field_files/header-attrs-2.27/header-attrs.js"></script>
+        <script src="field_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="field_files/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="field_files/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        <script src="field_files/navigation-1.1/tabsets.js"></script>
+        <link href="field_files/readthedown-0.1/readthedown.css" rel="stylesheet" />
+        <link href="field_files/readthedown-0.1/readthedown_fonts_embed.css" rel="stylesheet" />
+        <script src="field_files/readthedown-0.1/readthedown.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q67PXWY3L5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Q67PXWY3L5');
+        </script>
+    
+    
+    
+    
+    <!-- tabsets -->
+    <script>
+      $(document).ready(function () {
+	  window.buildTabsets("toc");
+      });
+      $(document).ready(function () {
+	  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+	      $(this).parent().toggleClass('nav-tabs-open')
+	  });
+      });
+    </script>
+
+    <!-- code folding -->
+    
+    <!-- code download -->
+    
+    <!-- tabsets dropdown -->
+
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+	  display: inline-table;
+	  max-height: 500px;
+	  min-height: 44px;
+	  overflow-y: auto;
+	  background: white;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+	  content: "&#xe258;";
+	  border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active {
+	  display: block;
+      }
+
+      .tabset-dropdown > .nav-tabs > li.active a {
+  	  padding: 0 15px !important;
+      }
+
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+	  border: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: transparent;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+	  display: block;
+	  float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li {
+	  display: none;
+	  margin-left: 0 !important;
+      }
+    </style>
+    
+</head>
+
+<body class="preload">
+
+   	
+         <!-- readthedown start -->   
+   <div id="content" data-toggle="wy-nav-shift">
+     <nav id="nav-top" role="navigation" aria-label="top navigation">
+       <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+     </nav>
+         
+   
+      
+      <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">College Tables</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="fields_overview.html">Fields</a>
+      </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+      </div><!--/.navbar -->
+        
+      <h1 class="title">Architecture And Related Services</h1>
+      
+         <!-- readthedown authors -->
+   <div id="sidebar">
+    <h2><a href="#content">Architecture And Related Services</a></h2>
+    <div id="toc">
+      <ul>
+      <li><a href="#pre-architecture-studies"
+      id="toc-pre-architecture-studies">Pre-Architecture
+      Studies</a></li>
+      <li><a href="#architecture"
+      id="toc-architecture">Architecture</a></li>
+      <li><a href="#architectural-design"
+      id="toc-architectural-design">Architectural Design</a></li>
+      <li><a href="#cityurban-community-and-regional-planning"
+      id="toc-cityurban-community-and-regional-planning">City/Urban,
+      Community, and Regional Planning</a></li>
+      <li><a href="#environmental-designarchitecture"
+      id="toc-environmental-designarchitecture">Environmental
+      Design/Architecture</a></li>
+      <li><a href="#healthcare-environment-designarchitecture"
+      id="toc-healthcare-environment-designarchitecture">Healthcare
+      Environment Design/Architecture</a></li>
+      <li><a href="#sustainable-designarchitecture"
+      id="toc-sustainable-designarchitecture">Sustainable
+      Design/Architecture</a></li>
+      <li><a href="#environmental-design-other"
+      id="toc-environmental-design-other">Environmental Design,
+      Other</a></li>
+      <li><a href="#interior-architecture"
+      id="toc-interior-architecture">Interior Architecture</a></li>
+      <li><a href="#landscape-architecture"
+      id="toc-landscape-architecture">Landscape Architecture</a></li>
+      <li><a href="#architectural-history-and-criticism-general"
+      id="toc-architectural-history-and-criticism-general">Architectural
+      History and Criticism, General</a></li>
+      <li><a href="#architectural-conservation"
+      id="toc-architectural-conservation">Architectural
+      Conservation</a></li>
+      <li><a href="#architectural-studies"
+      id="toc-architectural-studies">Architectural Studies</a></li>
+      <li><a href="#architectural-technologytechnician"
+      id="toc-architectural-technologytechnician">Architectural
+      Technology/Technician</a></li>
+      <li><a href="#architectural-and-building-sciencestechnology"
+      id="toc-architectural-and-building-sciencestechnology">Architectural
+      and Building Sciences/Technology</a></li>
+      <li><a href="#architectural-sciences-and-technology-other"
+      id="toc-architectural-sciences-and-technology-other">Architectural
+      Sciences and Technology, Other</a></li>
+      <li><a href="#real-estate-development"
+      id="toc-real-estate-development">Real Estate Development</a></li>
+      <li><a href="#architecture-and-related-services-other"
+      id="toc-architecture-and-related-services-other">Architecture and
+      Related Services, Other</a></li>
+      </ul>
+    </div>
+    <div id="postamble" data-toggle="wy-nav-shift" class="status">
+                </div>
+   </div>
+     
+
+   
+      
+   
+<!-- Don't indent these lines or it will mess pre blocks indentation --> 
+<div id="main">
+<p>This has all the subfields within “Architecture And Related
+Services”. This field is for “Instructional programs that prepare
+individuals for professional practice in the various
+architecture-related fields and focus on the study of related aesthetic
+and socioeconomic aspects of the built environment.”</p>
+<p>Clicking on a degree name within a table will link to a page for that
+degree and field combination.</p>
+<div id="pre-architecture-studies" class="section level2">
+<h2>Pre-Architecture Studies</h2>
+<p>A program of study that is a precursor to an advanced degree in
+architecture. Includes instruction in architectural design,
+architectural graphics, architectural history, architectural technology,
+architectural theory and criticism, building technology, calculus,
+design studio, human factors, environmental architecture, geometry and
+trigonometry, physics, and technical drawing.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Associates_Pre_ArchitectureStudies.html’>Associates</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_Pre_ArchitectureStudies.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+62
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="architecture" class="section level2">
+<h2>Architecture</h2>
+<p>A program that prepares individuals for the independent professional
+practice of architecture and to conduct research in various aspects of
+the field. Includes instruction in architectural design, history, and
+theory; building structures and environmental systems; project and site
+planning; construction; professional responsibilities and standards; and
+related cultural, social, economic, and environmental issues.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href=‘majors_Associates_Architecture.html’>Associates</a>
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+102
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href=‘majors_Bachelors_Architecture.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+99
+</td>
+<td style="text-align:right;">
+3627
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_Architecture.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+96
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href=‘majors_Doctorate_Architecture.html’>Doctorate</a>
+</td>
+<td style="text-align:right;">
+22
+</td>
+<td style="text-align:right;">
+69
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href=‘majors_Masters_Architecture.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:right;">
+802
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="architectural-design" class="section level2">
+<h2>Architectural Design</h2>
+<p>An advanced program of study for architects and related professionals
+that focuses on theoretical and practical issues in architecture and
+integrates digital technologies into architectural design, fabrication,
+and construction. Includes instruction in architectural history and
+urban theory, 3-D digital technologies, construction, design and
+fabrication methods, and sustainable practices in architecture.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_ArchitecturalDesign.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_ArchitecturalDesign.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_ArchitecturalDesign.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="cityurban-community-and-regional-planning"
+class="section level2">
+<h2>City/Urban, Community, and Regional Planning</h2>
+<p>A program that prepares individuals to apply principles of planning,
+analysis, and architecture to the development and improvement of urban
+areas and surrounding regions, and to function as professional planners.
+Includes instruction in principles of architecture; master plan
+development; service, communications, and transportation systems design;
+community and commercial development; zoning; land use planning; applied
+economics; policy analysis; applicable laws and regulations; and
+professional responsibilities and managerial duties.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_City_Urban_Community_andRegionalPlanning.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+723
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_City_Urban_Community_andRegionalPlanning.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+182
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Doctorate_City_Urban_Community_andRegionalPlanning.html’>Doctorate</a>
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+92
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_City_Urban_Community_andRegionalPlanning.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+96
+</td>
+<td style="text-align:right;">
+1461
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="environmental-designarchitecture" class="section level2">
+<h2>Environmental Design/Architecture</h2>
+<p>A program that prepares individuals to design public and private
+spaces, indoor and outdoor, for leisure, recreational, commercial, and
+living purposes, and for professional practice as environmental
+designers and architects. Includes instruction in the design and
+planning of public and private open spaces and their relationship to
+buildings and other aspects of the built environment; facilities
+management; related aspects of interior design and architecture,
+landscape architecture, and urban planning; and professional
+responsibilities and standards.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Associates_EnvironmentalDesign_Architecture.html’>Associates</a>
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_EnvironmentalDesign_Architecture.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+34
+</td>
+<td style="text-align:right;">
+550
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_EnvironmentalDesign_Architecture.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+66
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Doctorate_EnvironmentalDesign_Architecture.html’>Doctorate</a>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+19
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_EnvironmentalDesign_Architecture.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="healthcare-environment-designarchitecture"
+class="section level2">
+<h2>Healthcare Environment Design/Architecture</h2>
+<p>A program that focuses on the design and performance of healthcare
+environments to optimize healing. Includes instruction in interior
+design, architecture, healing sciences, healthcare environments,
+human-centered design, and healthcare delivery.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_HealthcareEnvironmentDesign_Architecture.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_HealthcareEnvironmentDesign_Architecture.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+7
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="sustainable-designarchitecture" class="section level2">
+<h2>Sustainable Design/Architecture</h2>
+<p>A program that focuses on the application of biological, physical,
+and social science in the design of sustainable cities and metropolitan
+regions. Includes instruction in community revitalization, community
+economic development, construction technology, design innovation,
+environmental economics, ethics, justice and politics, sustainable
+materials, sustainability theory, structural materials, and
+urbanism.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_SustainableDesign_Architecture.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_SustainableDesign_Architecture.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+41
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_SustainableDesign_Architecture.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+9
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="environmental-design-other" class="section level2">
+<h2>Environmental Design, Other</h2>
+<p>Any instructional program in environmental design not listed
+above.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Associates_EnvironmentalDesign_Other.html’>Associates</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="interior-architecture" class="section level2">
+<h2>Interior Architecture</h2>
+<p>A program that prepares individuals to apply architectural principles
+in the design of structural interiors for living, recreational, and
+business purposes and to function as professional interior architects.
+Includes instruction in architecture, structural systems design, heating
+and cooling systems, occupational and safety standards, interior design,
+specific end-use applications, and professional responsibilities and
+standards.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Associates_InteriorArchitecture.html’>Associates</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+30
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_InteriorArchitecture.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+679
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_InteriorArchitecture.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+12
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_InteriorArchitecture.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+128
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="landscape-architecture" class="section level2">
+<h2>Landscape Architecture</h2>
+<p>A program that prepares individuals for the independent professional
+practice of landscape architecture and research in various aspects of
+the field. Includes instruction in geology and hydrology; soils,
+groundcovers, and horticultural elements; project and site planning;
+landscape design, history, and theory; environmental design; applicable
+law and regulations; and professional responsibilities and
+standards.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Associates_LandscapeArchitecture.html’>Associates</a>
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_LandscapeArchitecture.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+612
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_LandscapeArchitecture.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+28
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Doctorate_LandscapeArchitecture.html’>Doctorate</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_LandscapeArchitecture.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:right;">
+276
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="architectural-history-and-criticism-general"
+class="section level2">
+<h2>Architectural History and Criticism, General</h2>
+<p>A general program that focuses on the aesthetic, technical, and
+social development of the built environment and the architectural
+profession from earliest times to the present. Includes instruction in
+the principles of architecture and related fields; art history;
+historiography of architecture; architectural theory and criticism;
+related aspects of the history of technology and social and economic
+history; and various period, cultural, and stylistic
+specializations.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Associates_ArchitecturalHistoryandCriticism_General.html’>Associates</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_ArchitecturalHistoryandCriticism_General.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+76
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_ArchitecturalHistoryandCriticism_General.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+11
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Doctorate_ArchitecturalHistoryandCriticism_General.html’>Doctorate</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_ArchitecturalHistoryandCriticism_General.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+23
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="architectural-conservation" class="section level2">
+<h2>Architectural Conservation</h2>
+<p>A program that focuses on the architectural design principles and
+building techniques used in historic structures and environments, and
+the process of saving and restoring old buildings and districts for
+contemporary use and enjoyment. Includes instruction in architectural
+history, building conservation techniques, and material
+conservation.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_ArchitecturalConservation.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="architectural-studies" class="section level2">
+<h2>Architectural Studies</h2>
+<p>A program that focuses on the study of architecture, cities,
+landscapes, designed objects, ornament, architectural photography, and
+material culture in diverse places and time periods, and the social and
+aesthetic dimensions of contemporary architecture, landscapes, and
+cities, emphasizing issues of sustainable environments, new forms of
+urbanism, and the use of digital media for visualization and analysis.
+Includes instruction in the fundamentals of architecture, design,
+environmental and sustainability studies, historic preservation,
+landscape architecture, studio art, and urban affairs and planning.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_ArchitecturalStudies.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+20
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_ArchitecturalStudies.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+2
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="architectural-technologytechnician" class="section level2">
+<h2>Architectural Technology/Technician</h2>
+<p>A program that prepares individuals to assist architects in
+developing plans and related documentation and in performing
+architectural office services. Includes instruction in architectural
+drafting, computer-assisted drafting and design, construction methods
+and materials, environmental systems, building codes and standards,
+structural principles, cost estimation, planning documentation, visual
+communication skills, display production, and architectural office
+management.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Associates_ArchitecturalTechnology_Technician.html’>Associates</a>
+</td>
+<td style="text-align:right;">
+66
+</td>
+<td style="text-align:right;">
+466
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_ArchitecturalTechnology_Technician.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+92
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_ArchitecturalTechnology_Technician.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+316
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_ArchitecturalTechnology_Technician.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+12
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="architectural-and-building-sciencestechnology"
+class="section level2">
+<h2>Architectural and Building Sciences/Technology</h2>
+<p>A program that focuses on the application of advanced technology to
+building design and construction, retrofitting existing buildings, and
+efficient operation of buildings, including lighting and daylight
+design, acoustics, solar design, building conservation, and
+energy-conscious design. Includes instruction in architecture, building
+technology, civil and structural engineering, mechanical engineering,
+environmental control systems, sustainability, and computer tools and
+applications.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Associates_ArchitecturalandBuildingSciences_Technology.html’>Associates</a>
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+96
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_ArchitecturalandBuildingSciences_Technology.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:right;">
+3536
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_ArchitecturalandBuildingSciences_Technology.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+108
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Doctorate_ArchitecturalandBuildingSciences_Technology.html’>Doctorate</a>
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+59
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_ArchitecturalandBuildingSciences_Technology.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+101
+</td>
+<td style="text-align:right;">
+4331
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="architectural-sciences-and-technology-other"
+class="section level2">
+<h2>Architectural Sciences and Technology, Other</h2>
+<p>Any instructional program in architectural sciences and technology
+not listed above.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Associates_ArchitecturalSciencesandTechnology_Other.html’>Associates</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_ArchitecturalSciencesandTechnology_Other.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+10
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="real-estate-development" class="section level2">
+<h2>Real Estate Development</h2>
+<p>A program that prepares individuals to create and redevelop housing,
+offices, retail centers, and industrial sites. Includes instruction in
+architectural design and construction, historic preservation, landscape
+architecture, urban planning and design, business, real estate and land
+use law, public policy, and engineering.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_RealEstateDevelopment.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+171
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_RealEstateDevelopment.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+38
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_RealEstateDevelopment.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+337
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="architecture-and-related-services-other"
+class="section level2">
+<h2>Architecture and Related Services, Other</h2>
+<p>Any instructional program in architecture and related programs not
+listed above.</p>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Degree
+</th>
+<th style="text-align:right;">
+Schools offering
+</th>
+<th style="text-align:right;">
+Degrees completed
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Associates_ArchitectureandRelatedServices_Other.html’>Associates</a>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+13
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Bachelors_ArchitectureandRelatedServices_Other.html’>Bachelors</a>
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+112
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Certificate_ArchitectureandRelatedServices_Other.html’>Certificate</a>
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+62
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a
+href=‘majors_Masters_ArchitectureandRelatedServices_Other.html’>Masters</a>
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+18
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+   
+   
+            
+      
+
+  <script>
+    $(document).ready(function () {
+
+			
+ 		
+	    });
+  </script>
+
+
+
+    <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+	document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+  
+</body>
+</html>

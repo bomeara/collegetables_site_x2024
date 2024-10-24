@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+
+    
+    
+    <title>Upstate Medical University</title>
+
+        <script src="institution_files/header-attrs-2.27/header-attrs.js"></script>
+        <script src="institution_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="institution_files/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="institution_files/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        <script src="institution_files/navigation-1.1/tabsets.js"></script>
+        <link href="institution_files/readthedown-0.1/readthedown.css" rel="stylesheet" />
+        <link href="institution_files/readthedown-0.1/readthedown_fonts_embed.css" rel="stylesheet" />
+        <script src="institution_files/readthedown-0.1/readthedown.js"></script>
+        <link href="institution_files/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+        <script src="institution_files/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+        <link href="institution_files/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+        <script src="institution_files/leaflet-1.3.1/leaflet.js"></script>
+        <link href="institution_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+        <script src="institution_files/proj4-2.6.2/proj4.min.js"></script>
+        <script src="institution_files/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+        <link href="institution_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+        <script src="institution_files/leaflet-binding-2.2.2/leaflet.js"></script>
+        <link href="institution_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+        <script src="institution_files/datatables-binding-0.33/datatables.js"></script>
+        <link href="institution_files/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+        <link href="institution_files/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+        <script src="institution_files/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+        <link href="institution_files/dt-ext-fixedcolumns-1.13.6/css/fixedColumns.dataTables.min.css" rel="stylesheet" />
+        <script src="institution_files/dt-ext-fixedcolumns-1.13.6/js/dataTables.fixedColumns.min.js"></script>
+        <link href="institution_files/dt-ext-fixedheader-1.13.6/css/fixedHeader.dataTables.min.css" rel="stylesheet" />
+        <script src="institution_files/dt-ext-fixedheader-1.13.6/js/dataTables.fixedHeader.min.js"></script>
+        <link href="institution_files/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+        <script src="institution_files/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q67PXWY3L5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Q67PXWY3L5');
+        </script>
+    
+    
+    
+    
+    <!-- tabsets -->
+    <script>
+      $(document).ready(function () {
+	  window.buildTabsets("toc");
+      });
+      $(document).ready(function () {
+	  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+	      $(this).parent().toggleClass('nav-tabs-open')
+	  });
+      });
+    </script>
+
+    <!-- code folding -->
+    
+    <!-- code download -->
+    
+    <!-- tabsets dropdown -->
+
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+	  display: inline-table;
+	  max-height: 500px;
+	  min-height: 44px;
+	  overflow-y: auto;
+	  background: white;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+	  content: "&#xe258;";
+	  border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active {
+	  display: block;
+      }
+
+      .tabset-dropdown > .nav-tabs > li.active a {
+  	  padding: 0 15px !important;
+      }
+
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+	  border: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: transparent;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+	  display: block;
+	  float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li {
+	  display: none;
+	  margin-left: 0 !important;
+      }
+    </style>
+    
+</head>
+
+<body class="preload">
+
+   	
+         <!-- readthedown start -->   
+   <div id="content" data-toggle="wy-nav-shift">
+     <nav id="nav-top" role="navigation" aria-label="top navigation">
+       <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+     </nav>
+         
+   
+      
+      <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">College Tables</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="fields_overview.html">Fields</a>
+      </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+      </div><!--/.navbar -->
+        
+      <h1 class="title">Upstate Medical University</h1>
+      
+         <!-- readthedown authors -->
+   <div id="sidebar">
+    <h2><a href="#content">Upstate Medical University</a></h2>
+    <div id="toc">
+      <ul>
+      <li><a href="#notes" id="toc-notes">Notes</a></li>
+      <li><a href="#overview-of-institution"
+      id="toc-overview-of-institution">Overview of institution</a></li>
+      <li><a href="#map" id="toc-map">Map</a></li>
+      <li><a href="#comparisons" id="toc-comparisons">Comparisons</a>
+      <ul>
+      <li><a href="#enrollment" id="toc-enrollment">Enrollment</a></li>
+      <li><a href="#general" id="toc-general">General</a></li>
+      <li><a href="#teaching" id="toc-teaching">Teaching</a></li>
+      <li><a href="#geography" id="toc-geography">Geography</a></li>
+      <li><a href="#financial-aid" id="toc-financial-aid">Financial
+      Aid</a></li>
+      <li><a href="#graduation" id="toc-graduation">Graduation</a></li>
+      <li><a href="#library" id="toc-library">Library</a></li>
+      </ul></li>
+      <li><a href="#diversity" id="toc-diversity">Diversity</a>
+      <ul>
+      <li><a href="#overall-diversity"
+      id="toc-overall-diversity">Overall diversity</a></li>
+      <li><a href="#freshman-profile" id="toc-freshman-profile">Freshman
+      profile</a></li>
+      <li><a href="#freshman-geography"
+      id="toc-freshman-geography">Freshman geography</a></li>
+      </ul></li>
+      <li><a href="#test-scores" id="toc-test-scores">Test scores</a>
+      <ul>
+      <li><a href="#sat-scores" id="toc-sat-scores">SAT scores</a></li>
+      <li><a href="#act-scores" id="toc-act-scores">ACT scores</a></li>
+      </ul></li>
+      <li><a href="#majors" id="toc-majors">Majors</a>
+      <ul>
+      <li><a href="#bachelors" id="toc-bachelors">Bachelors</a></li>
+      <li><a href="#masters" id="toc-masters">Masters</a></li>
+      <li><a href="#doctorate" id="toc-doctorate">Doctorate</a></li>
+      <li><a href="#certificate"
+      id="toc-certificate">Certificate</a></li>
+      <li><a href="#associates" id="toc-associates">Associates</a></li>
+      </ul></li>
+      </ul>
+    </div>
+    <div id="postamble" data-toggle="wy-nav-shift" class="status">
+                </div>
+   </div>
+     
+
+   
+      
+   
+<!-- Don't indent these lines or it will mess pre blocks indentation --> 
+<div id="main">
+<style type="text/css">
+img {
+  max-width: 100%;
+}
+</style>
+<p><a href='https://www.upstate.edu/'>Upstate Medical University</a> is
+located in Syracuse, New York. It is a public, 4-year or above
+institution.</p>
+<p><em>From <a
+href="https://en.wikipedia.org/wiki/%20Upstate%20Medical%20University">Wikipedia</a></em>:
+The State University of New York Upstate Medical University (SUNY
+Upstate) is a public medical school in Syracuse, New York. Founded in
+1834, Upstate is the 15th oldest medical school in the United States and
+is the only medical school in Central New York. The university is part
+of the State University of New York (SUNY) system. SUNY Upstate is an
+upper-division transfer and doctoral university with degree-granting
+programs in the Norton College of Medicine (NCOM), College of Health
+Professions (CHP), College of Graduate Studies (CoGS) and the College of
+Nursing. As one of 140 academic medical centers in the United States,
+the Upstate University Health System serves over 1.8 million people
+annually. Its facilities include Upstate University Hospital, the
+region’s only Level 1 trauma and burn center; Upstate Community
+Hospital; Golisano Children’s Hospital; Upstate Brain &amp; Spine
+Center; Upstate Cardiovascular Center; Upstate Cancer Center; and other
+satellite sites in Central New York. Many of Upstate’s faculty provide
+patient care, teach, and conduct research at the University Hospital.
+Part of the SUNY system since 1950, Upstate provides over 12,000
+employment opportunities, making it Central New York’s largest employer.
+The university adds more than $2.5 billion to the state economy
+annually. Over 8,000 SUNY Upstate alumni physicians are licensed in the
+United States and they generate more than $24.8 billion in economic
+activity and support or employ over 140,000 employees.</p>
+<div id="notes" class="section level1">
+<h1>Notes</h1>
+<p>These are items that bear looking into more closely.</p>
+<ul>
+<li>This institution’s full-time undergraduate enrollment has tended to
+decrease over time.</li>
+</ul>
+</div>
+<div id="overview-of-institution" class="section level1">
+<h1>Overview of institution</h1>
+<p>This, and the rest of the page, use info from the most recent year
+available, generally 2023.</p>
+<ul>
+<li><p><strong>Institution kind</strong>: Special Focus Four-Year:
+Medical Schools &amp; Centers</p></li>
+<li><p><strong>Undergrad program</strong>: Professions focus, high
+graduate coexistence</p></li>
+<li><p><strong>Graduate program</strong>: Research Doctoral: Single
+program-Other</p></li>
+<li><p><strong>Enrollment profile</strong>: Majority graduate (see more
+details below)</p></li>
+<li><p><strong>Average net price for undergrads on financial
+aid</strong>: Unknown .</p></li>
+<li><p><strong>Actual price for <em>your</em> family</strong>: Go
+<a href='https://www.suny.edu/howmuch/netpricecalculator.xhtml'>here</a>
+to see what your family may be asked to pay. It can be MUCH lower than
+the average price but also higher for some.</p></li>
+<li><p><strong>Size and setting</strong>: Four-year, small, primarily
+residential</p></li>
+<li><p><strong>In state percentage</strong>: Unknown of first year
+students come from New York</p></li>
+<li><p><strong>In US percentage</strong>: Unknown of first year students
+come from the US</p></li>
+<li><p><strong>Student to tenure-stream faculty ratio</strong>: 0.7
+(undergrads to tenure-stream faculty) [<a href="tenure.html">Tenure
+explained</a>]</p></li>
+<li><p><strong>Student to faculty ratio</strong>: 0.2 (undergrads to all
+faculty)</p></li>
+<li><p><strong>Degrees offered</strong>: Bachelor’s degree,
+Postbaccalaureate certificate, Master’s degree, Post master’s
+certificate, Doctor’s degree: research scholarship, Doctor’s degree:
+professional practice</p></li>
+<li><p><strong>Schedule</strong>: Semester</p></li>
+<li><p><strong>Institution provides on campus housing</strong>:
+Yes</p></li>
+<li><p><strong>Dorm capacity</strong>: There are enough dorm beds for
+234 students</p></li>
+<li><p><strong>Freshmen required to live on campus</strong>: Not
+applicable</p></li>
+<li><p><strong>Advanced placement (AP) credits used</strong>:
+Yes</p></li>
+<li><p><strong>Disabilities</strong>: 3 percent or less of undergrads
+are registered as having disabilities.</p></li>
+</ul>
+</div>
+<div id="map" class="section level1">
+<h1>Map</h1>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-35cc3cfe137029c1a45c" style="width:768px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-35cc3cfe137029c1a45c">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[43.041819,-76.14000900000001,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[43.041819,-76.14000900000001],16,[]],"limits":{"lat":[43.041819,43.041819],"lng":[-76.14000900000001,-76.14000900000001]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="comparisons" class="section level1">
+<h1>Comparisons</h1>
+<p>The sections below show this institution compared with others. The
+ones listed are ones it has identified as peers, who consider themselves
+peers, and/or who the federal government considers peers. If a
+comparison school has the same value as the focal school, its cell is
+grayed out. Arrows show where there is a signficant trend over time for
+a school.</p>
+<div id="enrollment" class="section level2">
+<h2>Enrollment</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-15dd0268aa918a1cec83" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-15dd0268aa918a1cec83">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","",""],["Enrollment","Enrollment","Enrollment","Enrollment","Enrollment","Enrollment","Enrollment","Enrollment"],["Undergrads (full time)","Undergrads (part time)","Grad students (full time)","Grad students (part time)","Admission rate (undergrads)","Yield rate (percent of applicants offered undergraduate admission who accept)","Graduation rate (bachelors in 6 years)","Transfer out rate (bachelors)"],["<span style=\"color:#43BAAD;\">128</span> ↓<br />-7.5/y","<span style=\"color:#3491A7;\">30</span>","<span style=\"color:#46BCAD;\">1,161</span> ↑<br />+17/y","<span style=\"color:#38AAAC;\">112</span> ↓<br />-15/y",null,null,null,null],["392","30","1926","158",null,null,null,null],["<span style=\"color:#37A5AB;\">4</span>","<span style=\"color:#5DCCAC;\">13</span>","<span style=\"color:#3498A9;\">7</span>","<span style=\"color:#46BCAD;\">20</span>","100","100","100",null],["<span style=\"color:#36699F;\">360</span>","<span style=\"color:#3C5295;\">340</span>","<span style=\"color:#3487A5;\">1,118</span>","<span style=\"color:#3487A5;\">450</span>",null,null,null,null],["<span style=\"color:#347DA2;\">22</span> ↓<br />-2.3/y","<span style=\"color:#37A5AB;\">1</span>","<span style=\"color:#000000;\">906</span> ↑<br />+13/y","<span style=\"color:#000000;\">86</span> ↑<br />+5.2/y",null,null,null,null],["35","73",null,null,null,null,"42.8571428571429",null],["<span style=\"color:#000000;\">542</span>","<span style=\"color:#000000;\">143</span>","<span style=\"color:#000000;\">3,100</span>","<span style=\"color:#000000;\">2,011</span> ↑<br />+103/y",null,null,null,null],[null,null,null,null,null,null,null,null],[null,null,"<span style=\"color:#3475A1;\">405</span> ↑<br />+9.2/y","<span style=\"color:#3D4E93;\">2</span>",null,null,null,null],[null,null,"<span style=\"color:#000000;\">491</span>","<span style=\"color:#000000;\">0</span>",null,null,null,null],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Category<\/th>\n      <th>Measure<\/th>\n      <th>Upstate Medical U.<\/th>\n      <th>Georgia Health Sciences U.<\/th>\n      <th>DeVry U.-Maryland<\/th>\n      <th>U. of Mississippi Medical Center<\/th>\n      <th>Louisiana State U. Health Sciences Center-Shreveport<\/th>\n      <th>DeVry U.-Maryland.1<\/th>\n      <th>The U. of Texas Health Science Center at Houston<\/th>\n      <th>U. of Medicine and Dentistry of New Jersey<\/th>\n      <th>SUNY College of Optometry<\/th>\n      <th>Hackensack Meridian School of Medicine<\/th>\n      <th>V13<\/th>\n      <th>V14<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Category","targets":1},{"name":"Measure","targets":2},{"name":"Upstate Medical U.","targets":3},{"name":"Georgia Health Sciences U.","targets":4},{"name":"DeVry U.-Maryland","targets":5},{"name":"U. of Mississippi Medical Center","targets":6},{"name":"Louisiana State U. Health Sciences Center-Shreveport","targets":7},{"name":"DeVry U.-Maryland.1","targets":8},{"name":"The U. of Texas Health Science Center at Houston","targets":9},{"name":"U. of Medicine and Dentistry of New Jersey","targets":10},{"name":"SUNY College of Optometry","targets":11},{"name":"Hackensack Meridian School of Medicine","targets":12},{"name":"V13","targets":13},{"name":"V14","targets":14}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'vertical-align':'top'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'vertical-align':'top'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'vertical-align':'top'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'vertical-align':'top'});\nvar value=data[14]; $(this.api().cell(row, 14).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="general" class="section level2">
+<h2>General</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-bf9f0c8b32605658b3ab" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-bf9f0c8b32605658b3ab">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","",""],["Sector","Level","HBCU","Tribal College","Size and setting","Undergrad profile","Undergrad instruction","Grad instruction","Enrollment profile"],["Public, 4-year or above","Four or more years","No","No","Four-year, small, primarily residential","Four-year, medium full-time, inclusive, higher transfer-in","Professions focus, high graduate coexistence","Research Doctoral: Single program-Other","Majority graduate"],["<span style=\"color:#B6B6B4;\">Public, 4-year or above</span>","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>",null,null,null,null,null],["Private for-profit, 4-year or above","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>",null,null,null,null,null],["<span style=\"color:#B6B6B4;\">Public, 4-year or above</span>","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>",null,null,null,null,null],["<span style=\"color:#B6B6B4;\">Public, 4-year or above</span>","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, very small, primarily nonresidential","<span style=\"color:#B6B6B4;\">Four-year, medium full-time, inclusive, higher transfer-in</span>","<span style=\"color:#B6B6B4;\">Professions focus, high graduate coexistence</span>","<span style=\"color:#B6B6B4;\">Research Doctoral: Single program-Other</span>","<span style=\"color:#B6B6B4;\">Majority graduate</span>"],["Private for-profit, 4-year or above","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>",null,null,null,null,null],["<span style=\"color:#B6B6B4;\">Public, 4-year or above</span>","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, medium, primarily nonresidential","Four-year, full-time, inclusive, higher transfer-in","<span style=\"color:#B6B6B4;\">Professions focus, high graduate coexistence</span>","Research Doctoral: Professional-dominant","<span style=\"color:#B6B6B4;\">Majority graduate</span>"],[null,null,null,null,null,null,null,null,null],["<span style=\"color:#B6B6B4;\">Public, 4-year or above</span>","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Exclusively graduate/professional","Not classified (Exclusively Graduate)","Not Classified (Exclusively Graduate Programs)","<span style=\"color:#B6B6B4;\">Research Doctoral: Single program-Other</span>","Exclusively graduate"],["Private not-for-profit, 4-year or above","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Not applicable, not in Carnegie universe (not accredited or nondegree-granting)","Not applicable, not in Carnegie universe (not accredited or nondegree-granting)","Not applicable, not in Carnegie universe (not accredited or nondegree-granting)","Not applicable, not in Carnegie universe (not accredited or nondegree-granting)","Not applicable, not in Carnegie universe (not accredited or nondegree-granting)"],[null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Upstate Medical U.<\/th>\n      <th>Georgia Health Sciences U.<\/th>\n      <th>DeVry U.-Maryland<\/th>\n      <th>U. of Mississippi Medical Center<\/th>\n      <th>Louisiana State U. Health Sciences Center-Shreveport<\/th>\n      <th>DeVry U.-Maryland.1<\/th>\n      <th>The U. of Texas Health Science Center at Houston<\/th>\n      <th>U. of Medicine and Dentistry of New Jersey<\/th>\n      <th>SUNY College of Optometry<\/th>\n      <th>Hackensack Meridian School of Medicine<\/th>\n      <th>V13<\/th>\n      <th>V14<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Upstate Medical U.","targets":2},{"name":"Georgia Health Sciences U.","targets":3},{"name":"DeVry U.-Maryland","targets":4},{"name":"U. of Mississippi Medical Center","targets":5},{"name":"Louisiana State U. Health Sciences Center-Shreveport","targets":6},{"name":"DeVry U.-Maryland.1","targets":7},{"name":"The U. of Texas Health Science Center at Houston","targets":8},{"name":"U. of Medicine and Dentistry of New Jersey","targets":9},{"name":"SUNY College of Optometry","targets":10},{"name":"Hackensack Meridian School of Medicine","targets":11},{"name":"V13","targets":12},{"name":"V14","targets":13}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'vertical-align':'top'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'vertical-align':'top'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'vertical-align':'top'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="teaching" class="section level2">
+<h2>Teaching</h2>
+<p>Tenure track faculty are those who are eligible for tenure. This
+includes both pre-tenure and tenured faculty. Once faculty get tenure,
+they are (generally) protected from being fired for intellectual
+reasons, helping to ensure their freedom in teaching and research. They
+can still lose their positions for misconduct, financial problems, not
+fulfilling their duties, or other reasons.</p>
+<p>Non-tenure track faculty are not eligible for tenure. Some are hired
+one semester at a time, some have multi-year contracts. They typically
+have a higher teaching load than tenure track faculty, leaving less time
+for research or other creative endeavors. They are also easier to fire
+than tenured faculty. Sometimes they are external experts (a noted
+musician, a former senator) who are hired to teach some classes without
+the expected permanence of a tenure-track position.</p>
+<p>Note that this chart uses US federal demographic data: it only has
+two genders and a specified set of ethnicities and races.</p>
+<p>Having a low student to faculty ratio is considered a good thing by
+many, as it can mean more individual attention.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-27fde5e9e84745438dd1" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-27fde5e9e84745438dd1">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","",""],["Undergrads per tenure track instructor (lower is better)","Undergrads per instructor (lower is better)","Total instructors","Tenure track instructors","Non-tenure track instructors"],["<span style=\"color:#000000;\">0.7</span> ↓<br />-0.0/y","<span style=\"color:#000000;\">0.2</span> ↓<br />-0.0/y","<span style=\"color:#000000;\">646</span> ↑<br />+29/y","<span style=\"color:#000000;\">185</span> ↓<br />-5.2/y","<span style=\"color:#000000;\">461</span> ↑<br />+34/y"],["2.01025641025641","0.63843648208469","614","195","419"],[null,null,null,null,null],["<span style=\"color:#000000;\">0.8</span>","<span style=\"color:#000000;\">0.4</span>","<span style=\"color:#000000;\">831</span>","<span style=\"color:#000000;\">450</span>","<span style=\"color:#000000;\">381</span>"],["<span style=\"color:#000000;\">0.2</span> ↓<br />-0.0/y","<span style=\"color:#000000;\">0.0</span> ↓<br />-0.0/y","<span style=\"color:#000000;\">488</span>","<span style=\"color:#000000;\">117</span> ↓<br />-5.1/y","<span style=\"color:#000000;\">371</span> ↑<br />+7.7/y"],[null,null,null,null,null],["<span style=\"color:#000000;\">1.4</span>","<span style=\"color:#000000;\">0.3</span> ↓<br />-0.0/y","<span style=\"color:#000000;\">1,948</span> ↑<br />+52/y","<span style=\"color:#000000;\">408</span>","<span style=\"color:#000000;\">1,540</span> ↑<br />+54/y"],[null,null,null,null,null],[null,null,"<span style=\"color:#000000;\">71</span> ↑<br />+1.6/y","<span style=\"color:#000000;\">16</span> ↓<br />-0.9/y","<span style=\"color:#000000;\">55</span> ↑<br />+2.5/y"],[null,null,"<span style=\"color:#000000;\">9</span>",null,"<span style=\"color:#000000;\">9</span>"],[null,null,null,null,null],[null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Upstate Medical U.<\/th>\n      <th>Georgia Health Sciences U.<\/th>\n      <th>DeVry U.-Maryland<\/th>\n      <th>U. of Mississippi Medical Center<\/th>\n      <th>Louisiana State U. Health Sciences Center-Shreveport<\/th>\n      <th>DeVry U.-Maryland.1<\/th>\n      <th>The U. of Texas Health Science Center at Houston<\/th>\n      <th>U. of Medicine and Dentistry of New Jersey<\/th>\n      <th>SUNY College of Optometry<\/th>\n      <th>Hackensack Meridian School of Medicine<\/th>\n      <th>V13<\/th>\n      <th>V14<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Upstate Medical U.","targets":2},{"name":"Georgia Health Sciences U.","targets":3},{"name":"DeVry U.-Maryland","targets":4},{"name":"U. of Mississippi Medical Center","targets":5},{"name":"Louisiana State U. Health Sciences Center-Shreveport","targets":6},{"name":"DeVry U.-Maryland.1","targets":7},{"name":"The U. of Texas Health Science Center at Houston","targets":8},{"name":"U. of Medicine and Dentistry of New Jersey","targets":9},{"name":"SUNY College of Optometry","targets":10},{"name":"Hackensack Meridian School of Medicine","targets":11},{"name":"V13","targets":12},{"name":"V14","targets":13}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'vertical-align':'top'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'vertical-align':'top'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'vertical-align':'top'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="geography" class="section level2">
+<h2>Geography</h2>
+<p>This has information on the location of the institution. See the <a
+href="about.html">about page</a> for more information on what the
+metrics are and how they are calculated. The goal is to neutrally
+provide information: for example, some individuals want stringent gun
+control in an area, some want the opposite: the categories are meant to
+be descriptive.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-0ab086bb4985620f0515" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-0ab086bb4985620f0515">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","",""],["Location","Gun Law Stringency","Abortion access","State rep support for same sex and mixed race marriage","State rep support for contraception","Risk to trans adults","Miles to mountains","Biome"],["Syracuse, New York","5: Very High","2: Very protective",null,null,"1: Safest","<span style=\"color:#000000;\">10</span>","Temperate Broadleaf &amp; Mixed Forests"],["Augusta, Georgia","1: Very Low","5: Restrictive","42.8571428571429","42.8571428571429","3: Moderate risk","113.753139891386","<span style=\"color:#B6B6B4;\">Temperate Broadleaf &amp; Mixed Forests</span>"],["Bethesda, Maryland","<span style=\"color:#B6B6B4;\">5: Very High</span>","<span style=\"color:#B6B6B4;\">2: Very protective</span>",null,null,"<span style=\"color:#B6B6B4;\">1: Safest</span>","<span style=\"color:#000000;\">38</span>","<span style=\"color:#B6B6B4;\">Temperate Broadleaf &amp; Mixed Forests</span>"],["Jackson, Mississippi","1: Very Low","7: Most restrictive",null,null,"5: Worst","<span style=\"color:#000000;\">259</span>","<span style=\"color:#B6B6B4;\">Temperate Broadleaf &amp; Mixed Forests</span>"],["Shreveport, Louisiana","1: Very Low","7: Most restrictive",null,null,"5: Worst","<span style=\"color:#000000;\">129</span>","Temperate Conifer Forests"],["Bethesda, Maryland","<span style=\"color:#B6B6B4;\">5: Very High</span>","<span style=\"color:#B6B6B4;\">2: Very protective</span>","87.5","87.5","<span style=\"color:#B6B6B4;\">1: Safest</span>","37.8123628732674","<span style=\"color:#B6B6B4;\">Temperate Broadleaf &amp; Mixed Forests</span>"],["Houston, Texas","1: Very Low","7: Most restrictive",null,null,"4: High risk","<span style=\"color:#000000;\">331</span>","Tropical &amp; Subtropical Grasslands, Savannas &amp; Shrubland"],[null,null,null,null,null,null,null,null],["New York, New York","<span style=\"color:#B6B6B4;\">5: Very High</span>","<span style=\"color:#B6B6B4;\">2: Very protective</span>",null,null,"<span style=\"color:#B6B6B4;\">1: Safest</span>","<span style=\"color:#000000;\">34</span>","<span style=\"color:#B6B6B4;\">Temperate Broadleaf &amp; Mixed Forests</span>"],["Nutley, New Jersey","<span style=\"color:#B6B6B4;\">5: Very High</span>","<span style=\"color:#B6B6B4;\">2: Very protective</span>",null,null,"<span style=\"color:#B6B6B4;\">1: Safest</span>","<span style=\"color:#000000;\">29</span>","<span style=\"color:#B6B6B4;\">Temperate Broadleaf &amp; Mixed Forests</span>"],[null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Upstate Medical U.<\/th>\n      <th>Georgia Health Sciences U.<\/th>\n      <th>DeVry U.-Maryland<\/th>\n      <th>U. of Mississippi Medical Center<\/th>\n      <th>Louisiana State U. Health Sciences Center-Shreveport<\/th>\n      <th>DeVry U.-Maryland.1<\/th>\n      <th>The U. of Texas Health Science Center at Houston<\/th>\n      <th>U. of Medicine and Dentistry of New Jersey<\/th>\n      <th>SUNY College of Optometry<\/th>\n      <th>Hackensack Meridian School of Medicine<\/th>\n      <th>V13<\/th>\n      <th>V14<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Upstate Medical U.","targets":2},{"name":"Georgia Health Sciences U.","targets":3},{"name":"DeVry U.-Maryland","targets":4},{"name":"U. of Mississippi Medical Center","targets":5},{"name":"Louisiana State U. Health Sciences Center-Shreveport","targets":6},{"name":"DeVry U.-Maryland.1","targets":7},{"name":"The U. of Texas Health Science Center at Houston","targets":8},{"name":"U. of Medicine and Dentistry of New Jersey","targets":9},{"name":"SUNY College of Optometry","targets":10},{"name":"Hackensack Meridian School of Medicine","targets":11},{"name":"V13","targets":12},{"name":"V14","targets":13}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'vertical-align':'top'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'vertical-align':'top'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'vertical-align':'top'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="financial-aid" class="section level2">
+<h2>Financial Aid</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-cd0ac141f9031958b91c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-cd0ac141f9031958b91c">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","",""],["Average net price (for students awarded aid)","Undergrads getting federal aid","Undergrads getting any aid","Undergrads getting Pell grants"],[null,null,null,null],[null,null,null,null],["28993","100","100","100"],[null,null,null,null],[null,null,null,null],[null,null,null,null],[null,null,null,null],[null,null,null,null],[null,null,null,null],[null,null,null,null],[null,null,null,null],[null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Upstate Medical U.<\/th>\n      <th>Georgia Health Sciences U.<\/th>\n      <th>DeVry U.-Maryland<\/th>\n      <th>U. of Mississippi Medical Center<\/th>\n      <th>Louisiana State U. Health Sciences Center-Shreveport<\/th>\n      <th>DeVry U.-Maryland.1<\/th>\n      <th>The U. of Texas Health Science Center at Houston<\/th>\n      <th>U. of Medicine and Dentistry of New Jersey<\/th>\n      <th>SUNY College of Optometry<\/th>\n      <th>Hackensack Meridian School of Medicine<\/th>\n      <th>V13<\/th>\n      <th>V14<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Upstate Medical U.","targets":2},{"name":"Georgia Health Sciences U.","targets":3},{"name":"DeVry U.-Maryland","targets":4},{"name":"U. of Mississippi Medical Center","targets":5},{"name":"Louisiana State U. Health Sciences Center-Shreveport","targets":6},{"name":"DeVry U.-Maryland.1","targets":7},{"name":"The U. of Texas Health Science Center at Houston","targets":8},{"name":"U. of Medicine and Dentistry of New Jersey","targets":9},{"name":"SUNY College of Optometry","targets":10},{"name":"Hackensack Meridian School of Medicine","targets":11},{"name":"V13","targets":12},{"name":"V14","targets":13}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'vertical-align':'top'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'vertical-align':'top'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'vertical-align':'top'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="graduation" class="section level2">
+<h2>Graduation</h2>
+<p>Note these are bachelors graduation rates in six years, not four
+(this is standard). Sample sizes can be small for some demographic
+groups with few individuals in a school, leading to large year-to-year
+fluctuations and often extreme values for those groups (if there are two
+individuals in the class with a given identity, the possible graduation
+rates are 0%, 50%, or 100% depending on whether zero, one, or both
+students graduate within six years).</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-e27c2616cb245c0cd9ad" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-e27c2616cb245c0cd9ad">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","","","","","","","","","","","",""],["Total","Men","Women","American Indian or Alaska Native men","American Indian or Alaska Native women","Asian men","Asian women","Black or African American men","Black or African American women","Hispanic men","Hispanic women","Native Hawaiian or other Pacific Islander men","Native Hawaiian or other Pacific Islander women","White men","White women","Two or more races men","Two or more races women","Nonresident alien men","Nonresident alien women"],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",""],["100","","100","","","","","","100","","","","","","","","","",""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",""],["42.8571428571429","50","33.3333333333333","","","","","33.3333333333333","0","100","50","","","","","","","",""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Upstate Medical U.<\/th>\n      <th>Georgia Health Sciences U.<\/th>\n      <th>DeVry U.-Maryland<\/th>\n      <th>U. of Mississippi Medical Center<\/th>\n      <th>Louisiana State U. Health Sciences Center-Shreveport<\/th>\n      <th>DeVry U.-Maryland.1<\/th>\n      <th>The U. of Texas Health Science Center at Houston<\/th>\n      <th>U. of Medicine and Dentistry of New Jersey<\/th>\n      <th>SUNY College of Optometry<\/th>\n      <th>Hackensack Meridian School of Medicine<\/th>\n      <th>V13<\/th>\n      <th>V14<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Upstate Medical U.","targets":2},{"name":"Georgia Health Sciences U.","targets":3},{"name":"DeVry U.-Maryland","targets":4},{"name":"U. of Mississippi Medical Center","targets":5},{"name":"Louisiana State U. Health Sciences Center-Shreveport","targets":6},{"name":"DeVry U.-Maryland.1","targets":7},{"name":"The U. of Texas Health Science Center at Houston","targets":8},{"name":"U. of Medicine and Dentistry of New Jersey","targets":9},{"name":"SUNY College of Optometry","targets":10},{"name":"Hackensack Meridian School of Medicine","targets":11},{"name":"V13","targets":12},{"name":"V14","targets":13}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'vertical-align':'top'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'vertical-align':'top'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'vertical-align':'top'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="library" class="section level2">
+<h2>Library</h2>
+<p>Libraries are changing rapidly. Note that how institutions count
+digital collections may vary.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-3c71ef79302a464e861a" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-3c71ef79302a464e861a">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","",""],["Number of physical books","Physical library circulations per students and faculty","Digital library circulations per students and faculty"],["<span style=\"color:#3500C9;\">63,774</span> ↓<br />-17,749/y","<span style=\"color:#5600A8;\">0.7</span> ↓<br />-0.5/y","<span style=\"color:#5600A8;\">113</span>"],[null,null,null],[null,null,null],[null,null,null],["<span style=\"color:#9B0063;\">17,658</span> ↓<br />-17,277/y","<span style=\"color:#0200FC;\">2.1</span>","<span style=\"color:#AD0051;\">9.4</span>"],[null,null,null],["<span style=\"color:#0200FC;\">138,746</span>","<span style=\"color:#AD0051;\">0.0</span>","<span style=\"color:#0200FC;\">165</span>"],[null,null,null],["<span style=\"color:#680096;\">20,237</span>",null,null],["<span style=\"color:#CE0030;\">631</span>",null,null],[null,null,null],[null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Upstate Medical U.<\/th>\n      <th>Georgia Health Sciences U.<\/th>\n      <th>DeVry U.-Maryland<\/th>\n      <th>U. of Mississippi Medical Center<\/th>\n      <th>Louisiana State U. Health Sciences Center-Shreveport<\/th>\n      <th>DeVry U.-Maryland.1<\/th>\n      <th>The U. of Texas Health Science Center at Houston<\/th>\n      <th>U. of Medicine and Dentistry of New Jersey<\/th>\n      <th>SUNY College of Optometry<\/th>\n      <th>Hackensack Meridian School of Medicine<\/th>\n      <th>V13<\/th>\n      <th>V14<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Upstate Medical U.","targets":2},{"name":"Georgia Health Sciences U.","targets":3},{"name":"DeVry U.-Maryland","targets":4},{"name":"U. of Mississippi Medical Center","targets":5},{"name":"Louisiana State U. Health Sciences Center-Shreveport","targets":6},{"name":"DeVry U.-Maryland.1","targets":7},{"name":"The U. of Texas Health Science Center at Houston","targets":8},{"name":"U. of Medicine and Dentistry of New Jersey","targets":9},{"name":"SUNY College of Optometry","targets":10},{"name":"Hackensack Meridian School of Medicine","targets":11},{"name":"V13","targets":12},{"name":"V14","targets":13}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'vertical-align':'top'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'vertical-align':'top'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'vertical-align':'top'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="diversity" class="section level1">
+<h1>Diversity</h1>
+<p>The US Census Bureau has a <a
+href="https://www.census.gov/library/visualizations/interactive/racial-and-ethnic-diversity-in-the-united-states-2010-and-2020-census.html">diversity
+index</a> that goes from 0 to 1. In their words, “A 0-value indicates
+that everyone in the population has the same racial and ethnic
+characteristics. A value close to 1 indicates that everyone in the
+population has different racial and ethnic characteristics.” This uses
+their formula, but with the resolution available for the federal IPEDS
+data (which does not separate for a given demographic group whether
+members identify as Hispanic or not). This metric is about heterogeneity
+within the population, not the proportion of the population that comes
+from historically excluded groups.</p>
+<p>Following the practice of the census, the index is multiplied by 100
+to give the percentage probability a random pair of individuals will
+have a different background. Most institutions argue that diversity is a
+benefit, so by default a higher number is listed as better, but there
+may be cases where this measure does not reflect the mission of a
+college (for example, 70% of the students at a <a
+href="https://www.aihec.org/tribal-colleges-universities/">tribal
+college or university</a> may be American Indian: that could be
+low-scoring by this metric but should not be read as “bad” given the
+institution’s mission).</p>
+<p>These numbers are based on the most recent year available, generally
+2023, which predates effects of the US Supreme Court’s striking down of
+<a href="https://en.wikipedia.org/wiki/Affirmative_action">affirmative
+action</a>. This has often <a
+href="https://www.insidehighered.com/news/admissions/traditional-age/2024/09/06/early-look-racial-diversity-post-affirmative-action">changed</a>,
+sometimes dramatically, the incoming student demographics at some
+institutions.</p>
+<div id="overall-diversity" class="section level2">
+<h2>Overall diversity</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-6a33d2f05c5d1c4a8155" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6a33d2f05c5d1c4a8155">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","",""],["Freshman diversity","Tenure-stream diversity","Non-tenure-track diversity"],[null,"<span style=\"color:#960068;\">41.8%</span> ↑<br />+1.88%/y","<span style=\"color:#82007C;\">49.8%</span>"],[null,"53.0600189035917","44.3057053230076"],[null,null,null],[null,"<span style=\"color:#990066;\">40.5%</span>","<span style=\"color:#9B0063;\">39.9%</span>"],[null,"<span style=\"color:#660099;\">61.4%</span> ↑<br />+1.60%/y","<span style=\"color:#4C00B2;\">70.7%</span>"],[null,null,null],[null,"<span style=\"color:#5E00A0;\">64.1%</span> ↑<br />+1.51%/y","<span style=\"color:#4F00AF;\">70.1%</span> ↑<br />+0.74%/y"],[null,null,null],[null,"<span style=\"color:#770087;\">54.3%</span> ↑<br />+2.33%/y","<span style=\"color:#770087;\">54.0%</span> ↑<br />+2.57%/y"],[null,null,"<span style=\"color:#84007A;\">49.4%</span>"],[null,null,null],[null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Upstate Medical U.<\/th>\n      <th>Georgia Health Sciences U.<\/th>\n      <th>DeVry U.-Maryland<\/th>\n      <th>U. of Mississippi Medical Center<\/th>\n      <th>Louisiana State U. Health Sciences Center-Shreveport<\/th>\n      <th>DeVry U.-Maryland.1<\/th>\n      <th>The U. of Texas Health Science Center at Houston<\/th>\n      <th>U. of Medicine and Dentistry of New Jersey<\/th>\n      <th>SUNY College of Optometry<\/th>\n      <th>Hackensack Meridian School of Medicine<\/th>\n      <th>V13<\/th>\n      <th>V14<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Upstate Medical U.","targets":2},{"name":"Georgia Health Sciences U.","targets":3},{"name":"DeVry U.-Maryland","targets":4},{"name":"U. of Mississippi Medical Center","targets":5},{"name":"Louisiana State U. Health Sciences Center-Shreveport","targets":6},{"name":"DeVry U.-Maryland.1","targets":7},{"name":"The U. of Texas Health Science Center at Houston","targets":8},{"name":"U. of Medicine and Dentistry of New Jersey","targets":9},{"name":"SUNY College of Optometry","targets":10},{"name":"Hackensack Meridian School of Medicine","targets":11},{"name":"V13","targets":12},{"name":"V14","targets":13}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'vertical-align':'top'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'vertical-align':'top'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'vertical-align':'top'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="freshman-profile" class="section level2">
+<h2>Freshman profile</h2>
+<p>Demographic data for first time degree-seeking students. Note that
+this uses US federal demographic data: it only has two genders and a
+specified set of ethnicities and races.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-a10661f9cde60bba3915" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-a10661f9cde60bba3915">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","","","","","","","","","","","","",""],["Men","Women","American Indian or Alaska Native men","American Indian or Alaska Native women","Asian men","Asian women","Black or African American men","Black or African American women","Hispanic men","Hispanic women","Native Hawaiian or Other Pacific Islander men","Native Hawaiian or Other Pacific Islander women","White men","White women","Two or more races men","Two or more races women","Race ethnicity unknown men","Race ethnicity unknown women","Nonresident alien men","Nonresident alien women"],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],["0","100","0","0","0","0","0","0","0","0","0","0","0","100","0","0","0","0","0","0"],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Upstate Medical U.<\/th>\n      <th>Georgia Health Sciences U.<\/th>\n      <th>DeVry U.-Maryland<\/th>\n      <th>U. of Mississippi Medical Center<\/th>\n      <th>Louisiana State U. Health Sciences Center-Shreveport<\/th>\n      <th>DeVry U.-Maryland.1<\/th>\n      <th>The U. of Texas Health Science Center at Houston<\/th>\n      <th>U. of Medicine and Dentistry of New Jersey<\/th>\n      <th>SUNY College of Optometry<\/th>\n      <th>Hackensack Meridian School of Medicine<\/th>\n      <th>V13<\/th>\n      <th>V14<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Upstate Medical U.","targets":2},{"name":"Georgia Health Sciences U.","targets":3},{"name":"DeVry U.-Maryland","targets":4},{"name":"U. of Mississippi Medical Center","targets":5},{"name":"Louisiana State U. Health Sciences Center-Shreveport","targets":6},{"name":"DeVry U.-Maryland.1","targets":7},{"name":"The U. of Texas Health Science Center at Houston","targets":8},{"name":"U. of Medicine and Dentistry of New Jersey","targets":9},{"name":"SUNY College of Optometry","targets":10},{"name":"Hackensack Meridian School of Medicine","targets":11},{"name":"V13","targets":12},{"name":"V14","targets":13}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'vertical-align':'top'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'vertical-align':'top'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'vertical-align':'top'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="freshman-geography" class="section level2">
+<h2>Freshman geography</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-df0b0eb7f5543d911188" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-df0b0eb7f5543d911188">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Outlying areas total","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming","Virgin Islands","Northern Marianas","Guam","American Samoa","Marshall Islands","Federated States of Micronesia","Palau","Foreign countries","Residence not reported"],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,""],["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","100","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0",""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,""],["0","0","0","0","0","0","0","0","18.1818181818182","0","0","0","0","0","0","0","0","0","0","0","81.8181818181818","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0",""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Upstate Medical U.<\/th>\n      <th>Georgia Health Sciences U.<\/th>\n      <th>DeVry U.-Maryland<\/th>\n      <th>U. of Mississippi Medical Center<\/th>\n      <th>Louisiana State U. Health Sciences Center-Shreveport<\/th>\n      <th>DeVry U.-Maryland.1<\/th>\n      <th>The U. of Texas Health Science Center at Houston<\/th>\n      <th>U. of Medicine and Dentistry of New Jersey<\/th>\n      <th>SUNY College of Optometry<\/th>\n      <th>Hackensack Meridian School of Medicine<\/th>\n      <th>V13<\/th>\n      <th>V14<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Upstate Medical U.","targets":2},{"name":"Georgia Health Sciences U.","targets":3},{"name":"DeVry U.-Maryland","targets":4},{"name":"U. of Mississippi Medical Center","targets":5},{"name":"Louisiana State U. Health Sciences Center-Shreveport","targets":6},{"name":"DeVry U.-Maryland.1","targets":7},{"name":"The U. of Texas Health Science Center at Houston","targets":8},{"name":"U. of Medicine and Dentistry of New Jersey","targets":9},{"name":"SUNY College of Optometry","targets":10},{"name":"Hackensack Meridian School of Medicine","targets":11},{"name":"V13","targets":12},{"name":"V14","targets":13}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'vertical-align':'top'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'vertical-align':'top'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'vertical-align':'top'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="test-scores" class="section level1">
+<h1>Test scores</h1>
+<div id="sat-scores" class="section level2">
+<h2>SAT scores</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-11b4650c991cdfe4dcb5" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-11b4650c991cdfe4dcb5">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","",""],["Applicants submitting SAT","SAT Evidence Based Reading and Writing 25th percentile score","SAT Evidence Based Reading and Writing 75th percentile score","SAT Math 25th percentile score","SAT Math 75th percentile score"],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null],[null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Upstate Medical U.<\/th>\n      <th>Georgia Health Sciences U.<\/th>\n      <th>DeVry U.-Maryland<\/th>\n      <th>U. of Mississippi Medical Center<\/th>\n      <th>Louisiana State U. Health Sciences Center-Shreveport<\/th>\n      <th>DeVry U.-Maryland.1<\/th>\n      <th>The U. of Texas Health Science Center at Houston<\/th>\n      <th>U. of Medicine and Dentistry of New Jersey<\/th>\n      <th>SUNY College of Optometry<\/th>\n      <th>Hackensack Meridian School of Medicine<\/th>\n      <th>V13<\/th>\n      <th>V14<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Upstate Medical U.","targets":2},{"name":"Georgia Health Sciences U.","targets":3},{"name":"DeVry U.-Maryland","targets":4},{"name":"U. of Mississippi Medical Center","targets":5},{"name":"Louisiana State U. Health Sciences Center-Shreveport","targets":6},{"name":"DeVry U.-Maryland.1","targets":7},{"name":"The U. of Texas Health Science Center at Houston","targets":8},{"name":"U. of Medicine and Dentistry of New Jersey","targets":9},{"name":"SUNY College of Optometry","targets":10},{"name":"Hackensack Meridian School of Medicine","targets":11},{"name":"V13","targets":12},{"name":"V14","targets":13}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'vertical-align':'top'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'vertical-align':'top'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'vertical-align':'top'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="act-scores" class="section level2">
+<h2>ACT scores</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-11590c29e378eca8c0e9" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-11590c29e378eca8c0e9">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","",""],["Applicants submitting ACT","ACT Composite 25th percentile score","ACT Composite 75th percentile score","ACT English 25th percentile score","ACT English 75th percentile score","ACT Math 25th percentile score","ACT Math 75th percentile score"],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Upstate Medical U.<\/th>\n      <th>Georgia Health Sciences U.<\/th>\n      <th>DeVry U.-Maryland<\/th>\n      <th>U. of Mississippi Medical Center<\/th>\n      <th>Louisiana State U. Health Sciences Center-Shreveport<\/th>\n      <th>DeVry U.-Maryland.1<\/th>\n      <th>The U. of Texas Health Science Center at Houston<\/th>\n      <th>U. of Medicine and Dentistry of New Jersey<\/th>\n      <th>SUNY College of Optometry<\/th>\n      <th>Hackensack Meridian School of Medicine<\/th>\n      <th>V13<\/th>\n      <th>V14<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Upstate Medical U.","targets":2},{"name":"Georgia Health Sciences U.","targets":3},{"name":"DeVry U.-Maryland","targets":4},{"name":"U. of Mississippi Medical Center","targets":5},{"name":"Louisiana State U. Health Sciences Center-Shreveport","targets":6},{"name":"DeVry U.-Maryland.1","targets":7},{"name":"The U. of Texas Health Science Center at Houston","targets":8},{"name":"U. of Medicine and Dentistry of New Jersey","targets":9},{"name":"SUNY College of Optometry","targets":10},{"name":"Hackensack Meridian School of Medicine","targets":11},{"name":"V13","targets":12},{"name":"V14","targets":13}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100],"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'vertical-align':'top'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'vertical-align':'top'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'vertical-align':'top'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="majors" class="section level1">
+<h1>Majors</h1>
+<p>This presents information on the number of majors and the median
+earnings one and five years after graduation for people who got a degree
+from this institution in that field. The earnings are for those who are
+working and not enrolled in further education. The earnings data (from
+the federal college scorecard) also has information on earnings for
+those categorized as ‘MALE’ and ‘NOMALE’ – for readability, these are
+recategorized here as “Men” and “Women”, respectively, which adopts the
+gender binary used in other federal data. “W/M earnings ratio” is the
+median earnings of women divided by men, as a percentage.</p>
+<div id="bachelors" class="section level2">
+<h2>Bachelors</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-1f13bbeacc0d37fa78f7" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1f13bbeacc0d37fa78f7">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Bachelors_RegisteredNursing_RegisteredNurse.html\">Registered Nursing/Registered Nurse</a>","<a href=\"majors_Bachelors_AlliedHealthDiagnostic_Intervention_andTreatmentProfessions_Other.html\">Allied Health Diagnostic, Intervention, and Treatment Professions, Other</a>","<a href=\"majors_Bachelors_RespiratoryCareTherapy_Therapist.html\">Respiratory Care Therapy/Therapist</a>","<a href=\"majors_Bachelors_ClinicalLaboratoryScience_MedicalTechnology_Technologist.html\">Clinical Laboratory Science/Medical Technology/Technologist</a>","<a href=\"majors_Bachelors_MedicalRadiologicTechnology_Science_RadiationTherapist.html\">Medical Radiologic Technology/Science - Radiation Therapist</a>","<a href=\"majors_Bachelors_DiagnosticMedicalSonography_SonographerandUltrasoundTechnician.html\">Diagnostic Medical Sonography/Sonographer and Ultrasound Technician</a>","<a href=\"majors_Bachelors_Biotechnology.html\">Biotechnology</a>"],[20,19,16,11,10,7,3],[23.256,22.093,18.605,12.791,11.628,8.140000000000001,3.488],[0.014,2.61,1.085,0.348,0.903,0.795,0.283],["Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2023<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2023","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100]},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-24294fc31ca1910079ff" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-24294fc31ca1910079ff">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["Allied Health Diagnostic, Intervention, and Treatment Professions","Clinical/Medical Laboratory Science/Research and Allied Professions","Registered Nursing, Nursing Administration, Nursing Research and Clinical Nursing"],[72045,63447,77319],[0.8834529800986127,null,null],[77067,68140,97378],[0.9823715495688555,null,null],[78286,null,null],[69162,null,null],[78396,null,null],[77014,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Earnings 1 year all<\/th>\n      <th>W:M earning ratio 1 year<\/th>\n      <th>Earnings 5 year all<\/th>\n      <th>W:M earning ratio 5 year<\/th>\n      <th>Earnings 1 year men<\/th>\n      <th>Earnings 1 year women<\/th>\n      <th>Earnings 5 year men<\/th>\n      <th>Earnings 5 year women<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"targets":1,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":8,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[1,2,3,4,5,6,7,8]},{"name":"Field","targets":0},{"name":"Earnings 1 year all","targets":1},{"name":"W:M earning ratio 1 year","targets":2},{"name":"Earnings 5 year all","targets":3},{"name":"W:M earning ratio 5 year","targets":4},{"name":"Earnings 1 year men","targets":5},{"name":"Earnings 1 year women","targets":6},{"name":"Earnings 5 year men","targets":7},{"name":"Earnings 5 year women","targets":8}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100]},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render","options.columnDefs.5.render","options.columnDefs.6.render","options.columnDefs.7.render"],"jsHooks":[]}</script>
+</div>
+<div id="masters" class="section level2">
+<h2>Masters</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-f53174284429f2c92fe9" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-f53174284429f2c92fe9">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Masters_FamilyPracticeNurse_Nursing.html\">Family Practice Nurse/Nursing</a>","<a href=\"majors_Masters_PhysicianAssistant.html\">Physician Assistant</a>","<a href=\"majors_Masters_Psychiatric_MentalHealthNurse_Nursing.html\">Psychiatric/Mental Health Nurse/Nursing</a>","<a href=\"majors_Masters_PublicHealth.html\">Public Health</a>","<a href=\"majors_Masters_ClinicalLaboratoryScience_MedicalTechnology_Technologist.html\">Clinical Laboratory Science/Medical Technology/Technologist</a>","<a href=\"majors_Masters_PediatricNurse_Nursing.html\">Pediatric Nurse/Nursing</a>","<a href=\"majors_Masters_PerfusionTechnology_Perfusionist.html\">Perfusion Technology/Perfusionist</a>","<a href=\"majors_Masters_AppliedBehaviorAnalysis.html\">Applied Behavior Analysis</a>","<a href=\"majors_Masters_Physiology.html\">Physiology</a>"],[54,33,23,17,14,13,12,4,1],[31.579,19.298,13.45,9.942,8.186999999999999,7.602,7.018,2.339,0.585],[0.409,0.286,1.738,0.138,3.535,3.133,6.742,0.08799999999999999,0.127],["Masters","Masters","Masters","Masters","Masters","Masters","Masters","Masters","Masters"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2023<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2023","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100]},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-5697c87dbdd735bb6266" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-5697c87dbdd735bb6266">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["Allied Health Diagnostic, Intervention, and Treatment Professions","Public Health","Registered Nursing, Nursing Administration, Nursing Research and Clinical Nursing"],[116774,42681,109921],[0.8892976275836268,null,0.906728741060699],[122988,null,118044],[null,null,null],[128308,null,118997],[114104,null,107898],[null,null,null],[null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Earnings 1 year all<\/th>\n      <th>W:M earning ratio 1 year<\/th>\n      <th>Earnings 5 year all<\/th>\n      <th>W:M earning ratio 5 year<\/th>\n      <th>Earnings 1 year men<\/th>\n      <th>Earnings 1 year women<\/th>\n      <th>Earnings 5 year men<\/th>\n      <th>Earnings 5 year women<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"targets":1,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":8,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[1,2,3,4,5,6,7,8]},{"name":"Field","targets":0},{"name":"Earnings 1 year all","targets":1},{"name":"W:M earning ratio 1 year","targets":2},{"name":"Earnings 5 year all","targets":3},{"name":"W:M earning ratio 5 year","targets":4},{"name":"Earnings 1 year men","targets":5},{"name":"Earnings 1 year women","targets":6},{"name":"Earnings 5 year men","targets":7},{"name":"Earnings 5 year women","targets":8}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100]},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render","options.columnDefs.5.render","options.columnDefs.6.render","options.columnDefs.7.render"],"jsHooks":[]}</script>
+</div>
+<div id="doctorate" class="section level2">
+<h2>Doctorate</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-f08c9a571f0af4ec6647" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-f08c9a571f0af4ec6647">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Doctorate_Medicine.html\">Medicine</a>","<a href=\"majors_Doctorate_PhysicalTherapy_Therapist.html\">Physical Therapy/Therapist</a>","<a href=\"majors_Doctorate_MolecularBiochemistry.html\">Molecular Biochemistry</a>","<a href=\"majors_Doctorate_Anatomy.html\">Anatomy</a>","<a href=\"majors_Doctorate_MicrobiologyandImmunology.html\">Microbiology and Immunology</a>","<a href=\"majors_Doctorate_Neuroscience.html\">Neuroscience</a>","<a href=\"majors_Doctorate_Pharmacology.html\">Pharmacology</a>"],[175,37,8,5,4,3,2],[74.786,15.812,3.419,2.137,1.709,1.282,0.855],[0.844,0.278,13.115,7.463,3.077,0.416,0.926],["Doctorate","Doctorate","Doctorate","Doctorate","Doctorate","Doctorate","Doctorate"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2023<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2023","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100]},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="certificate" class="section level2">
+<h2>Certificate</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-01edddb6cf3abcee04a7" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-01edddb6cf3abcee04a7">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Certificate_NursingEducation.html\">Nursing Education</a>","<a href=\"majors_Certificate_Psychiatric_MentalHealthNurse_Nursing.html\">Psychiatric/Mental Health Nurse/Nursing</a>","<a href=\"majors_Certificate_PublicHealth.html\">Public Health</a>"],[5,5,3],[38.462,38.462,23.077],[2.336,0.287,0.271],["Certificate","Certificate","Certificate"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2023<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"pageLength":-1,"paging":false,"dom":"t","columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2023","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[-1,10,25,50,100]},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="associates" class="section level2">
+<h2>Associates</h2>
+</div>
+</div>
+</div>
+
+   
+   
+            
+      
+
+  <script>
+    $(document).ready(function () {
+
+			
+ 		
+	    });
+  </script>
+
+
+
+    <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+	document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+  
+</body>
+</html>

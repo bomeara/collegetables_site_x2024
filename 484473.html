@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+
+    
+    
+    <title>University of Florida-Online</title>
+
+        <script src="institution_files/header-attrs-2.27/header-attrs.js"></script>
+        <script src="institution_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="institution_files/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="institution_files/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        <script src="institution_files/navigation-1.1/tabsets.js"></script>
+        <link href="institution_files/readthedown-0.1/readthedown.css" rel="stylesheet" />
+        <link href="institution_files/readthedown-0.1/readthedown_fonts_embed.css" rel="stylesheet" />
+        <script src="institution_files/readthedown-0.1/readthedown.js"></script>
+        <link href="institution_files/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+        <script src="institution_files/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+        <link href="institution_files/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+        <script src="institution_files/leaflet-1.3.1/leaflet.js"></script>
+        <link href="institution_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+        <script src="institution_files/proj4-2.6.2/proj4.min.js"></script>
+        <script src="institution_files/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+        <link href="institution_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+        <script src="institution_files/leaflet-binding-2.2.2/leaflet.js"></script>
+        <link href="institution_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+        <script src="institution_files/datatables-binding-0.33/datatables.js"></script>
+        <link href="institution_files/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+        <link href="institution_files/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+        <script src="institution_files/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+        <link href="institution_files/dt-ext-fixedcolumns-1.13.6/css/fixedColumns.dataTables.min.css" rel="stylesheet" />
+        <script src="institution_files/dt-ext-fixedcolumns-1.13.6/js/dataTables.fixedColumns.min.js"></script>
+        <link href="institution_files/dt-ext-fixedheader-1.13.6/css/fixedHeader.dataTables.min.css" rel="stylesheet" />
+        <script src="institution_files/dt-ext-fixedheader-1.13.6/js/dataTables.fixedHeader.min.js"></script>
+        <link href="institution_files/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+        <script src="institution_files/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q67PXWY3L5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Q67PXWY3L5');
+        </script>
+    
+    
+    
+    
+    <!-- tabsets -->
+    <script>
+      $(document).ready(function () {
+	  window.buildTabsets("toc");
+      });
+      $(document).ready(function () {
+	  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+	      $(this).parent().toggleClass('nav-tabs-open')
+	  });
+      });
+    </script>
+
+    <!-- code folding -->
+    
+    <!-- code download -->
+    
+    <!-- tabsets dropdown -->
+
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+	  display: inline-table;
+	  max-height: 500px;
+	  min-height: 44px;
+	  overflow-y: auto;
+	  background: white;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+	  content: "&#xe258;";
+	  border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active {
+	  display: block;
+      }
+
+      .tabset-dropdown > .nav-tabs > li.active a {
+  	  padding: 0 15px !important;
+      }
+
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+	  border: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: transparent;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+	  display: block;
+	  float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li {
+	  display: none;
+	  margin-left: 0 !important;
+      }
+    </style>
+    
+</head>
+
+<body class="preload">
+
+   	
+         <!-- readthedown start -->   
+   <div id="content" data-toggle="wy-nav-shift">
+     <nav id="nav-top" role="navigation" aria-label="top navigation">
+       <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+     </nav>
+         
+   
+      
+      <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">College Tables</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="fields_overview.html">Fields</a>
+      </li>
+      <li>
+        <a href="earnings_overview.html">Earnings</a>
+      </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+      </div><!--/.navbar -->
+        
+      <h1 class="title">University of Florida-Online</h1>
+      
+         <!-- readthedown authors -->
+   <div id="sidebar">
+    <h2><a href="#content">University of Florida-Online</a></h2>
+    <div id="toc">
+      <ul>
+      <li><a href="#notes" id="toc-notes">Notes</a></li>
+      <li><a href="#overview-of-institution"
+      id="toc-overview-of-institution">Overview of institution</a></li>
+      <li><a href="#map" id="toc-map">Map</a></li>
+      <li><a href="#comparisons" id="toc-comparisons">Comparisons</a>
+      <ul>
+      <li><a href="#enrollment" id="toc-enrollment">Enrollment</a></li>
+      <li><a href="#general" id="toc-general">General</a></li>
+      <li><a href="#teaching" id="toc-teaching">Teaching</a></li>
+      <li><a href="#geography" id="toc-geography">Geography</a></li>
+      <li><a href="#financial-aid" id="toc-financial-aid">Financial
+      Aid</a></li>
+      <li><a href="#graduation" id="toc-graduation">Graduation</a></li>
+      <li><a href="#library" id="toc-library">Library</a></li>
+      </ul></li>
+      <li><a href="#diversity" id="toc-diversity">Diversity</a>
+      <ul>
+      <li><a href="#overall-diversity"
+      id="toc-overall-diversity">Overall diversity</a></li>
+      <li><a href="#freshman-profile" id="toc-freshman-profile">Freshman
+      profile</a></li>
+      <li><a href="#freshman-geography"
+      id="toc-freshman-geography">Freshman geography</a></li>
+      </ul></li>
+      <li><a href="#test-scores" id="toc-test-scores">Test scores</a>
+      <ul>
+      <li><a href="#sat-scores" id="toc-sat-scores">SAT scores</a></li>
+      <li><a href="#act-scores" id="toc-act-scores">ACT scores</a></li>
+      </ul></li>
+      <li><a href="#majors" id="toc-majors">Majors</a>
+      <ul>
+      <li><a href="#bachelors" id="toc-bachelors">Bachelors</a></li>
+      <li><a href="#masters" id="toc-masters">Masters</a></li>
+      <li><a href="#doctorate" id="toc-doctorate">Doctorate</a></li>
+      <li><a href="#certificate"
+      id="toc-certificate">Certificate</a></li>
+      <li><a href="#associates" id="toc-associates">Associates</a></li>
+      </ul></li>
+      </ul>
+    </div>
+    <div id="postamble" data-toggle="wy-nav-shift" class="status">
+                </div>
+   </div>
+     
+
+   
+      
+   
+<!-- Don't indent these lines or it will mess pre blocks indentation --> 
+<div id="main">
+<style type="text/css">
+img {
+  max-width: 100%;
+}
+</style>
+<p><a href='https://www.ufonline.ufl.edu/'>University of
+Florida-Online</a> is located in Gainesville, Florida. It is a public,
+4-year or above institution.</p>
+<div id="notes" class="section level1">
+<h1>Notes</h1>
+<p>These are items that bear looking into more closely.</p>
+<ul>
+<li><p>“Florida is openly hostile toward African Americans, people of
+color and LGBTQ+ individuals. Before traveling to Florida, please
+understand that the state of Florida devalues and marginalizes the
+contributions of, and the challenges faced by African Americans and
+other communities of color” according to an <a
+href="https://naacp.org/articles/naacp-issues-travel-advisory-florida">NAACP
+travel advisory</a> of May 20, 2023.</p></li>
+<li><p>This institution’s six year bachelors graduation rate is 58.8%,
+so approximately 2/5 of undergrads who enroll do not earn a bachelors
+degree from here.</p></li>
+<li><p>There are extremely few tenure-track faculty relative to the
+number of students. For something like an art or music school where
+instruction is done nearly entirely by rotating artists or musicians,
+this may be fine; for other schools, it can indicate a
+<a href='https://www.aaup.org/issues/tenure'>risk to academic
+freedom</a> and thus educational quality, as faculty members
+<em>may</em> be able to lose their positions because of their speech,
+publications, or research findings.</p></li>
+</ul>
+</div>
+<div id="overview-of-institution" class="section level1">
+<h1>Overview of institution</h1>
+<p>This, and the rest of the page, use info from the most recent year
+available, generally 2023.</p>
+<ul>
+<li><p><strong>Institution kind</strong>: Baccalaureate Colleges:
+Diverse Fields</p></li>
+<li><p><strong>Undergrad program</strong>: Professions plus arts &amp;
+sciences, no graduate coexistence</p></li>
+<li><p><strong>Graduate program</strong>: Not classified (Exclusively
+Undergraduate)</p></li>
+<li><p><strong>Enrollment profile</strong>: Exclusively undergraduate
+four-year (see more details below)</p></li>
+<li><p><strong>Average net price for undergrads on financial
+aid</strong>: $10,791 . This is 60% the average cost of
+Harvard.</p></li>
+<li><p><strong>Actual price for <em>your</em> family</strong>: Go
+<a href='https://npc.collegeboard.org/app/ufl'>here</a> to see what your
+family may be asked to pay. It can be MUCH lower than the average price
+but also higher for some.</p></li>
+<li><p><strong>Size and setting</strong>: Four-year, small, primarily
+nonresidential</p></li>
+<li><p><strong>In state percentage</strong>: 86% of first year students
+come from Florida</p></li>
+<li><p><strong>In US percentage</strong>: 99% of first year students
+come from the US</p></li>
+<li><p><strong>Graduation rate (within 6 years) for students seeking a
+Bachelors</strong>: 58.8% (this is what is usually reported as
+“graduation rate”)</p></li>
+<li><p><strong>Graduation rate (within 4 years) for students seeking a
+Bachelors</strong>: 41.2%</p></li>
+<li><p><strong>Percent of students seeking a Bachelors who transfer out
+of this institution</strong>: 11.8%</p></li>
+<li><p><strong>Student to tenure-stream faculty ratio</strong>: 1,227.0
+(undergrads to tenure-stream faculty) [<a href="tenure.html">Tenure
+explained</a>]</p></li>
+<li><p><strong>Student to faculty ratio</strong>: 147.9 (undergrads to
+all faculty)</p></li>
+<li><p><strong>Degrees offered</strong>: Associate’s degree, Bachelor’s
+degree</p></li>
+<li><p><strong>Schedule</strong>: Semester</p></li>
+<li><p><strong>Institution provides on campus housing</strong>:
+No</p></li>
+<li><p><strong>Freshmen required to live on campus</strong>: No</p></li>
+<li><p><strong>Advanced placement (AP) credits used</strong>:
+Yes</p></li>
+<li><p><strong>Disabilities</strong>: 4.28 percent of undergrads are
+registered as having disabilities.</p></li>
+</ul>
+</div>
+<div id="map" class="section level1">
+<h1>Map</h1>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-ab81d03dddaec30313a7" style="width:768px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-ab81d03dddaec30313a7">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[29.649413,-82.339848,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[29.649413,-82.339848],16,[]],"limits":{"lat":[29.649413,29.649413],"lng":[-82.339848,-82.339848]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="comparisons" class="section level1">
+<h1>Comparisons</h1>
+<p>The sections below show this institution compared with others. The
+ones listed are ones it has identified as peers, who consider themselves
+peers, and/or who the federal government considers peers. If a
+comparison school has the same value as the focal school, its cell is
+grayed out. Arrows show where there is a signficant trend over time for
+a school. You can swipe across the table to see more of it; the focal
+school column is always visible.</p>
+<ul>
+<li>These institutions compare themselves to University of
+Florida-Online, but not vice versa: <a href='243115.html'>University of
+Puerto Rico-Arecibo</a>, <a href='426314.html'>Embry-Riddle Aeronautical
+University-Worldwide</a>, <a href='180814.html'>Bellevue University</a>,
+<a href='476975.html'>Colorado State University Global</a></li>
+</ul>
+<div id="enrollment" class="section level2">
+<h2>Enrollment</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-8abc366152f34694b080" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-8abc366152f34694b080">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","",""],["Undergrads (full time)","Undergrads (part time)","Grad students (full time)","Grad students (part time)","Admission rate (undergrads)","Yield rate (percent of applicants offered undergraduate admission who accept)","Graduation rate (bachelors in 6 years)","Transfer out rate (bachelors)"],["<span style=\"color:#3495A8;\">2,514</span> ↑<br />+274/y","<span style=\"color:#3479A1;\">2,842</span> ↑<br />+290/y",null,null,"<span style=\"color:#38AAAC;\">64.6%</span>","<span style=\"color:#0200FC;\">91.4%</span>","<span style=\"color:#0200FC;\">58.8%</span>","<span style=\"color:#A80056;\">11.8%</span>"],["<span style=\"color:#3CB1AC;\">2,838</span>","<span style=\"color:#395B9B;\">279</span>",null,null,"<span style=\"color:#3487A5;\">60.0%</span>","<span style=\"color:#4200BC;\">76.9%</span> ↓<br />-1.72%/y","<span style=\"color:#4200BC;\">50.4%</span>","<span style=\"color:#5100AD;\">3.9%</span>"],["<span style=\"color:#3479A1;\">2,175</span> ↓<br />-61/y","<span style=\"color:#5DCCAC;\">6,304</span>","<span style=\"color:#359FAA;\">1,834</span> ↓<br />-63/y","<span style=\"color:#359FAA;\">1,261</span> ↓<br />-104/y","<span style=\"color:#38629D;\">57.7%</span>","<span style=\"color:#C1003D;\">53.6%</span>","<span style=\"color:#C1003D;\">19.3%</span> ↓<br />-3.00%/y",null],["<span style=\"color:#5DCCAC;\">6,509</span>","<span style=\"color:#3495A8;\">4,299</span> ↑<br />+399/y","<span style=\"color:#5DCCAC;\">2,279</span>","<span style=\"color:#356EA0;\">754</span>",null,null,"<span style=\"color:#82007C;\">40.7%</span>","<span style=\"color:#FC0002;\">33.3%</span>"],["<span style=\"color:#395B9B;\">1,525</span> ↓<br />-96/y","<span style=\"color:#3CB1AC;\">4,908</span>","<span style=\"color:#356EA0;\">194</span>","<span style=\"color:#5DCCAC;\">2,938</span> ↑<br />+267/y","<span style=\"color:#5DCCAC;\">96.9%</span>","<span style=\"color:#82007C;\">73.4%</span>",null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>U. of Florida-Online<\/th>\n      <th>U. of Puerto Rico-Arecibo<\/th>\n      <th>Embry-Riddle Aeronautical U.-Worldwide<\/th>\n      <th>Bellevue U.<\/th>\n      <th>Colorado State U. Global<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"U. of Florida-Online","targets":2},{"name":"U. of Puerto Rico-Arecibo","targets":3},{"name":"Embry-Riddle Aeronautical U.-Worldwide","targets":4},{"name":"Bellevue U.","targets":5},{"name":"Colorado State U. Global","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="general" class="section level2">
+<h2>General</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-15fc8da344cb6f90f981" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-15fc8da344cb6f90f981">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","",""],["Sector","Level","HBCU","Tribal College","Size and setting","Undergrad profile","Undergrad instruction","Grad instruction","Enrollment profile"],["Public, 4-year or above","Four or more years","No","No","Four-year, small, primarily nonresidential","Four-year, higher part-time","Professions plus arts &amp; sciences, no graduate coexistence","Not classified (Exclusively Undergraduate)","Exclusively undergraduate four-year"],["<span style=\"color:#B6B6B4;\">Public, 4-year or above</span>","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, medium, primarily nonresidential","Four-year, full-time, selective, lower transfer-in","<span style=\"color:#B6B6B4;\">Professions plus arts &amp; sciences, no graduate coexistence</span>","<span style=\"color:#B6B6B4;\">Not classified (Exclusively Undergraduate)</span>","<span style=\"color:#B6B6B4;\">Exclusively undergraduate four-year</span>"],["Private not-for-profit, 4-year or above","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, medium, primarily nonresidential","<span style=\"color:#B6B6B4;\">Four-year, higher part-time</span>","Professions focus, high graduate coexistence","Research Doctoral: Single program-Other","Majority undergraduate"],["Private not-for-profit, 4-year or above","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, large, primarily nonresidential","Four-year, medium full-time, inclusive, higher transfer-in","Professions plus arts &amp; sciences, some graduate coexistence","Research Doctoral: Single program-Other","Majority undergraduate"],["<span style=\"color:#B6B6B4;\">Public, 4-year or above</span>","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, medium, primarily nonresidential","<span style=\"color:#B6B6B4;\">Four-year, higher part-time</span>","Professions plus arts &amp; sciences, some graduate coexistence","Postbaccalaureate: Business-dominant, with Arts &amp; Sciences","Majority undergraduate"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>U. of Florida-Online<\/th>\n      <th>U. of Puerto Rico-Arecibo<\/th>\n      <th>Embry-Riddle Aeronautical U.-Worldwide<\/th>\n      <th>Bellevue U.<\/th>\n      <th>Colorado State U. Global<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"U. of Florida-Online","targets":2},{"name":"U. of Puerto Rico-Arecibo","targets":3},{"name":"Embry-Riddle Aeronautical U.-Worldwide","targets":4},{"name":"Bellevue U.","targets":5},{"name":"Colorado State U. Global","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="teaching" class="section level2">
+<h2>Teaching</h2>
+<p>Tenure track faculty are those who are eligible for tenure. This
+includes both pre-tenure and tenured faculty. Once faculty get tenure,
+they are (generally) protected from being fired for intellectual
+reasons, helping to ensure their freedom in teaching and research. They
+can still lose their positions for misconduct, financial problems, not
+fulfilling their duties, or other reasons.</p>
+<p>Non-tenure track faculty are not eligible for tenure. Some are hired
+one semester at a time, some have multi-year contracts. They typically
+have a higher teaching load than tenure track faculty, leaving less time
+for research or other creative endeavors. They are also easier to fire
+than tenured faculty. Sometimes they are external experts (a noted
+musician, a former senator) who are hired to teach some classes without
+the expected permanence of a tenure-track position.</p>
+<p>Note that this chart uses US federal demographic data: it only has
+two genders and a specified set of ethnicities and races.</p>
+<p>Having a low student to faculty ratio is considered a good thing by
+many, as it can mean more individual attention.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-ed2bec9f1648436963ff" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-ed2bec9f1648436963ff">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","",""],["Undergrads per tenure track instructor (lower is better)","Undergrads per instructor (lower is better)","Total instructors","Tenure track instructors","Non-tenure track instructors"],["<span style=\"color:#FC0002;\">1,227</span>","<span style=\"color:#FC0002;\">148</span>","<span style=\"color:#395B9B;\">17</span> ↑<br />+2.1/y","<span style=\"color:#356EA0;\">2</span>","<span style=\"color:#395B9B;\">17</span> ↑<br />+2.1/y"],["<span style=\"color:#5100AD;\">26</span>","<span style=\"color:#63009B;\">22</span>","<span style=\"color:#5DCCAC;\">137</span> ↓<br />-5.4/y","<span style=\"color:#5DCCAC;\">114</span> ↓<br />-6.2/y","<span style=\"color:#3479A1;\">23</span>"],["<span style=\"color:#A80056;\">38</span> ↓<br />-7.8/y","<span style=\"color:#3000CE;\">18</span> ↓<br />-1.4/y","<span style=\"color:#3CB1AC;\">121</span>","<span style=\"color:#359FAA;\">58</span> ↑<br />+3.6/y","<span style=\"color:#3CB1AC;\">63</span>"],[null,"<span style=\"color:#C90035;\">62</span>","<span style=\"color:#3495A8;\">105</span>",null,"<span style=\"color:#5DCCAC;\">105</span>"],[null,"<span style=\"color:#960068;\">38</span> ↓<br />-55/y","<span style=\"color:#3479A1;\">40</span> ↑<br />+4.0/y",null,"<span style=\"color:#3495A8;\">40</span> ↑<br />+4.0/y"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>U. of Florida-Online<\/th>\n      <th>U. of Puerto Rico-Arecibo<\/th>\n      <th>Embry-Riddle Aeronautical U.-Worldwide<\/th>\n      <th>Bellevue U.<\/th>\n      <th>Colorado State U. Global<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"U. of Florida-Online","targets":2},{"name":"U. of Puerto Rico-Arecibo","targets":3},{"name":"Embry-Riddle Aeronautical U.-Worldwide","targets":4},{"name":"Bellevue U.","targets":5},{"name":"Colorado State U. Global","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="geography" class="section level2">
+<h2>Geography</h2>
+<p>This has information on the location of the institution. See the <a
+href="about.html">about page</a> for more information on what the
+metrics are and how they are calculated. The goal is to neutrally
+provide information: for example, some individuals want stringent gun
+control in an area, some want the opposite: the categories are meant to
+be descriptive.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-0bae0168d31f34730dc2" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-0bae0168d31f34730dc2">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","",""],["Location","Gun Law Stringency","Abortion access","Risk to trans adults","Miles to mountains","Biome"],["Gainesville, Florida","2: Low","7: Most restrictive","6: Do not travel","<span style=\"color:#000000;\">330</span>","Temperate Conifer Forests"],["Arecibo, Puerto Rico",null,null,null,"<span style=\"color:#000000;\">989</span>","Tropical &amp; Subtropical Moist Broadleaf Forests"],["Daytona Beach, Florida","<span style=\"color:#B6B6B4;\">2: Low</span>","<span style=\"color:#B6B6B4;\">7: Most restrictive</span>","<span style=\"color:#B6B6B4;\">6: Do not travel</span>","<span style=\"color:#000000;\">405</span>","<span style=\"color:#B6B6B4;\">Temperate Conifer Forests</span>"],["Bellevue, Nebraska","3: Medium","5: Restrictive","4: High risk","<span style=\"color:#000000;\">375</span>","Temperate Grasslands, Savannas &amp; Shrublands"],["Aurora, Colorado","5: Very High","3: Protective","1: Safest","<span style=\"color:#000000;\">19</span>","Temperate Grasslands, Savannas &amp; Shrublands"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>U. of Florida-Online<\/th>\n      <th>U. of Puerto Rico-Arecibo<\/th>\n      <th>Embry-Riddle Aeronautical U.-Worldwide<\/th>\n      <th>Bellevue U.<\/th>\n      <th>Colorado State U. Global<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"U. of Florida-Online","targets":2},{"name":"U. of Puerto Rico-Arecibo","targets":3},{"name":"Embry-Riddle Aeronautical U.-Worldwide","targets":4},{"name":"Bellevue U.","targets":5},{"name":"Colorado State U. Global","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="financial-aid" class="section level2">
+<h2>Financial Aid</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-95b49f60e768e976c435" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-95b49f60e768e976c435">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","",""],["Average net price (for students awarded aid)","Undergrads getting federal aid","Undergrads getting any aid","Undergrads getting Pell grants"],["<span style=\"color:#63009B;\">$10,791</span> ↓<br />-$479/y","<span style=\"color:#680096;\">44.0%</span>","<span style=\"color:#3500C9;\">91.0%</span> ↑<br />+1.95%/y","<span style=\"color:#CE0030;\">17.0%</span> ↓<br />-2.95%/y"],["<span style=\"color:#3000CE;\">$9,444</span> ↑<br />+$523/y","<span style=\"color:#0200FC;\">99.0%</span> ↑<br />+1.37%/y","<span style=\"color:#0200FC;\">99.0%</span> ↑<br />+1.43%/y","<span style=\"color:#0200FC;\">89.0%</span>"],["<span style=\"color:#C90035;\">$17,002</span>","<span style=\"color:#CE0030;\">22.0%</span>","<span style=\"color:#CE0030;\">60.0%</span>","<span style=\"color:#9B0063;\">22.0%</span>"],["<span style=\"color:#FC0002;\">$24,767</span> ↑<br />+$1,271/y","<span style=\"color:#3500C9;\">59.0%</span>","<span style=\"color:#680096;\">76.0%</span>","<span style=\"color:#3500C9;\">48.0%</span>"],["<span style=\"color:#960068;\">$14,826</span>","<span style=\"color:#9B0063;\">33.0%</span>","<span style=\"color:#9B0063;\">61.0%</span>","<span style=\"color:#680096;\">33.0%</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>U. of Florida-Online<\/th>\n      <th>U. of Puerto Rico-Arecibo<\/th>\n      <th>Embry-Riddle Aeronautical U.-Worldwide<\/th>\n      <th>Bellevue U.<\/th>\n      <th>Colorado State U. Global<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"U. of Florida-Online","targets":2},{"name":"U. of Puerto Rico-Arecibo","targets":3},{"name":"Embry-Riddle Aeronautical U.-Worldwide","targets":4},{"name":"Bellevue U.","targets":5},{"name":"Colorado State U. Global","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="graduation" class="section level2">
+<h2>Graduation</h2>
+<p>Note these are bachelors graduation rates in six years, not four
+(this is standard). Sample sizes can be small for some demographic
+groups with few individuals in a school, leading to large year-to-year
+fluctuations and often extreme values for those groups (if there are two
+individuals in the class with a given identity, the possible graduation
+rates are 0%, 50%, or 100% depending on whether zero, one, or both
+students graduate within six years).</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-e3135fbe3cb08bec35f8" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-e3135fbe3cb08bec35f8">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","","","","","","","","","","","",""],["Total","Men","Women","American Indian or Alaska Native men","American Indian or Alaska Native women","Asian men","Asian women","Black or African American men","Black or African American women","Hispanic men","Hispanic women","Native Hawaiian or other Pacific Islander men","Native Hawaiian or other Pacific Islander women","White men","White women","Two or more races men","Two or more races women","Nonresident alien men","Nonresident alien women"],["<span style=\"color:#6B0093;\">58.8%</span>","<span style=\"color:#63009B;\">62.5%</span>","<span style=\"color:#72008C;\">55.6%</span>","","","","","","","","<span style=\"color:;\">0.0%</span>","","","<span style=\"color:#70008E;\">57.1%</span>","<span style=\"color:#70008E;\">57.1%</span>","","<span style=\"color:#0200FC;\">100.0%</span>","",""],["<span style=\"color:#82007C;\">50.4%</span>","<span style=\"color:#890075;\">47.1%</span> ↑<br />+1.44%/y","<span style=\"color:#7A0084;\">52.6%</span>","","","","","","","<span style=\"color:#890075;\">47.1%</span> ↑<br />+1.44%/y","<span style=\"color:#7A0084;\">52.6%</span>","","","","","","","",""],["<span style=\"color:#D1002D;\">19.3%</span> ↓<br />-3.00%/y","<span style=\"color:#D1002D;\">18.8%</span> ↓<br />-3.37%/y","<span style=\"color:#C4003A;\">24.3%</span>","<span style=\"color:#82007C;\">50.0%</span>","<span style=\"color:;\">0.0%</span>","<span style=\"color:#CE0030;\">20.0%</span>","<span style=\"color:;\">0.0%</span>","<span style=\"color:#F2000C;\">6.5%</span> ↓<br />-7.98%/y","<span style=\"color:;\">0.0%</span>","<span style=\"color:#E2001C;\">11.9%</span>","<span style=\"color:#CE0030;\">20.0%</span>","<span style=\"color:;\">0.0%</span>","","<span style=\"color:#C90035;\">22.4%</span> ↓<br />-3.37%/y","<span style=\"color:#D3002B;\">17.6%</span>","<span style=\"color:#E50019;\">11.1%</span>","<span style=\"color:#5600A8;\">66.7%</span>","",""],["<span style=\"color:#990066;\">40.7%</span>","<span style=\"color:#A50059;\">35.7%</span>","<span style=\"color:#8C0072;\">46.2%</span>","","","","<span style=\"color:;\">0.0%</span>","<span style=\"color:#CE0030;\">20.0%</span>","<span style=\"color:;\">0.0%</span>","<span style=\"color:#82007C;\">50.0%</span>","<span style=\"color:#AD0051;\">33.3%</span>","","","<span style=\"color:#AD0051;\">33.3%</span>","<span style=\"color:#82007C;\">50.0%</span>","","<span style=\"color:#0200FC;\">100.0%</span>","",""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>U. of Florida-Online<\/th>\n      <th>U. of Puerto Rico-Arecibo<\/th>\n      <th>Embry-Riddle Aeronautical U.-Worldwide<\/th>\n      <th>Bellevue U.<\/th>\n      <th>Colorado State U. Global<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"U. of Florida-Online","targets":2},{"name":"U. of Puerto Rico-Arecibo","targets":3},{"name":"Embry-Riddle Aeronautical U.-Worldwide","targets":4},{"name":"Bellevue U.","targets":5},{"name":"Colorado State U. Global","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="library" class="section level2">
+<h2>Library</h2>
+<p>Libraries are changing rapidly. Note that how institutions count
+digital collections may vary.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-0bdf19b8d80d7d749675" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-0bdf19b8d80d7d749675">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","",""],["Number of physical books","Physical library circulations per students and faculty","Digital library circulations per students and faculty"],[null,null,null],["<span style=\"color:#0200FC;\">84,725</span>",null,null],[null,null,null],["<span style=\"color:#82007C;\">62,037</span> ↓<br />-6,910/y","<span style=\"color:#0200FC;\">0.2</span> ↓<br />-0.1/y","<span style=\"color:#82007C;\">6.7</span>"],[null,null,"<span style=\"color:#0200FC;\">98</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>U. of Florida-Online<\/th>\n      <th>U. of Puerto Rico-Arecibo<\/th>\n      <th>Embry-Riddle Aeronautical U.-Worldwide<\/th>\n      <th>Bellevue U.<\/th>\n      <th>Colorado State U. Global<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"U. of Florida-Online","targets":2},{"name":"U. of Puerto Rico-Arecibo","targets":3},{"name":"Embry-Riddle Aeronautical U.-Worldwide","targets":4},{"name":"Bellevue U.","targets":5},{"name":"Colorado State U. Global","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="diversity" class="section level1">
+<h1>Diversity</h1>
+<p>The US Census Bureau has a <a
+href="https://www.census.gov/library/visualizations/interactive/racial-and-ethnic-diversity-in-the-united-states-2010-and-2020-census.html">diversity
+index</a> that goes from 0 to 1. In their words, “A 0-value indicates
+that everyone in the population has the same racial and ethnic
+characteristics. A value close to 1 indicates that everyone in the
+population has different racial and ethnic characteristics.” This uses
+their formula, but with the resolution available for the federal IPEDS
+data (which does not separate for a given demographic group whether
+members identify as Hispanic or not). This metric is about heterogeneity
+within the population, not the proportion of the population that comes
+from historically excluded groups.</p>
+<p>Following the practice of the census, the index is multiplied by 100
+to give the percentage probability a random pair of individuals will
+have a different background. Most institutions argue that diversity is a
+benefit, so by default a higher number is listed as better, but there
+may be cases where this measure does not reflect the mission of a
+college (for example, 70% of the students at a <a
+href="https://www.aihec.org/tribal-colleges-universities/">tribal
+college or university</a> may be American Indian: that could be
+low-scoring by this metric but should not be read as “bad” given the
+institution’s mission).</p>
+<p>These numbers are based on the most recent year available, generally
+2023, which predates effects of the US Supreme Court’s striking down of
+<a href="https://en.wikipedia.org/wiki/Affirmative_action">affirmative
+action</a>. This has often <a
+href="https://www.insidehighered.com/news/admissions/traditional-age/2024/09/06/early-look-racial-diversity-post-affirmative-action">changed</a>,
+sometimes dramatically, the incoming student demographics at some
+institutions.</p>
+<div id="overall-diversity" class="section level2">
+<h2>Overall diversity</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-06785e5271370226d9ab" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-06785e5271370226d9ab">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","",""],["Freshman diversity","Tenure-stream diversity","Non-tenure-track diversity"],["<span style=\"color:#70008E;\">57.2%</span>",null,"<span style=\"color:#E50019;\">11.1%</span>"],[null,"<span style=\"color:#FC0002;\">1.5%</span>",null],["<span style=\"color:#5100AD;\">69.1%</span> ↑<br />+2.25%/y","<span style=\"color:#BF003F;\">25.9%</span> ↑<br />+1.50%/y","<span style=\"color:#D3002B;\">18.2%</span>"],["<span style=\"color:#5E00A0;\">64.0%</span>",null,"<span style=\"color:#DD0021;\">13.6%</span>"],["<span style=\"color:#5100AD;\">68.8%</span>",null,"<span style=\"color:#84007A;\">49.3%</span> ↑<br />+2.68%/y"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>U. of Florida-Online<\/th>\n      <th>U. of Puerto Rico-Arecibo<\/th>\n      <th>Embry-Riddle Aeronautical U.-Worldwide<\/th>\n      <th>Bellevue U.<\/th>\n      <th>Colorado State U. Global<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"U. of Florida-Online","targets":2},{"name":"U. of Puerto Rico-Arecibo","targets":3},{"name":"Embry-Riddle Aeronautical U.-Worldwide","targets":4},{"name":"Bellevue U.","targets":5},{"name":"Colorado State U. Global","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="freshman-profile" class="section level2">
+<h2>Freshman profile</h2>
+<p>Demographic data for first time degree-seeking students. Note that
+this uses US federal demographic data: it only has two genders and a
+specified set of ethnicities and races.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-1c005135ce0d7ceecf27" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1c005135ce0d7ceecf27">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","","","","","","","","","","","","",""],["Women","Men","White women","White men","Hispanic women","Hispanic men","Asian men","Asian women","Two or more races men","Two or more races women","Race ethnicity unknown women","Race ethnicity unknown men","Black or African American women","Black or African American men","Nonresident alien men","Native Hawaiian or Other Pacific Islander men","Nonresident alien women","American Indian or Alaska Native men","American Indian or Alaska Native women","Native Hawaiian or Other Pacific Islander women"],["<span style=\"color:#3495A8;\">51.0%</span> ↓<br />-3.39%/y","<span style=\"color:#3495A8;\">49.0%</span> ↑<br />+3.39%/y","<span style=\"color:#5DCCAC;\">29.8%</span> ↓<br />-2.75%/y","<span style=\"color:#3495A8;\">28.1%</span> ↑<br />+1.65%/y","<span style=\"color:#3495A8;\">13.2%</span>","<span style=\"color:#3479A1;\">12.4%</span> ↑<br />+1.25%/y","<span style=\"color:#5DCCAC;\">3.9%</span> ↑<br />+0.31%/y","<span style=\"color:#5DCCAC;\">3.2%</span> ↓<br />-0.77%/y","<span style=\"color:#3495A8;\">3.1%</span> ↑<br />+0.30%/y","<span style=\"color:#3CB1AC;\">2.8%</span>","<span style=\"color:#3CB1AC;\">1.2%</span> ↑<br />+0.15%/y","<span style=\"color:#3495A8;\">1.0%</span>","<span style=\"color:#3479A1;\">0.8%</span>","<span style=\"color:#3479A1;\">0.4%</span>","<span style=\"color:#3CB1AC;\">0.3%</span>","<span style=\"color:#3CB1AC;\">0.1%</span>","<span style=\"color:#5DCCAC;\">0.1%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>"],["<span style=\"color:#3CB1AC;\">57.4%</span>","<span style=\"color:#3479A1;\">42.6%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#5DCCAC;\">57.4%</span>","<span style=\"color:#5DCCAC;\">42.6%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>"],["<span style=\"color:#395B9B;\">18.0%</span> ↑<br />+0.82%/y","<span style=\"color:#5DCCAC;\">82.0%</span> ↓<br />-0.82%/y","<span style=\"color:#3479A1;\">7.9%</span>","<span style=\"color:#5DCCAC;\">41.0%</span>","<span style=\"color:#395B9B;\">2.9%</span>","<span style=\"color:#3495A8;\">16.5%</span> ↑<br />+1.74%/y","<span style=\"color:#3CB1AC;\">2.2%</span>","<span style=\"color:#3495A8;\">0.7%</span>","<span style=\"color:#5DCCAC;\">5.8%</span> ↓<br />-0.51%/y","<span style=\"color:#3495A8;\">1.4%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">3.6%</span> ↓<br />-1.25%/y","<span style=\"color:#3495A8;\">1.4%</span>","<span style=\"color:#3495A8;\">5.0%</span>","<span style=\"color:#5DCCAC;\">6.5%</span>","<span style=\"color:#5DCCAC;\">0.7%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>"],["<span style=\"color:#3479A1;\">40.0%</span>","<span style=\"color:#3CB1AC;\">60.0%</span>","<span style=\"color:#3495A8;\">18.8%</span>","<span style=\"color:#3CB1AC;\">28.2%</span> ↑<br />+2.08%/y","<span style=\"color:#3479A1;\">10.6%</span>","<span style=\"color:#395B9B;\">12.4%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">1.8%</span>","<span style=\"color:#3CB1AC;\">4.1%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#5DCCAC;\">2.4%</span>","<span style=\"color:#5DCCAC;\">6.5%</span>","<span style=\"color:#5DCCAC;\">6.5%</span>","<span style=\"color:#5DCCAC;\">8.8%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>"],["<span style=\"color:#5DCCAC;\">68.8%</span>","<span style=\"color:#395B9B;\">31.2%</span>","<span style=\"color:#3CB1AC;\">25.0%</span>","<span style=\"color:#3479A1;\">6.2%</span>","<span style=\"color:#3CB1AC;\">25.0%</span>","<span style=\"color:#3CB1AC;\">18.8%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#5DCCAC;\">6.2%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3CB1AC;\">6.2%</span>","<span style=\"color:#3CB1AC;\">6.2%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">6.2%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>U. of Florida-Online<\/th>\n      <th>U. of Puerto Rico-Arecibo<\/th>\n      <th>Embry-Riddle Aeronautical U.-Worldwide<\/th>\n      <th>Bellevue U.<\/th>\n      <th>Colorado State U. Global<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"U. of Florida-Online","targets":2},{"name":"U. of Puerto Rico-Arecibo","targets":3},{"name":"Embry-Riddle Aeronautical U.-Worldwide","targets":4},{"name":"Bellevue U.","targets":5},{"name":"Colorado State U. Global","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="freshman-geography" class="section level2">
+<h2>Freshman geography</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-2cdda75759e8ecdaab1e" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-2cdda75759e8ecdaab1e">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],["Florida","New York","New Jersey","Virginia","Illinois","Georgia","Foreign countries","Texas","North Carolina","Pennsylvania","Wisconsin","California","Connecticut","Indiana","Maryland","Massachusetts","South Carolina","Washington","District of Columbia","Idaho","Kentucky","Nevada","Ohio","Rhode Island","Vermont","Alabama","Alaska","Arizona","Arkansas","Colorado","Delaware","Hawaii","Iowa","Kansas","Louisiana","Maine","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","New Hampshire","New Mexico","North Dakota","Oklahoma","Oregon","Puerto Rico","South Dakota","Tennessee","Utah","West Virginia","Wyoming","Virgin Islands","Northern Marianas","Guam","American Samoa","Marshall Islands","Federated States of Micronesia","Palau","Outlying areas total","Residence not reported"],["<span style=\"color:#5DCCAC;\">86.3%</span>","<span style=\"color:#3495A8;\">2.1%</span> ↑<br />+0.27%/y","<span style=\"color:#3CB1AC;\">2.0%</span> ↑<br />+0.28%/y","<span style=\"color:#3495A8;\">1.4%</span> ↑<br />+0.13%/y","<span style=\"color:#3CB1AC;\">1.2%</span> ↑<br />+0.13%/y","<span style=\"color:#3479A1;\">0.9%</span>","<span style=\"color:#3CB1AC;\">0.8%</span>","<span style=\"color:#3479A1;\">0.7%</span>","<span style=\"color:#3495A8;\">0.6%</span>","<span style=\"color:#3479A1;\">0.5%</span> ↑<br />+0.08%/y","<span style=\"color:#3495A8;\">0.3%</span>","<span style=\"color:#3479A1;\">0.2%</span>","<span style=\"color:#3495A8;\">0.2%</span>","<span style=\"color:#3495A8;\">0.2%</span>","<span style=\"color:#3479A1;\">0.2%</span>","<span style=\"color:#3CB1AC;\">0.2%</span>","<span style=\"color:#3479A1;\">0.2%</span>","<span style=\"color:#3479A1;\">0.2%</span>","<span style=\"color:#5DCCAC;\">0.1%</span>","<span style=\"color:#3479A1;\">0.1%</span>","<span style=\"color:#3479A1;\">0.1%</span>","<span style=\"color:#3479A1;\">0.1%</span>","<span style=\"color:#3479A1;\">0.1%</span>","<span style=\"color:#3CB1AC;\">0.1%</span>","<span style=\"color:#3CB1AC;\">0.1%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","",""],["<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#395B9B;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#5DCCAC;\">100.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","",""],["<span style=\"color:#3495A8;\">10.5%</span>","<span style=\"color:#3479A1;\">1.0%</span>","<span style=\"color:#3495A8;\">1.8%</span>","<span style=\"color:#5DCCAC;\">4.3%</span>","<span style=\"color:#3479A1;\">0.8%</span>","<span style=\"color:#3495A8;\">4.3%</span>","<span style=\"color:#5DCCAC;\">6.4%</span> ↑<br />+0.50%/y","<span style=\"color:#3495A8;\">8.4%</span>","<span style=\"color:#5DCCAC;\">9.7%</span> ↑<br />+0.69%/y","<span style=\"color:#3495A8;\">0.8%</span>","<span style=\"color:#3479A1;\">0.2%</span>","<span style=\"color:#5DCCAC;\">11.3%</span> ↓<br />-0.51%/y","<span style=\"color:#3CB1AC;\">0.6%</span>","<span style=\"color:#3CB1AC;\">0.6%</span>","<span style=\"color:#3CB1AC;\">1.8%</span> ↓<br />-0.18%/y","<span style=\"color:#3495A8;\">0.2%</span>","<span style=\"color:#5DCCAC;\">2.7%</span>","<span style=\"color:#5DCCAC;\">4.5%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">1.2%</span>","<span style=\"color:#5DCCAC;\">2.1%</span>","<span style=\"color:#3CB1AC;\">2.1%</span>","<span style=\"color:#3495A8;\">0.4%</span>","<span style=\"color:#5DCCAC;\">0.2%</span>","<span style=\"color:#5DCCAC;\">0.2%</span>","<span style=\"color:#3495A8;\">0.6%</span> ↓<br />-0.15%/y","<span style=\"color:#5DCCAC;\">1.6%</span>","<span style=\"color:#3CB1AC;\">2.9%</span>","<span style=\"color:#3495A8;\">0.4%</span>","<span style=\"color:#3CB1AC;\">3.7%</span> ↑<br />+0.29%/y","<span style=\"color:#5DCCAC;\">0.6%</span>","<span style=\"color:#5DCCAC;\">2.7%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3495A8;\">0.4%</span>","<span style=\"color:#5DCCAC;\">1.6%</span>","<span style=\"color:#3CB1AC;\">0.2%</span>","<span style=\"color:#3495A8;\">0.6%</span> ↑<br />+0.05%/y","<span style=\"color:#3495A8;\">0.2%</span>","<span style=\"color:#3CB1AC;\">0.2%</span>","<span style=\"color:#3CB1AC;\">0.8%</span>","<span style=\"color:#3CB1AC;\">0.8%</span>","<span style=\"color:#3CB1AC;\">0.8%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.8%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.6%</span>","<span style=\"color:#3CB1AC;\">0.4%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.2%</span>","<span style=\"color:#3CB1AC;\">2.1%</span>","<span style=\"color:#3CB1AC;\">1.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","",""],["<span style=\"color:#3479A1;\">9.3%</span>","<span style=\"color:#3CB1AC;\">2.3%</span>","<span style=\"color:#3479A1;\">0.7%</span>","<span style=\"color:#3CB1AC;\">2.7%</span>","<span style=\"color:#5DCCAC;\">2.3%</span>","<span style=\"color:#5DCCAC;\">5.4%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">9.7%</span> ↑<br />+1.10%/y","<span style=\"color:#3CB1AC;\">2.5%</span>","<span style=\"color:#5DCCAC;\">4.5%</span>","<span style=\"color:#3CB1AC;\">0.7%</span> ↑<br />+0.10%/y","<span style=\"color:#3CB1AC;\">4.7%</span> ↑<br />+0.54%/y","<span style=\"color:#5DCCAC;\">1.1%</span> ↑<br />+0.07%/y","<span style=\"color:#5DCCAC;\">1.6%</span>","<span style=\"color:#3495A8;\">0.9%</span>","<span style=\"color:#5DCCAC;\">0.5%</span>","<span style=\"color:#3CB1AC;\">1.6%</span>","<span style=\"color:#3495A8;\">0.9%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3495A8;\">0.2%</span>","<span style=\"color:#3495A8;\">0.7%</span>","<span style=\"color:#3495A8;\">1.6%</span>","<span style=\"color:#3CB1AC;\">1.8%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#5DCCAC;\">2.3%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">4.3%</span>","<span style=\"color:#5DCCAC;\">3.6%</span> ↑<br />+0.49%/y","<span style=\"color:#3495A8;\">1.6%</span>","<span style=\"color:#3CB1AC;\">0.2%</span>","<span style=\"color:#3CB1AC;\">0.5%</span>","<span style=\"color:#5DCCAC;\">2.5%</span>","<span style=\"color:#5DCCAC;\">1.4%</span>","<span style=\"color:#3CB1AC;\">1.1%</span>","<span style=\"color:#5DCCAC;\">0.5%</span> ↑<br />+0.04%/y","<span style=\"color:#5DCCAC;\">2.0%</span>","<span style=\"color:#3CB1AC;\">1.1%</span>","<span style=\"color:#5DCCAC;\">1.1%</span>","<span style=\"color:#5DCCAC;\">2.5%</span>","<span style=\"color:#3495A8;\">0.2%</span>","<span style=\"color:#5DCCAC;\">11.3%</span> ↓<br />-4.30%/y","<span style=\"color:#5DCCAC;\">0.5%</span>","<span style=\"color:#3CB1AC;\">0.7%</span>","<span style=\"color:#3CB1AC;\">0.2%</span>","<span style=\"color:#5DCCAC;\">2.3%</span>","<span style=\"color:#5DCCAC;\">0.9%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#5DCCAC;\">2.5%</span>","<span style=\"color:#3495A8;\">0.5%</span> ↑<br />+0.15%/y","<span style=\"color:#3CB1AC;\">0.7%</span> ↑<br />+0.07%/y","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.2%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","",""],["<span style=\"color:#3CB1AC;\">11.0%</span>","<span style=\"color:#5DCCAC;\">3.3%</span>","<span style=\"color:#5DCCAC;\">2.2%</span>","<span style=\"color:#3479A1;\">1.1%</span>","<span style=\"color:#3495A8;\">1.1%</span>","<span style=\"color:#3CB1AC;\">4.4%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#5DCCAC;\">11.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3CB1AC;\">3.3%</span>","<span style=\"color:#5DCCAC;\">1.1%</span>","<span style=\"color:#3495A8;\">2.2%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#5DCCAC;\">2.2%</span>","<span style=\"color:#3479A1;\">0.0%</span>","<span style=\"color:#3495A8;\">1.1%</span>","<span style=\"color:#3CB1AC;\">1.1%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3CB1AC;\">1.1%</span>","<span style=\"color:#3CB1AC;\">1.1%</span>","<span style=\"color:#5DCCAC;\">2.2%</span>","<span style=\"color:#5DCCAC;\">3.3%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">1.1%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3495A8;\">1.1%</span>","<span style=\"color:#3CB1AC;\">1.1%</span>","<span style=\"color:#5DCCAC;\">30.8%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3CB1AC;\">1.1%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">1.1%</span>","<span style=\"color:#5DCCAC;\">3.3%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#5DCCAC;\">1.1%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#5DCCAC;\">1.1%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">2.2%</span>","<span style=\"color:#3495A8;\">0.0%</span>","<span style=\"color:#5DCCAC;\">1.1%</span>","<span style=\"color:#5DCCAC;\">2.2%</span> ↑<br />+0.50%/y","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#3CB1AC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>U. of Florida-Online<\/th>\n      <th>U. of Puerto Rico-Arecibo<\/th>\n      <th>Embry-Riddle Aeronautical U.-Worldwide<\/th>\n      <th>Bellevue U.<\/th>\n      <th>Colorado State U. Global<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"U. of Florida-Online","targets":2},{"name":"U. of Puerto Rico-Arecibo","targets":3},{"name":"Embry-Riddle Aeronautical U.-Worldwide","targets":4},{"name":"Bellevue U.","targets":5},{"name":"Colorado State U. Global","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="test-scores" class="section level1">
+<h1>Test scores</h1>
+<div id="sat-scores" class="section level2">
+<h2>SAT scores</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-47df6ab7fa5befe67fb7" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-47df6ab7fa5befe67fb7">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","",""],["Applicants submitting SAT","SAT Evidence Based Reading and Writing 25th percentile score","SAT Evidence Based Reading and Writing 75th percentile score","SAT Math 25th percentile score","SAT Math 75th percentile score"],["<span style=\"color:#5DCCAC;\">76.0%</span>","<span style=\"color:#5DCCAC;\">640</span> ↑<br />+11/y","<span style=\"color:#5DCCAC;\">700</span> ↑<br />+7.4/y","<span style=\"color:#5DCCAC;\">610</span> ↑<br />+11/y","<span style=\"color:#5DCCAC;\">690</span> ↑<br />+9.3/y"],[null,null,null,null,null],["3","570","650","550","630"],[null,null,null,null,null],["<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#356EA0;\">495</span>","<span style=\"color:#356EA0;\">595</span>","<span style=\"color:#356EA0;\">450</span>","<span style=\"color:#356EA0;\">550</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>U. of Florida-Online<\/th>\n      <th>U. of Puerto Rico-Arecibo<\/th>\n      <th>Embry-Riddle Aeronautical U.-Worldwide<\/th>\n      <th>Bellevue U.<\/th>\n      <th>Colorado State U. Global<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"U. of Florida-Online","targets":2},{"name":"U. of Puerto Rico-Arecibo","targets":3},{"name":"Embry-Riddle Aeronautical U.-Worldwide","targets":4},{"name":"Bellevue U.","targets":5},{"name":"Colorado State U. Global","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="act-scores" class="section level2">
+<h2>ACT scores</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-177cbdf7fbf8e6b41130" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-177cbdf7fbf8e6b41130">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","",""],["Applicants submitting ACT","ACT Composite 25th percentile score","ACT Composite 75th percentile score","ACT English 25th percentile score","ACT English 75th percentile score","ACT Math 25th percentile score","ACT Math 75th percentile score"],["<span style=\"color:#5DCCAC;\">44.0%</span>","<span style=\"color:#5DCCAC;\">27</span> ↑<br />+0.5/y","<span style=\"color:#5DCCAC;\">31</span> ↑<br />+0.5/y","<span style=\"color:#5DCCAC;\">27</span> ↑<br />+0.6/y","<span style=\"color:#5DCCAC;\">33</span> ↑<br />+0.7/y","<span style=\"color:#5DCCAC;\">25</span> ↑<br />+0.3/y","<span style=\"color:#5DCCAC;\">29</span> ↑<br />+0.3/y"],[null,null,null,null,null,null,null],["2","25","28","21","30","21","28"],[null,null,null,null,null,null,null],["<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#356EA0;\">16</span>","<span style=\"color:#356EA0;\">18</span>","<span style=\"color:#356EA0;\">15</span>","<span style=\"color:#356EA0;\">23</span>","<span style=\"color:#356EA0;\">17</span>","<span style=\"color:#356EA0;\">18</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>U. of Florida-Online<\/th>\n      <th>U. of Puerto Rico-Arecibo<\/th>\n      <th>Embry-Riddle Aeronautical U.-Worldwide<\/th>\n      <th>Bellevue U.<\/th>\n      <th>Colorado State U. Global<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"U. of Florida-Online","targets":2},{"name":"U. of Puerto Rico-Arecibo","targets":3},{"name":"Embry-Riddle Aeronautical U.-Worldwide","targets":4},{"name":"Bellevue U.","targets":5},{"name":"Colorado State U. Global","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="majors" class="section level1">
+<h1>Majors</h1>
+<p>This presents information on the number of majors and the median
+earnings one and five years after graduation for people who got a degree
+from this institution in that field. The earnings are for those who are
+working and not enrolled in further education. The earnings data (from
+the federal college scorecard) also has information on earnings for
+those categorized as ‘MALE’ and ‘NOMALE’ – for readability, these are
+recategorized here as “Men” and “Women”, respectively, which adopts the
+gender binary used in other federal data. “W/M earnings ratio” is the
+median earnings of women divided by men, as a percentage.</p>
+<div id="bachelors" class="section level2">
+<h2>Bachelors</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-51360829004bbec2f490" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-51360829004bbec2f490">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Bachelors_BusinessAdministrationandManagement.html\">Business Administration and Management</a>","<a href=\"majors_Bachelors_RegisteredNursing_RegisteredNurse.html\">Registered Nursing/Registered Nurse</a>","<a href=\"majors_Bachelors_ComputerandInformationSciences.html\">Computer and Information Sciences</a>","<a href=\"majors_Bachelors_SportandFitnessAdministration_Management.html\">Sport and Fitness Administration/Management</a>","<a href=\"majors_Bachelors_Education.html\">Education</a>","<a href=\"majors_Bachelors_Psychology.html\">Psychology</a>","<a href=\"majors_Bachelors_Criminology.html\">Criminology</a>","<a href=\"majors_Bachelors_FireScience_Fire_fighting.html\">Fire Science/Fire-fighting</a>","<a href=\"majors_Bachelors_Sociology.html\">Sociology</a>","<a href=\"majors_Bachelors_PublicRelations_ImageManagement.html\">Public Relations/Image Management</a>","<a href=\"majors_Bachelors_Advertising.html\">Advertising</a>","<a href=\"majors_Bachelors_MedicalMicrobiologyandBacteriology.html\">Medical Microbiology and Bacteriology</a>","<a href=\"majors_Bachelors_CommunityHealthandPreventiveMedicine.html\">Community Health and Preventive Medicine</a>","<a href=\"majors_Bachelors_Biology_BiologicalSciences.html\">Biology/Biological Sciences</a>","<a href=\"majors_Bachelors_Anthropology.html\">Anthropology</a>","<a href=\"majors_Bachelors_Multi__InterdisciplinaryStudies_Other.html\">Multi-/Interdisciplinary Studies, Other</a>","<a href=\"majors_Bachelors_RadioandTelevision.html\">Radio and Television</a>","<a href=\"majors_Bachelors_Parks_Recreation_andLeisureFacilitiesManagement.html\">Parks, Recreation, and Leisure Facilities Management</a>","<a href=\"majors_Bachelors_Geology_EarthScience.html\">Geology/Earth Science</a>","<a href=\"majors_Bachelors_DigitalArts.html\">Digital Arts</a>","<a href=\"majors_Bachelors_Audiology_AudiologistandSpeech_LanguagePathology_Pathologist.html\">Audiology/Audiologist and Speech-Language Pathology/Pathologist</a>","<a href=\"majors_Bachelors_GeographyandEnvironmentalStudies.html\">Geography and Environmental Studies</a>","<a href=\"majors_Bachelors_Journalism.html\">Journalism</a>","<a href=\"majors_Bachelors_Geography.html\">Geography</a>"],[201,87,69,61,54,51,45,43,43,36,33,32,32,25,24,21,20,18,17,16,16,15,7,1],[20.786,8.997,7.135,6.308,5.584,5.274,4.654,4.447,4.447,3.723,3.413,3.309,3.309,2.585,2.482,2.172,2.068,1.861,1.758,1.655,1.655,1.551,0.724,0.103],[0.15,0.059,0.254,0.552,0.862,0.045,0.533,18.067,0.187,0.987,0.87,7.24,2.346,0.032,0.334,0.11,0.527,0.983,0.433,0.594,0.36,3.018,0.08500000000000001,0.043],["Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2023<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2023","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-7da194595867bbc0892a" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-7da194595867bbc0892a">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["Anthropology","Biology","Business Administration, Management and Operations","Communication Disorders Sciences and Services","Computer and Information Sciences","Criminology","Fire Protection","Geography and Cartography","Geological and Earth Sciences/Geosciences","Health and Physical Education/Fitness","Mechanical Engineering","Microbiological Sciences and Immunology","Multi/Interdisciplinary Studies, Other","Psychology","Public Health","Public Relations, Advertising, and Applied Communication","Radio, Television, and Digital Communication","Registered Nursing, Nursing Administration, Nursing Research and Clinical Nursing","Sociology","Visual and Performing Arts"],[29036,24713,52032,26539,90651,35096,86740,43856,40691,39717,76228,27994,33854,26003,30056,42099,33178,73711,33611,30629],[1.054544808471324,1.002915333846216,0.9845798142698819,null,1.025299262334909,0.8465794893426962,null,null,null,1.220878148982911,1.098432685867381,0.8920221899352794,null,1.059652665589661,null,1.181712288875946,0.8710362213082128,0.9878040608456745,1.464562942963213,1.284632115802895],[53927,66170,73834,59252,128097,61030,null,56172,53189,57216,94291,60469,67069,57099,66251,72397,57845,77478,51030,null],[0.9655184877290635,1.081784157592373,0.9273420100670708,null,null,0.9611820164186763,null,null,null,0.8269996442064957,1.052931351976361,0.9001612004158067,0.9968914251389097,1.092481274296008,null,0.8947228516094733,1.109672309307595,null,0.8984656150967719,null],[28142,24697,52334,null,90556,40301,null,null,null,35051,74650,30284,null,24760,null,36057,37685,74615,23704,26666],[29677,24769,51527,null,92847,34118,null,null,null,42793,81998,27014,34481,26237,31076,42609,32825,73705,34716,34256],[55334,64927,77679,null,130894,62368,null,null,null,59023,93404,66377,66590,52735,null,79001,54289,null,55853,null],[53426,70237,72035,null,null,59947,null,null,null,48812,98348,59750,66383,57612,null,70684,60243,null,50182,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Earnings 1 year all<\/th>\n      <th>W:M earning ratio 1 year<\/th>\n      <th>Earnings 5 year all<\/th>\n      <th>W:M earning ratio 5 year<\/th>\n      <th>Earnings 1 year men<\/th>\n      <th>Earnings 1 year women<\/th>\n      <th>Earnings 5 year men<\/th>\n      <th>Earnings 5 year women<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"targets":1,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":8,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[1,2,3,4,5,6,7,8]},{"name":"Field","targets":0},{"name":"Earnings 1 year all","targets":1},{"name":"W:M earning ratio 1 year","targets":2},{"name":"Earnings 5 year all","targets":3},{"name":"W:M earning ratio 5 year","targets":4},{"name":"Earnings 1 year men","targets":5},{"name":"Earnings 1 year women","targets":6},{"name":"Earnings 5 year men","targets":7},{"name":"Earnings 5 year women","targets":8}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render","options.columnDefs.5.render","options.columnDefs.6.render","options.columnDefs.7.render"],"jsHooks":[]}</script>
+</div>
+<div id="masters" class="section level2">
+<h2>Masters</h2>
+</div>
+<div id="doctorate" class="section level2">
+<h2>Doctorate</h2>
+</div>
+<div id="certificate" class="section level2">
+<h2>Certificate</h2>
+</div>
+<div id="associates" class="section level2">
+<h2>Associates</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-34d967fc774e995e11af" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-34d967fc774e995e11af">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Associates_LiberalArtsandSciences_LiberalStudies.html\">Liberal Arts and Sciences/Liberal Studies</a>"],[18],[100],[0.008],["Associates"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2023<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2023","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+
+   
+   
+            
+      
+
+  <script>
+    $(document).ready(function () {
+
+			
+ 		
+	    });
+  </script>
+
+
+
+    <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+	document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+  
+</body>
+</html>

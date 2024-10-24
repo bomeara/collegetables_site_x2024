@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+
+    
+    
+    <title>Baker College</title>
+
+        <script src="institution_files/header-attrs-2.27/header-attrs.js"></script>
+        <script src="institution_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="institution_files/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="institution_files/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        <script src="institution_files/navigation-1.1/tabsets.js"></script>
+        <link href="institution_files/readthedown-0.1/readthedown.css" rel="stylesheet" />
+        <link href="institution_files/readthedown-0.1/readthedown_fonts_embed.css" rel="stylesheet" />
+        <script src="institution_files/readthedown-0.1/readthedown.js"></script>
+        <link href="institution_files/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+        <script src="institution_files/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+        <link href="institution_files/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+        <script src="institution_files/leaflet-1.3.1/leaflet.js"></script>
+        <link href="institution_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+        <script src="institution_files/proj4-2.6.2/proj4.min.js"></script>
+        <script src="institution_files/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+        <link href="institution_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+        <script src="institution_files/leaflet-binding-2.2.2/leaflet.js"></script>
+        <link href="institution_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+        <script src="institution_files/datatables-binding-0.33/datatables.js"></script>
+        <link href="institution_files/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+        <link href="institution_files/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+        <script src="institution_files/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+        <link href="institution_files/dt-ext-fixedcolumns-1.13.6/css/fixedColumns.dataTables.min.css" rel="stylesheet" />
+        <script src="institution_files/dt-ext-fixedcolumns-1.13.6/js/dataTables.fixedColumns.min.js"></script>
+        <link href="institution_files/dt-ext-fixedheader-1.13.6/css/fixedHeader.dataTables.min.css" rel="stylesheet" />
+        <script src="institution_files/dt-ext-fixedheader-1.13.6/js/dataTables.fixedHeader.min.js"></script>
+        <link href="institution_files/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+        <script src="institution_files/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q67PXWY3L5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Q67PXWY3L5');
+        </script>
+    
+    
+    
+    
+    <!-- tabsets -->
+    <script>
+      $(document).ready(function () {
+	  window.buildTabsets("toc");
+      });
+      $(document).ready(function () {
+	  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+	      $(this).parent().toggleClass('nav-tabs-open')
+	  });
+      });
+    </script>
+
+    <!-- code folding -->
+    
+    <!-- code download -->
+    
+    <!-- tabsets dropdown -->
+
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+	  display: inline-table;
+	  max-height: 500px;
+	  min-height: 44px;
+	  overflow-y: auto;
+	  background: white;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+	  content: "&#xe258;";
+	  border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active {
+	  display: block;
+      }
+
+      .tabset-dropdown > .nav-tabs > li.active a {
+  	  padding: 0 15px !important;
+      }
+
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+	  border: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: transparent;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+	  display: block;
+	  float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li {
+	  display: none;
+	  margin-left: 0 !important;
+      }
+    </style>
+    
+</head>
+
+<body class="preload">
+
+   	
+         <!-- readthedown start -->   
+   <div id="content" data-toggle="wy-nav-shift">
+     <nav id="nav-top" role="navigation" aria-label="top navigation">
+       <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+     </nav>
+         
+   
+      
+      <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">College Tables</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="fields_overview.html">Fields</a>
+      </li>
+      <li>
+        <a href="earnings_overview.html">Earnings</a>
+      </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+      </div><!--/.navbar -->
+        
+      <h1 class="title">Baker College</h1>
+      
+         <!-- readthedown authors -->
+   <div id="sidebar">
+    <h2><a href="#content">Baker College</a></h2>
+    <div id="toc">
+      <ul>
+      <li><a href="#notes" id="toc-notes">Notes</a></li>
+      <li><a href="#overview-of-institution"
+      id="toc-overview-of-institution">Overview of institution</a></li>
+      <li><a href="#map" id="toc-map">Map</a></li>
+      <li><a href="#comparisons" id="toc-comparisons">Comparisons</a>
+      <ul>
+      <li><a href="#enrollment" id="toc-enrollment">Enrollment</a></li>
+      <li><a href="#general" id="toc-general">General</a></li>
+      <li><a href="#teaching" id="toc-teaching">Teaching</a></li>
+      <li><a href="#geography" id="toc-geography">Geography</a></li>
+      <li><a href="#financial-aid" id="toc-financial-aid">Financial
+      Aid</a></li>
+      <li><a href="#graduation" id="toc-graduation">Graduation</a></li>
+      <li><a href="#library" id="toc-library">Library</a></li>
+      </ul></li>
+      <li><a href="#diversity" id="toc-diversity">Diversity</a>
+      <ul>
+      <li><a href="#overall-diversity"
+      id="toc-overall-diversity">Overall diversity</a></li>
+      <li><a href="#freshman-profile" id="toc-freshman-profile">Freshman
+      profile</a></li>
+      <li><a href="#freshman-geography"
+      id="toc-freshman-geography">Freshman geography</a></li>
+      </ul></li>
+      <li><a href="#test-scores" id="toc-test-scores">Test scores</a>
+      <ul>
+      <li><a href="#sat-scores" id="toc-sat-scores">SAT scores</a></li>
+      <li><a href="#act-scores" id="toc-act-scores">ACT scores</a></li>
+      </ul></li>
+      <li><a href="#majors" id="toc-majors">Majors</a>
+      <ul>
+      <li><a href="#bachelors" id="toc-bachelors">Bachelors</a></li>
+      <li><a href="#masters" id="toc-masters">Masters</a></li>
+      <li><a href="#doctorate" id="toc-doctorate">Doctorate</a></li>
+      <li><a href="#certificate"
+      id="toc-certificate">Certificate</a></li>
+      <li><a href="#associates" id="toc-associates">Associates</a></li>
+      </ul></li>
+      </ul>
+    </div>
+    <div id="postamble" data-toggle="wy-nav-shift" class="status">
+                </div>
+   </div>
+     
+
+   
+      
+   
+<!-- Don't indent these lines or it will mess pre blocks indentation --> 
+<div id="main">
+<style type="text/css">
+img {
+  max-width: 100%;
+}
+</style>
+<p><a href='https://www.baker.edu/'>Baker College</a> is located in
+Owosso, Michigan. It is a private not-for-profit, 4-year or above
+institution.</p>
+<p><em>From <a
+href="https://en.wikipedia.org/wiki/%20Baker%20College">Wikipedia</a></em>:
+Baker College is a private college with its main campus in Owosso,
+Michigan, United States. It was founded in 1911 and (as of 2023) has
+four additional campuses throughout the Lower Peninsula of Michigan. The
+college has been accused of predatory practices. In 2022, a ProPublica
+and Detroit Free Press investigation titled “The Nonprofit College That
+Spends More on Marketing Than Financial Aid” highlighted its low
+graduation rate and high student debt rate compared to comparable
+institutions, as well as its unconventional management structure. That
+month, Baker College threatened legal action against a former faculty
+member relating to a non-disparagement clause included in a settlement
+with Baker.</p>
+<p>.</p>
+<div id="notes" class="section level1">
+<h1>Notes</h1>
+<p>These are items that bear looking into more closely.</p>
+<ul>
+<li><p>This institution’s six year bachelors graduation rate is 18.6%,
+so approximately 4/5 of undergrads who enroll do not earn a bachelors
+degree from here.</p></li>
+<li><p>There are apparently no tenure stream faculty. This can indicate
+a <a href='https://www.aaup.org/issues/tenure'>risk to academic
+freedom</a> and thus educational quality, as faculty members
+<em>may</em> be able to lose their positions because of their speech,
+publications, or research findings.</p></li>
+</ul>
+</div>
+<div id="overview-of-institution" class="section level1">
+<h1>Overview of institution</h1>
+<p>This, and the rest of the page, use info from the most recent year
+available, generally 2023.</p>
+<ul>
+<li><p><strong>Institution kind</strong>: Master’s Colleges &amp;
+Universities: Medium Programs</p></li>
+<li><p><strong>Undergrad program</strong>: Professions focus, some
+graduate coexistence</p></li>
+<li><p><strong>Graduate program</strong>: Research Doctoral: Single
+program-Other</p></li>
+<li><p><strong>Enrollment profile</strong>: Very high undergraduate (see
+more details below)</p></li>
+<li><p><strong>Average net price for undergrads on financial
+aid</strong>: $13,719 . This is 70% the average cost of
+Harvard.</p></li>
+<li><p><strong>Actual price for <em>your</em> family</strong>: Go
+<a href='https://baker.studentaidcalculator.com/survey.aspx'>here</a> to
+see what your family may be asked to pay. It can be MUCH lower than the
+average price but also higher for some.</p></li>
+<li><p><strong>Size and setting</strong>: Four-year, medium, primarily
+nonresidential</p></li>
+<li><p><strong>In state percentage</strong>: 94% of first year students
+come from Michigan</p></li>
+<li><p><strong>In US percentage</strong>: 100% of first year students
+come from the US</p></li>
+<li><p><strong>Graduation rate (within 6 years) for students seeking a
+Bachelors</strong>: 18.6% (this is what is usually reported as
+“graduation rate”)</p></li>
+<li><p><strong>Graduation rate (within 4 years) for students seeking a
+Bachelors</strong>: 8.4%</p></li>
+<li><p><strong>Percent of students seeking a Bachelors who transfer out
+of this institution</strong>: 36.2%</p></li>
+<li><p><strong>Student to tenure-stream faculty ratio</strong>: Unknown
+(undergrads to tenure-stream faculty) [<a href="tenure.html">Tenure
+explained</a>]</p></li>
+<li><p><strong>Student to faculty ratio</strong>: 13.6 (undergrads to
+all faculty)</p></li>
+<li><p><strong>Degrees offered</strong>: Certificate of less than 1
+year, Certificate of at least 12 weeks but less than 1 year, Certificate
+of at least 1 year but less than 2 years, Associate’s degree, Bachelor’s
+degree, Postbaccalaureate certificate, Master’s degree, Doctor’s degree:
+research scholarship</p></li>
+<li><p><strong>Schedule</strong>: Semester</p></li>
+<li><p><strong>Institution provides on campus housing</strong>:
+Yes</p></li>
+<li><p><strong>Dorm capacity</strong>: There are enough dorm beds for
+553 students</p></li>
+<li><p><strong>Freshmen required to live on campus</strong>: No</p></li>
+<li><p><strong>Advanced placement (AP) credits used</strong>:
+Yes</p></li>
+<li><p><strong>Disabilities</strong>: 3 percent or less of undergrads
+are registered as having disabilities.</p></li>
+</ul>
+</div>
+<div id="map" class="section level1">
+<h1>Map</h1>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-b084dbc9947ba7887b18" style="width:768px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-b084dbc9947ba7887b18">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[42.984804,-84.172404,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[42.984804,-84.172404],16,[]],"limits":{"lat":[42.984804,42.984804],"lng":[-84.172404,-84.172404]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="comparisons" class="section level1">
+<h1>Comparisons</h1>
+<p>The sections below show this institution compared with others. The
+ones listed are ones it has identified as peers, who consider themselves
+peers, and/or who the federal government considers peers. If a
+comparison school has the same value as the focal school, its cell is
+grayed out. Arrows show where there is a signficant trend over time for
+a school. You can swipe across the table to see more of it; the focal
+school column is always visible.</p>
+<ul>
+<li>These institutions compare themselves to Baker College, but not vice
+versa: <a href='202806.html'>Franklin University</a>,
+<a href='154518.html'>Waldorf University</a></li>
+</ul>
+<div id="enrollment" class="section level2">
+<h2>Enrollment</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-6d879d3f3f59828743cb" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6d879d3f3f59828743cb">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","",""],["Undergrads (full time)","Undergrads (part time)","Grad students (full time)","Grad students (part time)","Admission rate (undergrads)","Yield rate (percent of applicants offered undergraduate admission who accept)","Graduation rate (bachelors in 6 years)","Transfer out rate (bachelors)"],["<span style=\"color:#356EA0;\">1,423</span>","<span style=\"color:#359FAA;\">2,355</span>","<span style=\"color:#359FAA;\">86</span>","<span style=\"color:#356EA0;\">242</span>","<span style=\"color:#3487A5;\">36.6%</span> ↓<br />-11.89%/y","<span style=\"color:#0200FC;\">42.3%</span>","<span style=\"color:#AD0051;\">18.6%</span> ↑<br />+0.80%/y","<span style=\"color:#A80056;\">36.2%</span> ↑<br />+4.87%/y"],["<span style=\"color:#5DCCAC;\">1,452</span> ↑<br />+68/y","<span style=\"color:#356EA0;\">636</span> ↑<br />+74/y","<span style=\"color:#356EA0;\">29</span>","<span style=\"color:#359FAA;\">403</span>","<span style=\"color:#5DCCAC;\">73.9%</span>","<span style=\"color:#82007C;\">22.1%</span> ↓<br />-1.47%/y","<span style=\"color:#5600A8;\">25.9%</span>","<span style=\"color:#5100AD;\">5.2%</span>"],["<span style=\"color:#359FAA;\">1,430</span>","<span style=\"color:#5DCCAC;\">3,310</span>","<span style=\"color:#5DCCAC;\">1,160</span> ↑<br />+51/y","<span style=\"color:#5DCCAC;\">915</span> ↑<br />+65/y",null,null,"<span style=\"color:#0200FC;\">43.1%</span> ↑<br />+3.04%/y","<span style=\"color:#FC0002;\">44.8%</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Baker College<\/th>\n      <th>Waldorf U.<\/th>\n      <th>Franklin U.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Baker College","targets":2},{"name":"Waldorf U.","targets":3},{"name":"Franklin U.","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="general" class="section level2">
+<h2>General</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-1290cfdefefe058e6b8c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1290cfdefefe058e6b8c">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","",""],["Sector","Level","HBCU","Tribal College","Size and setting","Undergrad profile","Undergrad instruction","Grad instruction","Enrollment profile"],["Private not-for-profit, 4-year or above","Four or more years","No","No","Four-year, medium, primarily nonresidential","Four-year, higher part-time","Professions focus, some graduate coexistence","Research Doctoral: Single program-Other","Very high undergraduate"],["Private for-profit, 4-year or above","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, small, primarily nonresidential","Four-year, medium full-time, inclusive, higher transfer-in","<span style=\"color:#B6B6B4;\">Professions focus, some graduate coexistence</span>","Postbaccalaureate: Business-dominant, with other professional programs","<span style=\"color:#B6B6B4;\">Very high undergraduate</span>"],["<span style=\"color:#B6B6B4;\">Private not-for-profit, 4-year or above</span>","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">Four-year, medium, primarily nonresidential</span>","<span style=\"color:#B6B6B4;\">Four-year, higher part-time</span>","<span style=\"color:#B6B6B4;\">Professions focus, some graduate coexistence</span>","Research Doctoral: Professional-dominant","Majority undergraduate"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Baker College<\/th>\n      <th>Waldorf U.<\/th>\n      <th>Franklin U.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Baker College","targets":2},{"name":"Waldorf U.","targets":3},{"name":"Franklin U.","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="teaching" class="section level2">
+<h2>Teaching</h2>
+<p>Tenure track faculty are those who are eligible for tenure. This
+includes both pre-tenure and tenured faculty. Once faculty get tenure,
+they are (generally) protected from being fired for intellectual
+reasons, helping to ensure their freedom in teaching and research. They
+can still lose their positions for misconduct, financial problems, not
+fulfilling their duties, or other reasons.</p>
+<p>Non-tenure track faculty are not eligible for tenure. Some are hired
+one semester at a time, some have multi-year contracts. They typically
+have a higher teaching load than tenure track faculty, leaving less time
+for research or other creative endeavors. They are also easier to fire
+than tenured faculty. Sometimes they are external experts (a noted
+musician, a former senator) who are hired to teach some classes without
+the expected permanence of a tenure-track position.</p>
+<p>Note that this chart uses US federal demographic data: it only has
+two genders and a specified set of ethnicities and races.</p>
+<p>Having a low student to faculty ratio is considered a good thing by
+many, as it can mean more individual attention.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-9c7ae7ee99a389ed888b" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-9c7ae7ee99a389ed888b">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","",""],["Undergrads per tenure track instructor (lower is better)","Undergrads per instructor (lower is better)","Total instructors","Tenure track instructors","Non-tenure track instructors"],[null,"<span style=\"color:#5100AD;\">14</span> ↓<br />-5.7/y","<span style=\"color:#5DCCAC;\">105</span>",null,"<span style=\"color:#5DCCAC;\">105</span>"],["<span style=\"color:#FC0002;\">38</span>","<span style=\"color:#FC0002;\">30</span>","<span style=\"color:#356EA0;\">43</span>","<span style=\"color:#5DCCAC;\">33</span>","<span style=\"color:#356EA0;\">10</span>"],[null,"<span style=\"color:#A80056;\">23</span>","<span style=\"color:#359FAA;\">62</span>",null,"<span style=\"color:#359FAA;\">62</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Baker College<\/th>\n      <th>Waldorf U.<\/th>\n      <th>Franklin U.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Baker College","targets":2},{"name":"Waldorf U.","targets":3},{"name":"Franklin U.","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="geography" class="section level2">
+<h2>Geography</h2>
+<p>This has information on the location of the institution. See the <a
+href="about.html">about page</a> for more information on what the
+metrics are and how they are calculated. The goal is to neutrally
+provide information: for example, some individuals want stringent gun
+control in an area, some want the opposite: the categories are meant to
+be descriptive.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-c620916f138171d3f212" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-c620916f138171d3f212">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","",""],["Location","Gun Law Stringency","Abortion access","Risk to trans adults","Miles to mountains","Biome"],["Owosso, Michigan","4: High","2: Very protective","2: Low risk","<span style=\"color:#000000;\">311</span>","Temperate Broadleaf &amp; Mixed Forests"],["Forest City, Iowa","1: Very Low","7: Most restrictive","4: High risk","<span style=\"color:#000000;\">487</span>","Temperate Grasslands, Savannas &amp; Shrublands"],["Columbus, Ohio","2: Low","4: Some restrictions/protections","4: High risk","<span style=\"color:#000000;\">150</span>","<span style=\"color:#B6B6B4;\">Temperate Broadleaf &amp; Mixed Forests</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Baker College<\/th>\n      <th>Waldorf U.<\/th>\n      <th>Franklin U.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Baker College","targets":2},{"name":"Waldorf U.","targets":3},{"name":"Franklin U.","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="financial-aid" class="section level2">
+<h2>Financial Aid</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-dbf237c7c650800dc824" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-dbf237c7c650800dc824">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","",""],["Average net price (for students awarded aid)","Undergrads getting federal aid","Undergrads getting any aid","Undergrads getting Pell grants"],["<span style=\"color:#5100AD;\">$13,719</span> ↑<br />+$208/y","<span style=\"color:#5600A8;\">79.0%</span>","<span style=\"color:#5600A8;\">97.0%</span>","<span style=\"color:#5600A8;\">53.0%</span> ↓<br />-3.02%/y"],["<span style=\"color:#A80056;\">$18,620</span>","<span style=\"color:#0200FC;\">91.0%</span> ↑<br />+4.52%/y","<span style=\"color:#0200FC;\">99.0%</span>","<span style=\"color:#0200FC;\">54.0%</span>"],["<span style=\"color:#FC0002;\">$18,989</span>","<span style=\"color:#AD0051;\">23.0%</span>","<span style=\"color:#AD0051;\">31.0%</span>","<span style=\"color:#AD0051;\">23.0%</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Baker College<\/th>\n      <th>Waldorf U.<\/th>\n      <th>Franklin U.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Baker College","targets":2},{"name":"Waldorf U.","targets":3},{"name":"Franklin U.","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="graduation" class="section level2">
+<h2>Graduation</h2>
+<p>Note these are bachelors graduation rates in six years, not four
+(this is standard). Sample sizes can be small for some demographic
+groups with few individuals in a school, leading to large year-to-year
+fluctuations and often extreme values for those groups (if there are two
+individuals in the class with a given identity, the possible graduation
+rates are 0%, 50%, or 100% depending on whether zero, one, or both
+students graduate within six years).</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-a3965ee8654203e9e14e" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-a3965ee8654203e9e14e">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","","","","","","","","","","","",""],["Total","Men","Women","American Indian or Alaska Native men","American Indian or Alaska Native women","Asian men","Asian women","Black or African American men","Black or African American women","Hispanic men","Hispanic women","Native Hawaiian or other Pacific Islander men","Native Hawaiian or other Pacific Islander women","White men","White women","Two or more races men","Two or more races women","Nonresident alien men","Nonresident alien women"],["<span style=\"color:#D1002D;\">18.6%</span> ↑<br />+0.80%/y","<span style=\"color:#D80026;\">16.2%</span>","<span style=\"color:#CE0030;\">20.2%</span> ↑<br />+1.09%/y","","<span style=\"color:#82007C;\">50.0%</span>","<span style=\"color:;\">0.0%</span>","<span style=\"color:#C1003D;\">25.0%</span>","<span style=\"color:#ED0011;\">8.3%</span>","<span style=\"color:#ED0011;\">7.7%</span>","<span style=\"color:#93006B;\">42.9%</span>","<span style=\"color:#E2001C;\">11.8%</span>","","","<span style=\"color:#D80026;\">15.7%</span>","<span style=\"color:#C90035;\">22.5%</span> ↑<br />+0.95%/y","","<span style=\"color:#D60028;\">16.7%</span>","",""],["<span style=\"color:#BF003F;\">25.9%</span>","<span style=\"color:#C90035;\">22.5%</span>","<span style=\"color:#AD0051;\">33.3%</span> ↓<br />-2.12%/y","","<span style=\"color:;\">0.0%</span>","<span style=\"color:;\">0.0%</span>","","<span style=\"color:#CC0033;\">21.1%</span>","<span style=\"color:#680096;\">60.0%</span>","<span style=\"color:#BC0042;\">27.3%</span>","<span style=\"color:;\">0.0%</span>","<span style=\"color:;\">0.0%</span>","","<span style=\"color:#BC0042;\">26.9%</span>","<span style=\"color:#A80056;\">35.0%</span> ↓<br />-2.10%/y","<span style=\"color:;\">0.0%</span>","<span style=\"color:#82007C;\">50.0%</span>","",""],["<span style=\"color:#93006B;\">43.1%</span> ↑<br />+3.04%/y","<span style=\"color:#BF003F;\">26.5%</span>","<span style=\"color:#5600A8;\">66.7%</span> ↑<br />+4.63%/y","","","<span style=\"color:;\">0.0%</span>","","<span style=\"color:#F2000C;\">6.2%</span>","<span style=\"color:#2D00D1;\">83.3%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","","","<span style=\"color:#82007C;\">50.0%</span>","<span style=\"color:#960068;\">41.7%</span>","","","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Baker College<\/th>\n      <th>Waldorf U.<\/th>\n      <th>Franklin U.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Baker College","targets":2},{"name":"Waldorf U.","targets":3},{"name":"Franklin U.","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="library" class="section level2">
+<h2>Library</h2>
+<p>Libraries are changing rapidly. Note that how institutions count
+digital collections may vary.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-28ea14d6bfffe420b5f0" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-28ea14d6bfffe420b5f0">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","",""],["Number of physical books","Physical library circulations per students and faculty","Digital library circulations per students and faculty"],["<span style=\"color:#AD0051;\">6,343</span> ↓<br />-26,055/y","<span style=\"color:#AD0051;\">0</span> ↓<br />-0.1/y","<span style=\"color:#AD0051;\">21</span>"],["<span style=\"color:#0200FC;\">50,649</span>","<span style=\"color:#0200FC;\">4.0</span>","<span style=\"color:#0200FC;\">203</span>"],["<span style=\"color:#5600A8;\">13,516</span>","<span style=\"color:#5600A8;\">0.0</span>","<span style=\"color:#5600A8;\">45</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Baker College<\/th>\n      <th>Waldorf U.<\/th>\n      <th>Franklin U.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Baker College","targets":2},{"name":"Waldorf U.","targets":3},{"name":"Franklin U.","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="diversity" class="section level1">
+<h1>Diversity</h1>
+<p>The US Census Bureau has a <a
+href="https://www.census.gov/library/visualizations/interactive/racial-and-ethnic-diversity-in-the-united-states-2010-and-2020-census.html">diversity
+index</a> that goes from 0 to 1. In their words, “A 0-value indicates
+that everyone in the population has the same racial and ethnic
+characteristics. A value close to 1 indicates that everyone in the
+population has different racial and ethnic characteristics.” This uses
+their formula, but with the resolution available for the federal IPEDS
+data (which does not separate for a given demographic group whether
+members identify as Hispanic or not). This metric is about heterogeneity
+within the population, not the proportion of the population that comes
+from historically excluded groups.</p>
+<p>Following the practice of the census, the index is multiplied by 100
+to give the percentage probability a random pair of individuals will
+have a different background. Most institutions argue that diversity is a
+benefit, so by default a higher number is listed as better, but there
+may be cases where this measure does not reflect the mission of a
+college (for example, 70% of the students at a <a
+href="https://www.aihec.org/tribal-colleges-universities/">tribal
+college or university</a> may be American Indian: that could be
+low-scoring by this metric but should not be read as “bad” given the
+institution’s mission).</p>
+<p>These numbers are based on the most recent year available, generally
+2023, which predates effects of the US Supreme Court’s striking down of
+<a href="https://en.wikipedia.org/wiki/Affirmative_action">affirmative
+action</a>. This has often <a
+href="https://www.insidehighered.com/news/admissions/traditional-age/2024/09/06/early-look-racial-diversity-post-affirmative-action">changed</a>,
+sometimes dramatically, the incoming student demographics at some
+institutions.</p>
+<div id="overall-diversity" class="section level2">
+<h2>Overall diversity</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-da8ecbfbbf7ae940aabc" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-da8ecbfbbf7ae940aabc">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","",""],["Freshman diversity","Tenure-stream diversity","Non-tenure-track diversity"],["<span style=\"color:#B50049;\">29.7%</span> ↓<br />-1.88%/y",null,"<span style=\"color:#E0001E;\">12.6%</span>"],["<span style=\"color:#4900B5;\">71.9%</span>","<span style=\"color:#C90035;\">21.9%</span>","<span style=\"color:#AA0054;\">34.0%</span> ↑<br />+3.43%/y"],["<span style=\"color:#660099;\">60.7%</span>",null,"<span style=\"color:#91006D;\">44.3%</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Baker College<\/th>\n      <th>Waldorf U.<\/th>\n      <th>Franklin U.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Baker College","targets":2},{"name":"Waldorf U.","targets":3},{"name":"Franklin U.","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="freshman-profile" class="section level2">
+<h2>Freshman profile</h2>
+<p>Demographic data for first time degree-seeking students. Note that
+this uses US federal demographic data: it only has two genders and a
+specified set of ethnicities and races.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-95f52d5968f839685c60" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-95f52d5968f839685c60">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","","","","","","","","","","","","",""],["Women","White women","Men","White men","Hispanic women","Black or African American women","Two or more races women","Hispanic men","Black or African American men","Two or more races men","Race ethnicity unknown men","Race ethnicity unknown women","American Indian or Alaska Native men","American Indian or Alaska Native women","Asian women","Native Hawaiian or Other Pacific Islander women","Asian men","Native Hawaiian or Other Pacific Islander men","Nonresident alien men","Nonresident alien women"],["<span style=\"color:#5DCCAC;\">75.1%</span> ↑<br />+2.39%/y","<span style=\"color:#5DCCAC;\">62.4%</span> ↑<br />+3.03%/y","<span style=\"color:#356EA0;\">24.9%</span> ↓<br />-2.39%/y","<span style=\"color:#359FAA;\">19.3%</span> ↓<br />-1.47%/y","<span style=\"color:#356EA0;\">4.1%</span> ↑<br />+0.31%/y","<span style=\"color:#359FAA;\">3.0%</span> ↓<br />-1.16%/y","<span style=\"color:#5DCCAC;\">3.0%</span>","<span style=\"color:#356EA0;\">2.0%</span>","<span style=\"color:#359FAA;\">1.0%</span> ↓<br />-1.05%/y","<span style=\"color:#356EA0;\">1.0%</span>","<span style=\"color:#359FAA;\">1.0%</span>","<span style=\"color:#359FAA;\">1.0%</span>","<span style=\"color:#359FAA;\">0.5%</span>","<span style=\"color:#5DCCAC;\">0.5%</span> ↑<br />+0.05%/y","<span style=\"color:#359FAA;\">0.5%</span>","<span style=\"color:#5DCCAC;\">0.5%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>"],["<span style=\"color:#356EA0;\">40.6%</span>","<span style=\"color:#356EA0;\">6.3%</span> ↓<br />-2.60%/y","<span style=\"color:#5DCCAC;\">59.4%</span>","<span style=\"color:#356EA0;\">12.6%</span> ↓<br />-2.56%/y","<span style=\"color:#5DCCAC;\">9.1%</span>","<span style=\"color:#356EA0;\">2.8%</span>","<span style=\"color:#359FAA;\">0.7%</span>","<span style=\"color:#5DCCAC;\">6.3%</span>","<span style=\"color:#5DCCAC;\">13.3%</span>","<span style=\"color:#359FAA;\">1.4%</span>","<span style=\"color:#5DCCAC;\">23.8%</span> ↑<br />+4.23%/y","<span style=\"color:#5DCCAC;\">21.0%</span> ↑<br />+2.64%/y","<span style=\"color:#5DCCAC;\">0.7%</span>","<span style=\"color:#359FAA;\">0.0%</span> ↓<br />-0.08%/y","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span> ↓<br />-0.15%/y","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">2.1%</span>","<span style=\"color:#5DCCAC;\">0.5%</span>"],["<span style=\"color:#359FAA;\">45.5%</span>","<span style=\"color:#359FAA;\">22.7%</span>","<span style=\"color:#359FAA;\">54.5%</span>","<span style=\"color:#5DCCAC;\">36.4%</span> ↑<br />+3.92%/y","<span style=\"color:#359FAA;\">4.5%</span>","<span style=\"color:#5DCCAC;\">13.6%</span>","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#359FAA;\">4.5%</span> ↑<br />+0.49%/y","<span style=\"color:#356EA0;\">0.0%</span> ↓<br />-2.31%/y","<span style=\"color:#5DCCAC;\">9.1%</span>","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">4.5%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">4.5%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Baker College<\/th>\n      <th>Waldorf U.<\/th>\n      <th>Franklin U.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Baker College","targets":2},{"name":"Waldorf U.","targets":3},{"name":"Franklin U.","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="freshman-geography" class="section level2">
+<h2>Freshman geography</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-9271e1f4e0e102deff83" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-9271e1f4e0e102deff83">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],["Michigan","Indiana","Ohio","California","Georgia","Illinois","Massachusetts","Nebraska","New Jersey","Texas","Wisconsin","Alabama","Alaska","Arizona","Arkansas","Colorado","Connecticut","Delaware","District of Columbia","Florida","Hawaii","Idaho","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Minnesota","Mississippi","Missouri","Montana","Nevada","New Hampshire","New Mexico","New York","North Carolina","North Dakota","Oklahoma","Oregon","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Utah","Vermont","Virginia","Washington","West Virginia","Wyoming","Virgin Islands","Northern Marianas","Guam","American Samoa","Marshall Islands","Federated States of Micronesia","Palau","Foreign countries","Outlying areas total","Residence not reported"],["<span style=\"color:#5DCCAC;\">94.4%</span> ↓<br />-0.48%/y","<span style=\"color:#5DCCAC;\">2.5%</span> ↑<br />+0.24%/y","<span style=\"color:#356EA0;\">0.6%</span>","<span style=\"color:#356EA0;\">0.3%</span> ↑<br />+0.04%/y","<span style=\"color:#356EA0;\">0.3%</span>","<span style=\"color:#359FAA;\">0.3%</span>","<span style=\"color:#5DCCAC;\">0.3%</span>","<span style=\"color:#5DCCAC;\">0.3%</span>","<span style=\"color:#359FAA;\">0.3%</span>","<span style=\"color:#356EA0;\">0.3%</span> ↑<br />+0.05%/y","<span style=\"color:#5DCCAC;\">0.3%</span> ↑<br />+0.04%/y","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","",""],["<span style=\"color:#359FAA;\">1.3%</span>","<span style=\"color:#359FAA;\">0.7%</span>","<span style=\"color:#359FAA;\">1.3%</span>","<span style=\"color:#5DCCAC;\">9.2%</span> ↑<br />+1.12%/y","<span style=\"color:#5DCCAC;\">2.6%</span>","<span style=\"color:#5DCCAC;\">2.0%</span> ↓<br />-0.64%/y","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span> ↓<br />-0.29%/y","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#5DCCAC;\">14.4%</span> ↑<br />+0.85%/y","<span style=\"color:#359FAA;\">0.0%</span> ↓<br />-0.36%/y","<span style=\"color:#5DCCAC;\">2.6%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">5.2%</span>","<span style=\"color:#5DCCAC;\">0.7%</span>","<span style=\"color:#5DCCAC;\">0.7%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">7.2%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">1.3%</span>","<span style=\"color:#5DCCAC;\">22.9%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.7%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.7%</span>","<span style=\"color:#5DCCAC;\">9.8%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.7%</span>","<span style=\"color:#5DCCAC;\">0.7%</span>","<span style=\"color:#5DCCAC;\">3.3%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.7%</span>","<span style=\"color:#5DCCAC;\">1.3%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">2.0%</span>","<span style=\"color:#5DCCAC;\">0.7%</span>","<span style=\"color:#5DCCAC;\">2.0%</span> ↑<br />+0.21%/y","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.7%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.7%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.7%</span>","<span style=\"color:#5DCCAC;\">2.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">2.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","",""],["<span style=\"color:#356EA0;\">0.6%</span>","<span style=\"color:#356EA0;\">0.6%</span>","<span style=\"color:#5DCCAC;\">86.7%</span>","<span style=\"color:#359FAA;\">2.3%</span>","<span style=\"color:#359FAA;\">1.2%</span>","<span style=\"color:#356EA0;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.6%</span>","<span style=\"color:#359FAA;\">1.2%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.6%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.6%</span>","<span style=\"color:#5DCCAC;\">1.2%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#359FAA;\">1.2%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.6%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">1.2%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.6%</span>","<span style=\"color:#359FAA;\">1.2%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#359FAA;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","<span style=\"color:#5DCCAC;\">0.0%</span>","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Baker College<\/th>\n      <th>Waldorf U.<\/th>\n      <th>Franklin U.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Baker College","targets":2},{"name":"Waldorf U.","targets":3},{"name":"Franklin U.","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="test-scores" class="section level1">
+<h1>Test scores</h1>
+<div id="sat-scores" class="section level2">
+<h2>SAT scores</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-0698d8213bc7427507d9" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-0698d8213bc7427507d9">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","",""],["Applicants submitting SAT","SAT Evidence Based Reading and Writing 25th percentile score","SAT Evidence Based Reading and Writing 75th percentile score","SAT Math 25th percentile score","SAT Math 75th percentile score"],["0",null,null,null,null],["<span style=\"color:#5DCCAC;\">25.0%</span>","<span style=\"color:#5DCCAC;\">460</span>","<span style=\"color:#5DCCAC;\">560</span>","<span style=\"color:#5DCCAC;\">460</span> ↑<br />+11/y","<span style=\"color:#5DCCAC;\">550</span>"],[null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Baker College<\/th>\n      <th>Waldorf U.<\/th>\n      <th>Franklin U.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Baker College","targets":2},{"name":"Waldorf U.","targets":3},{"name":"Franklin U.","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="act-scores" class="section level2">
+<h2>ACT scores</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-9e9df1598ee976227178" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-9e9df1598ee976227178">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","",""],["Applicants submitting ACT","ACT Composite 25th percentile score","ACT Composite 75th percentile score","ACT English 25th percentile score","ACT English 75th percentile score","ACT Math 25th percentile score","ACT Math 75th percentile score"],["0",null,null,null,null,null,null],["<span style=\"color:#5DCCAC;\">52.0%</span>","<span style=\"color:#5DCCAC;\">17</span>","<span style=\"color:#5DCCAC;\">21</span>","<span style=\"color:#5DCCAC;\">15</span>","<span style=\"color:#5DCCAC;\">22</span>","<span style=\"color:#5DCCAC;\">16</span>","<span style=\"color:#5DCCAC;\">19</span> ↓<br />-0.7/y"],[null,null,null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Baker College<\/th>\n      <th>Waldorf U.<\/th>\n      <th>Franklin U.<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Baker College","targets":2},{"name":"Waldorf U.","targets":3},{"name":"Franklin U.","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="majors" class="section level1">
+<h1>Majors</h1>
+<p>This presents information on the number of majors and the median
+earnings one and five years after graduation for people who got a degree
+from this institution in that field. The earnings are for those who are
+working and not enrolled in further education. The earnings data (from
+the federal college scorecard) also has information on earnings for
+those categorized as ‘MALE’ and ‘NOMALE’ – for readability, these are
+recategorized here as “Men” and “Women”, respectively, which adopts the
+gender binary used in other federal data. “W/M earnings ratio” is the
+median earnings of women divided by men, as a percentage.</p>
+<div id="bachelors" class="section level2">
+<h2>Bachelors</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-d469630b6614477cdd5b" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-d469630b6614477cdd5b">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Bachelors_RegisteredNursing_RegisteredNurse.html\">Registered Nursing/Registered Nurse</a>","<a href=\"majors_Bachelors_BusinessAdministrationandManagement.html\">Business Administration and Management</a>","<a href=\"majors_Bachelors_Health_HealthCareAdministration_Management.html\">Health/Health Care Administration/Management</a>","<a href=\"majors_Bachelors_Psychology.html\">Psychology</a>","<a href=\"majors_Bachelors_GeneralStudies.html\">General Studies</a>","<a href=\"majors_Bachelors_ComputerandInformationSystemsSecurity_Auditing_InformationAssurance.html\">Computer and Information Systems Security/Auditing/Information Assurance</a>","<a href=\"majors_Bachelors_HumanResourcesManagement_PersonnelAdministration.html\">Human Resources Management/Personnel Administration</a>","<a href=\"majors_Bachelors_Accounting.html\">Accounting</a>","<a href=\"majors_Bachelors_ComputerScience.html\">Computer Science</a>","<a href=\"majors_Bachelors_FamilyandCommunityServices.html\">Family and Community Services</a>","<a href=\"majors_Bachelors_Marketing_MarketingManagement.html\">Marketing/Marketing Management</a>","<a href=\"majors_Bachelors_ChildDevelopment.html\">Child Development</a>","<a href=\"majors_Bachelors_ElementaryEducationandTeaching.html\">Elementary Education and Teaching</a>","<a href=\"majors_Bachelors_OccupationalTherapy_Therapist.html\">Occupational Therapy/Therapist</a>","<a href=\"majors_Bachelors_ComputerProgramming_Programmer.html\">Computer Programming/Programmer</a>","<a href=\"majors_Bachelors_MedicalRadiologicTechnology_Science_RadiationTherapist.html\">Medical Radiologic Technology/Science - Radiation Therapist</a>","<a href=\"majors_Bachelors_Finance.html\">Finance</a>","<a href=\"majors_Bachelors_Corrections.html\">Corrections</a>","<a href=\"majors_Bachelors_ComputerGameProgramming.html\">Computer Game Programming</a>","<a href=\"majors_Bachelors_Logistics_Materials_andSupplyChainManagement.html\">Logistics, Materials, and Supply Chain Management</a>","<a href=\"majors_Bachelors_SecondaryEducationandTeaching.html\">Secondary Education and Teaching</a>","<a href=\"majors_Bachelors_Education.html\">Education</a>"],[140,124,55,45,32,29,28,27,18,16,15,14,12,12,11,10,9,8,6,6,2,1],[22.581,20,8.871,7.258,5.161,4.677,4.516,4.355,2.903,2.581,2.419,2.258,1.935,1.935,1.774,1.613,1.452,1.29,0.968,0.968,0.323,0.161],[0.096,0.092,0.442,0.04,0.257,0.332,0.444,0.07000000000000001,0.043,2.192,0.037,0.905,0.041,2.12,0.5659999999999999,0.903,0.021,3.347,1.835,0.098,0.062,0.016],["Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors","Bachelors"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2023<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2023","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-6941288b2eb452389a42" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6941288b2eb452389a42">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["Accounting and Related Services","Business Administration, Management and Operations","Computer Science","Computer Software and Media Applications","Computer/Information Technology Administration and Management","Criminal Justice and Corrections","Finance and Financial Management Services","Graphic Communications","Health and Medical Administrative Services","Human Development, Family Studies, and Related Services","Human Resources Management and Services","Liberal Arts and Sciences, General Studies and Humanities","Marketing","Mechanical Engineering","Psychology","Registered Nursing, Nursing Administration, Nursing Research and Clinical Nursing","Teacher Education and Professional Development, Specific Levels and Methods"],[46471,55372,67839,41784,57128,42341,51325,74387,40114,36494,50383,42426,45136,68060,32913,69067,37750],[1.154518180727229,0.7327125444772503,null,null,0.7126891099904593,0.8386496319485575,null,null,0.6779265959297269,null,null,null,null,null,null,0.9531323729425153,null],[58119,61349,75262,86042,66120,52268,67718,null,49851,41143,61058,53139,58115,null,39022,91838,43606],[1.065526239489707,0.919173193678454,null,null,0.6862761635671011,0.7592884232178441,null,null,0.8441409917214304,0.8733406721491939,null,0.6585678921793344,0.8012299915754002,null,null,null,null],[41665,66045,null,null,58696,47276,null,null,57490,null,null,null,null,null,null,72054,null],[48103,48392,null,null,41832,39648,null,null,38974,null,null,null,null,null,null,68677,null],[55184,64731,null,null,71139,62228,null,null,58585,46329,null,76349,59350,null,null,null,null],[58800,59499,null,null,48821,47249,null,null,49454,40461,null,50281,47553,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Earnings 1 year all<\/th>\n      <th>W:M earning ratio 1 year<\/th>\n      <th>Earnings 5 year all<\/th>\n      <th>W:M earning ratio 5 year<\/th>\n      <th>Earnings 1 year men<\/th>\n      <th>Earnings 1 year women<\/th>\n      <th>Earnings 5 year men<\/th>\n      <th>Earnings 5 year women<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"targets":1,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":8,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[1,2,3,4,5,6,7,8]},{"name":"Field","targets":0},{"name":"Earnings 1 year all","targets":1},{"name":"W:M earning ratio 1 year","targets":2},{"name":"Earnings 5 year all","targets":3},{"name":"W:M earning ratio 5 year","targets":4},{"name":"Earnings 1 year men","targets":5},{"name":"Earnings 1 year women","targets":6},{"name":"Earnings 5 year men","targets":7},{"name":"Earnings 5 year women","targets":8}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render","options.columnDefs.5.render","options.columnDefs.6.render","options.columnDefs.7.render"],"jsHooks":[]}</script>
+</div>
+<div id="masters" class="section level2">
+<h2>Masters</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-fbc3e92caa22f6fab7de" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-fbc3e92caa22f6fab7de">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Masters_BusinessAdministrationandManagement.html\">Business Administration and Management</a>","<a href=\"majors_Masters_Health_HealthCareAdministration_Management.html\">Health/Health Care Administration/Management</a>","<a href=\"majors_Masters_OccupationalTherapy_Therapist.html\">Occupational Therapy/Therapist</a>","<a href=\"majors_Masters_ManagementInformationSystems.html\">Management Information Systems</a>","<a href=\"majors_Masters_IndustrialandOrganizationalPsychology.html\">Industrial and Organizational Psychology</a>","<a href=\"majors_Masters_NursingEducation.html\">Nursing Education</a>","<a href=\"majors_Masters_Accounting.html\">Accounting</a>","<a href=\"majors_Masters_FinancialPlanningandServices.html\">Financial Planning and Services</a>","<a href=\"majors_Masters_HumanResourcesManagement_PersonnelAdministration.html\">Human Resources Management/Personnel Administration</a>"],[24,16,16,13,9,6,6,5,2],[24.742,16.495,16.495,13.402,9.278,6.186,6.186,5.155,2.062],[0.023,0.119,0.264,1.077,0.43,0.176,0.041,2.732,0.037],["Masters","Masters","Masters","Masters","Masters","Masters","Masters","Masters","Masters"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2023<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2023","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-1092989dee54e608f0cb" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1092989dee54e608f0cb">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["Business Administration, Management and Operations","Health and Medical Administrative Services","Human Resources Management and Services","Management Information Systems and Services"],[65283,59077,62611,91337],[null,null,null,null],[76864,91855,76048,84636],[0.8313397676333364,null,null,null],[null,null,null,null],[null,null,null,null],[87448,null,null,null],[72699,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Earnings 1 year all<\/th>\n      <th>W:M earning ratio 1 year<\/th>\n      <th>Earnings 5 year all<\/th>\n      <th>W:M earning ratio 5 year<\/th>\n      <th>Earnings 1 year men<\/th>\n      <th>Earnings 1 year women<\/th>\n      <th>Earnings 5 year men<\/th>\n      <th>Earnings 5 year women<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"targets":1,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":8,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[1,2,3,4,5,6,7,8]},{"name":"Field","targets":0},{"name":"Earnings 1 year all","targets":1},{"name":"W:M earning ratio 1 year","targets":2},{"name":"Earnings 5 year all","targets":3},{"name":"W:M earning ratio 5 year","targets":4},{"name":"Earnings 1 year men","targets":5},{"name":"Earnings 1 year women","targets":6},{"name":"Earnings 5 year men","targets":7},{"name":"Earnings 5 year women","targets":8}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render","options.columnDefs.5.render","options.columnDefs.6.render","options.columnDefs.7.render"],"jsHooks":[]}</script>
+</div>
+<div id="doctorate" class="section level2">
+<h2>Doctorate</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-e06e85ce9d272714949d" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-e06e85ce9d272714949d">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Doctorate_BusinessAdministrationandManagement.html\">Business Administration and Management</a>","<a href=\"majors_Doctorate_Law.html\">Law</a>"],[11,6],[64.706,35.294],[0.499,0.017],["Doctorate","Doctorate"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2023<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2023","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="certificate" class="section level2">
+<h2>Certificate</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-22112c4ead6119a2fe7a" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-22112c4ead6119a2fe7a">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Certificate_Medical_ClinicalAssistant.html\">Medical/Clinical Assistant</a>","<a href=\"majors_Certificate_Medium_HeavyVehicleandTruckTechnology_Technician.html\">Medium/Heavy Vehicle and Truck Technology/Technician</a>","<a href=\"majors_Certificate_Automobile_AutomotiveMechanicsTechnology_Technician.html\">Automobile/Automotive Mechanics Technology/Technician</a>","<a href=\"majors_Certificate_SecondaryEducationandTeaching.html\">Secondary Education and Teaching</a>","<a href=\"majors_Certificate_WeldingTechnology_Welder.html\">Welding Technology/Welder</a>"],[19,12,2,1,1],[54.286,34.286,5.714,2.857,2.857],[0.04,0.701,0.007,0.138,0.002],["Certificate","Certificate","Certificate","Certificate","Certificate"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2023<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2023","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-f8ad9ac39bbfbaaa19a6" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-f8ad9ac39bbfbaaa19a6">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["Allied Health and Medical Assisting Services","Vehicle Maintenance and Repair Technologies"],[32846,39719],[null,null],[null,50127],[null,null],[null,null],[null,null],[null,null],[null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Earnings 1 year all<\/th>\n      <th>W:M earning ratio 1 year<\/th>\n      <th>Earnings 5 year all<\/th>\n      <th>W:M earning ratio 5 year<\/th>\n      <th>Earnings 1 year men<\/th>\n      <th>Earnings 1 year women<\/th>\n      <th>Earnings 5 year men<\/th>\n      <th>Earnings 5 year women<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"targets":1,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":8,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[1,2,3,4,5,6,7,8]},{"name":"Field","targets":0},{"name":"Earnings 1 year all","targets":1},{"name":"W:M earning ratio 1 year","targets":2},{"name":"Earnings 5 year all","targets":3},{"name":"W:M earning ratio 5 year","targets":4},{"name":"Earnings 1 year men","targets":5},{"name":"Earnings 1 year women","targets":6},{"name":"Earnings 5 year men","targets":7},{"name":"Earnings 5 year women","targets":8}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render","options.columnDefs.5.render","options.columnDefs.6.render","options.columnDefs.7.render"],"jsHooks":[]}</script>
+</div>
+<div id="associates" class="section level2">
+<h2>Associates</h2>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-17a0164350ba1da30c76" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-17a0164350ba1da30c76">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Associates_Veterinary_AnimalHealthTechnology_TechnicianandVeterinaryAssistant.html\">Veterinary/Animal Health Technology/Technician and Veterinary Assistant</a>","<a href=\"majors_Associates_GeneralStudies.html\">General Studies</a>","<a href=\"majors_Associates_PhysicalTherapyAssistant.html\">Physical Therapy Assistant</a>","<a href=\"majors_Associates_MedicalRadiologicTechnology_Science_RadiationTherapist.html\">Medical Radiologic Technology/Science - Radiation Therapist</a>","<a href=\"majors_Associates_CulinaryArts_ChefTraining.html\">Culinary Arts/Chef Training</a>","<a href=\"majors_Associates_Mechatronics_Robotics_andAutomationEngineeringTechnology_Technician.html\">Mechatronics, Robotics, and Automation Engineering Technology/Technician</a>","<a href=\"majors_Associates_BakingandPastryArts_Baker_PastryChef.html\">Baking and Pastry Arts/Baker/Pastry Chef</a>","<a href=\"majors_Associates_HealthInformation_MedicalRecordsTechnology_Technician.html\">Health Information/Medical Records Technology/Technician</a>","<a href=\"majors_Associates_OccupationalTherapistAssistant.html\">Occupational Therapist Assistant</a>","<a href=\"majors_Associates_SurgicalTechnology_Technologist.html\">Surgical Technology/Technologist</a>","<a href=\"majors_Associates_Corrections.html\">Corrections</a>","<a href=\"majors_Associates_DiagnosticMedicalSonography_SonographerandUltrasoundTechnician.html\">Diagnostic Medical Sonography/Sonographer and Ultrasound Technician</a>","<a href=\"majors_Associates_ElectrocardiographTechnology_Technician.html\">Electrocardiograph Technology/Technician</a>","<a href=\"majors_Associates_BusinessAdministrationandManagement.html\">Business Administration and Management</a>","<a href=\"majors_Associates_Automobile_AutomotiveMechanicsTechnology_Technician.html\">Automobile/Automotive Mechanics Technology/Technician</a>","<a href=\"majors_Associates_Medium_HeavyVehicleandTruckTechnology_Technician.html\">Medium/Heavy Vehicle and Truck Technology/Technician</a>","<a href=\"majors_Associates_ChildDevelopment.html\">Child Development</a>","<a href=\"majors_Associates_Health_HealthCareAdministration_Management.html\">Health/Health Care Administration/Management</a>"],[54,45,33,28,21,19,16,15,14,14,13,11,9,9,7,7,6,5],[16.564,13.804,10.123,8.589,6.442,5.828,4.908,4.601,4.294,4.294,3.988,3.374,2.761,2.761,2.147,2.147,1.84,1.534],[1.31,0.05,0.584,1.179,0.531,7.224,1.004,0.427,0.392,0.281,3.163,0.273,34.615,0.016,0.06900000000000001,2.208,0.773,0.229],["Associates","Associates","Associates","Associates","Associates","Associates","Associates","Associates","Associates","Associates","Associates","Associates","Associates","Associates","Associates","Associates","Associates","Associates"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2023<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2023","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-fef497d1315ca0e168e7" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-fef497d1315ca0e168e7">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["Accounting and Related Services","Allied Health and Medical Assisting Services","Allied Health Diagnostic, Intervention, and Treatment Professions","Business Administration, Management and Operations","Computer/Information Technology Administration and Management","Criminal Justice and Corrections","Culinary Arts and Related Services","Dental Support Services and Allied Professions","Health and Medical Administrative Services","Human Development, Family Studies, and Related Services","Radio, Television, and Digital Communication","Vehicle Maintenance and Repair Technologies","Veterinary/Animal Health Technologies/Technicians"],[36181,36955,46984,40585,35380,44354,25204,43971,33831,22557,24167,48705,35142],[null,0.8130987796022581,0.9929632525410477,0.7960523253107398,null,0.5701970933704957,0.8791369995348671,null,null,null,null,null,null],[44262,37214,51272,47196,52699,41758,37278,45283,38409,32007,32921,52602,38959],[null,0.6867540484050554,0.8734905925301881,0.8592618918463927,null,0.7209328547535376,0.7498277940416739,null,0.6410623816590758,null,0.5022932559554453,null,null],[null,42691,47323,42962,null,50230,27949,null,null,null,null,null,null],[null,34712,46990,34200,null,28641,24571,null,null,null,null,null,null],[null,51193,56976,53461,null,53213,46456,null,58623,null,42734,null,null],[null,35157,49768,45937,null,38363,34834,null,37581,null,21465,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Earnings 1 year all<\/th>\n      <th>W:M earning ratio 1 year<\/th>\n      <th>Earnings 5 year all<\/th>\n      <th>W:M earning ratio 5 year<\/th>\n      <th>Earnings 1 year men<\/th>\n      <th>Earnings 1 year women<\/th>\n      <th>Earnings 5 year men<\/th>\n      <th>Earnings 5 year women<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"targets":1,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":8,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[1,2,3,4,5,6,7,8]},{"name":"Field","targets":0},{"name":"Earnings 1 year all","targets":1},{"name":"W:M earning ratio 1 year","targets":2},{"name":"Earnings 5 year all","targets":3},{"name":"W:M earning ratio 5 year","targets":4},{"name":"Earnings 1 year men","targets":5},{"name":"Earnings 1 year women","targets":6},{"name":"Earnings 5 year men","targets":7},{"name":"Earnings 5 year women","targets":8}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render","options.columnDefs.5.render","options.columnDefs.6.render","options.columnDefs.7.render"],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+
+   
+   
+            
+      
+
+  <script>
+    $(document).ready(function () {
+
+			
+ 		
+	    });
+  </script>
+
+
+
+    <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+	document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+  
+</body>
+</html>
