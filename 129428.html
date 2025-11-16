@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+
+    
+    
+    <title>Rensselaer at Hartford</title>
+
+        <script src="institution_files/header-attrs-2.29/header-attrs.js"></script>
+        <script src="institution_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="institution_files/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="institution_files/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        <script src="institution_files/navigation-1.1/tabsets.js"></script>
+        <link href="institution_files/readthedown-0.1/readthedown.css" rel="stylesheet" />
+        <link href="institution_files/readthedown-0.1/readthedown_fonts_embed.css" rel="stylesheet" />
+        <script src="institution_files/readthedown-0.1/readthedown.js"></script>
+        <link href="institution_files/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+        <script src="institution_files/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+        <link href="institution_files/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+        <script src="institution_files/leaflet-1.3.1/leaflet.js"></script>
+        <link href="institution_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+        <script src="institution_files/proj4-2.6.2/proj4.min.js"></script>
+        <script src="institution_files/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+        <link href="institution_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+        <script src="institution_files/leaflet-binding-2.2.2/leaflet.js"></script>
+        <link href="institution_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+        <script src="institution_files/datatables-binding-0.33/datatables.js"></script>
+        <link href="institution_files/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+        <link href="institution_files/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+        <script src="institution_files/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+        <link href="institution_files/dt-ext-fixedcolumns-1.13.6/css/fixedColumns.dataTables.min.css" rel="stylesheet" />
+        <script src="institution_files/dt-ext-fixedcolumns-1.13.6/js/dataTables.fixedColumns.min.js"></script>
+        <link href="institution_files/dt-ext-fixedheader-1.13.6/css/fixedHeader.dataTables.min.css" rel="stylesheet" />
+        <script src="institution_files/dt-ext-fixedheader-1.13.6/js/dataTables.fixedHeader.min.js"></script>
+        <link href="institution_files/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+        <script src="institution_files/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q67PXWY3L5"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Q67PXWY3L5');
+        </script>
+    
+    
+    
+    
+    <!-- tabsets -->
+    <script>
+      $(document).ready(function () {
+	  window.buildTabsets("toc");
+      });
+      $(document).ready(function () {
+	  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+	      $(this).parent().toggleClass('nav-tabs-open')
+	  });
+      });
+    </script>
+
+    <!-- code folding -->
+    
+    <!-- code download -->
+    
+    <!-- tabsets dropdown -->
+
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+	  display: inline-table;
+	  max-height: 500px;
+	  min-height: 44px;
+	  overflow-y: auto;
+	  background: white;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+	  content: "&#xe258;";
+	  border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active {
+	  display: block;
+      }
+
+      .tabset-dropdown > .nav-tabs > li.active a {
+  	  padding: 0 15px !important;
+      }
+
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+	  border: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: transparent;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+	  display: block;
+	  float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li {
+	  display: none;
+	  margin-left: 0 !important;
+      }
+    </style>
+    
+</head>
+
+<body class="preload">
+
+   	
+         <!-- readthedown start -->   
+   <div id="content" data-toggle="wy-nav-shift">
+     <nav id="nav-top" role="navigation" aria-label="top navigation">
+       <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+     </nav>
+         
+   
+      
+      <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">College Tables</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="fields_overview.html">Fields</a>
+      </li>
+      <li>
+        <a href="earnings_overview.html">Earnings</a>
+      </li>
+      <li>
+        <a href="predict.html">Predict</a>
+      </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+      </div><!--/.navbar -->
+        
+      <h1 class="title">Rensselaer at Hartford</h1>
+      
+         <!-- readthedown authors -->
+   <div id="sidebar">
+    <h2><a href="#content">Rensselaer at Hartford</a></h2>
+    <div id="toc">
+      <ul>
+      <li><a href="#notes" id="toc-notes">Notes</a></li>
+      <li><a href="#overview-of-institution"
+      id="toc-overview-of-institution">Overview of institution</a></li>
+      <li><a href="#map" id="toc-map">Map</a></li>
+      <li><a href="#comparisons"
+      id="toc-comparisons">Comparisons</a></li>
+      <li><a href="#enrollment" id="toc-enrollment">Enrollment</a></li>
+      <li><a href="#general" id="toc-general">General</a></li>
+      <li><a href="#teaching" id="toc-teaching">Teaching</a></li>
+      <li><a href="#geography" id="toc-geography">Geography</a></li>
+      <li><a href="#financial-aid" id="toc-financial-aid">Financial
+      Aid</a></li>
+      <li><a href="#graduation" id="toc-graduation">Graduation</a></li>
+      <li><a href="#library" id="toc-library">Library</a></li>
+      <li><a href="#diversity" id="toc-diversity">Diversity</a></li>
+      <li><a href="#overall-diversity"
+      id="toc-overall-diversity">Overall diversity</a></li>
+      <li><a href="#freshman-profile" id="toc-freshman-profile">Freshman
+      profile</a></li>
+      <li><a href="#freshman-geography"
+      id="toc-freshman-geography">Freshman geography</a></li>
+      <li><a href="#test-scores" id="toc-test-scores">Test
+      scores</a></li>
+      <li><a href="#sat-scores" id="toc-sat-scores">SAT scores</a></li>
+      <li><a href="#act-scores" id="toc-act-scores">ACT scores</a></li>
+      <li><a href="#majors" id="toc-majors">Majors</a></li>
+      <li><a href="#bachelors" id="toc-bachelors">Bachelors</a></li>
+      <li><a href="#masters" id="toc-masters">Masters</a></li>
+      <li><a href="#doctorate" id="toc-doctorate">Doctorate</a></li>
+      <li><a href="#certificate"
+      id="toc-certificate">Certificate</a></li>
+      <li><a href="#associates" id="toc-associates">Associates</a></li>
+      </ul>
+    </div>
+    <div id="postamble" data-toggle="wy-nav-shift" class="status">
+                </div>
+   </div>
+     
+
+   
+      
+   
+<!-- Don't indent these lines or it will mess pre blocks indentation --> 
+<div id="main">
+<style type="text/css">
+img {
+  max-width: 100%;
+}
+</style>
+<p><a href='https://ewp.rpi.edu/index.html'>Rensselaer at Hartford</a>
+is located in Hartford, Connecticut. It is a private not-for-profit,
+4-year or above institution.</p>
+<p><em>From <a
+href="https://en.wikipedia.org/wiki/%20Rensselaer%20at%20Hartford">Wikipedia</a></em>:
+Rensselaer at Work is the online division of Rensselaer Polytechnic
+Institute, operating administratively from facilities in Hartford,
+Connecticut, since 1955. Until 1997, it was known as the Hartford
+Graduate Center. The primary focus of the division is to offer
+graduate-level professional education to learners across the country via
+its digital delivery.</p>
+<div id="notes" class="section level1">
+<h1>Notes</h1>
+<p>These are items that bear looking into more closely.</p>
+<ul>
+<li>There are apparently no tenure stream faculty. This can indicate a
+<a href='https://www.aaup.org/issues/tenure'>risk to academic
+freedom</a> and thus educational quality, as faculty members
+<em>may</em> be able to lose their positions because of their speech,
+publications, or research findings.</li>
+</ul>
+</div>
+<div id="overview-of-institution" class="section level1">
+<h1>Overview of institution</h1>
+<p>This, and the rest of the page, use info from the most recent year
+available, generally 2022.</p>
+<ul>
+<li><p><strong>Institution kind</strong>: Special Focus Four-Year:
+Engineering and Other Technology-Related Schools</p></li>
+<li><p><strong>Undergrad program</strong>: Not Classified (Exclusively
+Graduate Programs)</p></li>
+<li><p><strong>Graduate program</strong>: Postbaccalaureate: Arts &amp;
+sciences-dominant</p></li>
+<li><p><strong>Enrollment profile</strong>: Exclusively graduate (see
+more details below)</p></li>
+<li><p><strong>Average net price for undergrads on financial
+aid</strong>: Unknown .</p></li>
+<li><p><strong>Actual price for <em>your</em> family</strong>: Go
+<a href='https://npc.collegeboard.org/app/rpi'>here</a> to see what your
+family may be asked to pay. It can be MUCH lower than the average price
+but also higher for some.</p></li>
+<li><p><strong>Size and setting</strong>: Exclusively
+graduate/professional</p></li>
+<li><p><strong>In state percentage</strong>: Unknown of first year
+students come from Connecticut</p></li>
+<li><p><strong>In US percentage</strong>: Unknown of first year students
+come from the US</p></li>
+<li><p><strong>Student to tenure-stream faculty ratio</strong>: Unknown
+(undergrads to tenure-stream faculty) [<a href="tenure.html">Tenure
+explained</a>]</p></li>
+<li><p><strong>Student to faculty ratio</strong>: Unknown (undergrads to
+all faculty)</p></li>
+<li><p><strong>Degrees offered</strong>: Postbaccalaureate certificate,
+Master’s degree</p></li>
+<li><p><strong>Schedule</strong>: Semester</p></li>
+<li><p><strong>Institution provides on campus housing</strong>:
+No</p></li>
+<li><p><strong>Freshmen required to live on campus</strong>: Not
+applicable</p></li>
+<li><p><strong>Advanced placement (AP) credits used</strong>: Implied
+no</p></li>
+<li><p><strong>Disabilities</strong>: Not applicable of undergrads are
+registered as having disabilities.</p></li>
+</ul>
+</div>
+<div id="map" class="section level1">
+<h1>Map</h1>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-4a7faaa6c47c1b13b768" style="width:768px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-4a7faaa6c47c1b13b768">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[41.773462,-72.67391600000001,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[41.773462,-72.67391600000001],16,[]],"limits":{"lat":[41.773462,41.773462],"lng":[-72.67391600000001,-72.67391600000001]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="comparisons" class="section level1">
+<h1>Comparisons</h1>
+<p>The sections below show this institution compared with others. The
+ones listed are ones it has identified as peers, who consider themselves
+peers, and/or who the federal government considers peers. If a
+comparison school has the same value as the focal school, its cell is
+grayed out. In fields where there is a common view that higher (or
+lower) values are better, the best values are in
+<font color="blue">blue</font>, the worst values are in
+<font color="red">red</font>. If there isn’t a sense of a particular
+value being better, values are shown in varying shades of
+<font color="green">green</font>. Arrows show where there is a
+signficant trend over time for a school. You can swipe across the table
+to see more of it; the focal school column is always visible.</p>
+<ul>
+<li>These institutions compare themselves to Rensselaer at Hartford, but
+not vice versa: <a href='443128.html'>International Technological
+University</a></li>
+</ul>
+</div>
+<div id="enrollment" class="section level1">
+<h1>Enrollment</h1>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-e89ca320c9ff6d8b6e29" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-e89ca320c9ff6d8b6e29">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","",""],["Undergrads (full time)","Undergrads (part time)","Grad students (full time)","Grad students (part time)","Admission rate (undergrads)","Yield rate (percent of applicants offered undergraduate admission who accept)","Graduation rate (bachelors in 6 years)","Transfer out rate (bachelors)"],[null,null,"<span style=\"color:#0BBD14;\">0</span>","<span style=\"color:#2D8B56;\">115</span>",null,null,null,null],[null,null,"<span style=\"color:#2D8B56;\">116</span> ↓<br />-151/y","<span style=\"color:#229C40;\">21</span> ↓<br />-69/y",null,null,null,null],["<span style=\"color:#259647;\">470</span>","<span style=\"color:#2D8B56;\">47</span>",null,null,"<span style=\"color:#2D8B56;\">87.6%</span> ↑<br />+1.02%/y","<span style=\"color:#82007C;\">18.4%</span> ↓<br />-1.05%/y","<span style=\"color:#D60028;\">57.5%</span>",null],["<span style=\"color:#16AC2A;\">330</span>","<span style=\"color:#16AC2A;\">0</span>","<span style=\"color:#16AC2A;\">3</span> ↓<br />-2.3/y","<span style=\"color:#0BBD14;\">0</span>",null,null,"<span style=\"color:#AD0051;\">66.7%</span>",null],["<span style=\"color:#07C20D;\">85</span>","<span style=\"color:#16AC2A;\">0</span> ↓<br />-10/y",null,null,null,null,"<span style=\"color:#0200FC;\">100.0%</span>",null],["<span style=\"color:#2D8B56;\">2,138</span> ↓<br />-27/y","<span style=\"color:#259647;\">31</span>","<span style=\"color:#229C40;\">15</span> ↓<br />-7.9/y","<span style=\"color:#16AC2A;\">4</span> ↓<br />-3.9/y","<span style=\"color:#229C40;\">73.0%</span> ↑<br />+2.67%/y","<span style=\"color:#C1003D;\">16.5%</span> ↓<br />-0.81%/y","<span style=\"color:#82007C;\">80.8%</span> ↑<br />+0.78%/y","<span style=\"color:#A80056;\">15.5%</span>"],["<span style=\"color:#1EA139;\">360</span>","<span style=\"color:#1EA139;\">22</span>",null,null,"<span style=\"color:#0BBD14;\">19.1%</span> ↑<br />+1.07%/y","<span style=\"color:#4200BC;\">45.5%</span> ↓<br />-2.02%/y","<span style=\"color:#2D00D1;\">93.7%</span>","<span style=\"color:#5100AD;\">2.5%</span>"],["<span style=\"color:#0EB71B;\">105</span> ↑<br />+2.3/y","<span style=\"color:#16AC2A;\">0</span>",null,null,"<span style=\"color:#16AC2A;\">20.8%</span> ↓<br />-2.06%/y","<span style=\"color:#0200FC;\">65.8%</span>","<span style=\"color:#5600A8;\">89.3%</span>","<span style=\"color:#FC0002;\">23.1%</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Rensselaer at Hartford<\/th>\n      <th>International Technological U.<\/th>\n      <th>Neumont College of Computer Science<\/th>\n      <th>California Aeronautical U.<\/th>\n      <th>Academy College<\/th>\n      <th>Rose-Hulman Institute of Technology<\/th>\n      <th>Franklin W Olin College of Engineering<\/th>\n      <th>Webb Institute<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Rensselaer at Hartford","targets":2},{"name":"International Technological U.","targets":3},{"name":"Neumont College of Computer Science","targets":4},{"name":"California Aeronautical U.","targets":5},{"name":"Academy College","targets":6},{"name":"Rose-Hulman Institute of Technology","targets":7},{"name":"Franklin W Olin College of Engineering","targets":8},{"name":"Webb Institute","targets":9}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="general" class="section level1">
+<h1>General</h1>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-740c81d2311663e76421" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-740c81d2311663e76421">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","",""],["Sector","Level","HBCU","Tribal College","Size and setting","Undergrad profile","Undergrad instruction","Grad instruction","Enrollment profile"],["Private not-for-profit, 4-year or above","Four or more years","No","No","Exclusively graduate/professional","Not classified (Exclusively Graduate)","Not Classified (Exclusively Graduate Programs)","Postbaccalaureate: Arts &amp; sciences-dominant","Exclusively graduate"],["<span style=\"color:#B6B6B4;\">Private not-for-profit, 4-year or above</span>","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">Exclusively graduate/professional</span>","<span style=\"color:#B6B6B4;\">Not classified (Exclusively Graduate)</span>","<span style=\"color:#B6B6B4;\">Not Classified (Exclusively Graduate Programs)</span>","Research Doctoral: Single program-Other","<span style=\"color:#B6B6B4;\">Exclusively graduate</span>"],["Private for-profit, 4-year or above","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, very small, highly residential","Four-year, full-time, inclusive, lower transfer-in","Professions focus, no graduate coexistence","Not classified (Exclusively Undergraduate)","Exclusively undergraduate four-year"],["Private for-profit, 4-year or above","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, very small, highly residential","Four-year, full-time, inclusive, higher transfer-in","Professions focus, high graduate coexistence","Postbaccalaureate: Other-dominant, with other professional programs","Very high undergraduate"],["Private for-profit, 4-year or above","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, very small, primarily nonresidential","Four-year, full-time, inclusive, higher transfer-in","Professions focus, no graduate coexistence","Not classified (Exclusively Undergraduate)","Exclusively undergraduate four-year"],["<span style=\"color:#B6B6B4;\">Private not-for-profit, 4-year or above</span>","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, small, highly residential","Four-year, full-time, more selective, lower transfer-in","Professions plus arts &amp; sciences, some graduate coexistence","Postbaccalaureate: Other-dominant, with Arts &amp; Sciences","Very high undergraduate"],["<span style=\"color:#B6B6B4;\">Private not-for-profit, 4-year or above</span>","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, very small, highly residential","Four-year, full-time, more selective, lower transfer-in","Professions focus, no graduate coexistence","Not classified (Exclusively Undergraduate)","Exclusively undergraduate four-year"],["<span style=\"color:#B6B6B4;\">Private not-for-profit, 4-year or above</span>","<span style=\"color:#B6B6B4;\">Four or more years</span>","<span style=\"color:#B6B6B4;\">No</span>","<span style=\"color:#B6B6B4;\">No</span>","Four-year, very small, highly residential","Four-year, full-time, more selective, lower transfer-in","Professions focus, no graduate coexistence","Not classified (Exclusively Undergraduate)","Exclusively undergraduate four-year"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Rensselaer at Hartford<\/th>\n      <th>International Technological U.<\/th>\n      <th>Neumont College of Computer Science<\/th>\n      <th>California Aeronautical U.<\/th>\n      <th>Academy College<\/th>\n      <th>Rose-Hulman Institute of Technology<\/th>\n      <th>Franklin W Olin College of Engineering<\/th>\n      <th>Webb Institute<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Rensselaer at Hartford","targets":2},{"name":"International Technological U.","targets":3},{"name":"Neumont College of Computer Science","targets":4},{"name":"California Aeronautical U.","targets":5},{"name":"Academy College","targets":6},{"name":"Rose-Hulman Institute of Technology","targets":7},{"name":"Franklin W Olin College of Engineering","targets":8},{"name":"Webb Institute","targets":9}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="teaching" class="section level1">
+<h1>Teaching</h1>
+<p>Tenure track faculty are those who are eligible for tenure. This
+includes both pre-tenure and tenured faculty. Once faculty get tenure,
+they are (generally) protected from being fired for intellectual
+reasons, helping to ensure their freedom in teaching and research. They
+can still lose their positions for misconduct, financial problems, not
+fulfilling their duties, or other reasons.</p>
+<p>Non-tenure track faculty are not eligible for tenure. Some are hired
+one semester at a time, some have multi-year contracts. They typically
+have a higher teaching load than tenure track faculty, leaving less time
+for research or other creative endeavors. They are also easier to fire
+than tenured faculty. Sometimes they are external experts (a noted
+musician, a former senator) who are hired to teach some classes without
+the expected permanence of a tenure-track position.</p>
+<p>Note that this chart uses US federal demographic data: it only has
+two genders and a specified set of ethnicities and races.</p>
+<p>Having a low student to faculty ratio is considered a good thing by
+many, as it can mean more individual attention.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-7adab47b79dff3e0f611" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-7adab47b79dff3e0f611">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","",""],["Undergrads per tenure track instructor (lower is better)","Undergrads per instructor (lower is better)","Total instructors","Tenure track instructors","Non-tenure track instructors"],[null,null,"<span style=\"color:#05C40B;\">5</span>",null,"<span style=\"color:#05C40B;\">5</span>"],[null,null,"<span style=\"color:#0CBA18;\">7</span>",null,"<span style=\"color:#0CBA18;\">7</span>"],[null,"<span style=\"color:#FC0002;\">43</span> ↑<br />+2.9/y","<span style=\"color:#19A830;\">12</span>",null,"<span style=\"color:#209E3C;\">12</span>"],[null,"<span style=\"color:#C90035;\">19</span>","<span style=\"color:#209E3C;\">17</span>",null,"<span style=\"color:#279449;\">17</span>"],[null,null,null,null,null],["<span style=\"color:#FC0002;\">12</span> ↓<br />-0.2/y","<span style=\"color:#63009B;\">12</span> ↓<br />-0.2/y","<span style=\"color:#2D8B56;\">185</span> ↑<br />+1.2/y","<span style=\"color:#2D8B56;\">173</span> ↑<br />+0.5/y","<span style=\"color:#209E3C;\">12</span>"],[null,"<span style=\"color:#3000CE;\">8</span>","<span style=\"color:#279449;\">47</span>",null,"<span style=\"color:#2D8B56;\">47</span>"],[null,"<span style=\"color:#960068;\">12</span>","<span style=\"color:#13B124;\">10</span>",null,"<span style=\"color:#13B124;\">10</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Rensselaer at Hartford<\/th>\n      <th>International Technological U.<\/th>\n      <th>Neumont College of Computer Science<\/th>\n      <th>California Aeronautical U.<\/th>\n      <th>Academy College<\/th>\n      <th>Rose-Hulman Institute of Technology<\/th>\n      <th>Franklin W Olin College of Engineering<\/th>\n      <th>Webb Institute<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Rensselaer at Hartford","targets":2},{"name":"International Technological U.","targets":3},{"name":"Neumont College of Computer Science","targets":4},{"name":"California Aeronautical U.","targets":5},{"name":"Academy College","targets":6},{"name":"Rose-Hulman Institute of Technology","targets":7},{"name":"Franklin W Olin College of Engineering","targets":8},{"name":"Webb Institute","targets":9}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="geography" class="section level1">
+<h1>Geography</h1>
+<p>This has information on the location of the institution. See the <a
+href="about.html">about page</a> for more information on what the
+metrics are and how they are calculated.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-bcb0c71158ebe5343576" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-bcb0c71158ebe5343576">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","",""],["Location","Miles to mountains","Biome"],["Hartford, Connecticut","<span style=\"color:#000000;\">35</span>","Temperate Broadleaf &amp; Mixed Forests"],["Santa Clara, California","<span style=\"color:#000000;\">6.1</span>","Mediterranean Forests, Woodlands &amp; Scrub"],["Salt Lake City, Utah","<span style=\"color:#000000;\">0.2</span>","Deserts &amp; Xeric Shrublands"],["Bakersfield, California","<span style=\"color:#000000;\">11</span>","Temperate Grasslands, Savannas &amp; Shrublands"],["Bloomington, Minnesota","<span style=\"color:#000000;\">497</span>","<span style=\"color:#B6B6B4;\">Temperate Broadleaf &amp; Mixed Forests</span>"],["Terre Haute, Indiana","<span style=\"color:#000000;\">259</span>","<span style=\"color:#B6B6B4;\">Temperate Broadleaf &amp; Mixed Forests</span>"],["Needham, Massachusetts","<span style=\"color:#000000;\">33</span>","<span style=\"color:#B6B6B4;\">Temperate Broadleaf &amp; Mixed Forests</span>"],["Glen Cove, New York","<span style=\"color:#000000;\">31</span>","<span style=\"color:#B6B6B4;\">Temperate Broadleaf &amp; Mixed Forests</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Rensselaer at Hartford<\/th>\n      <th>International Technological U.<\/th>\n      <th>Neumont College of Computer Science<\/th>\n      <th>California Aeronautical U.<\/th>\n      <th>Academy College<\/th>\n      <th>Rose-Hulman Institute of Technology<\/th>\n      <th>Franklin W Olin College of Engineering<\/th>\n      <th>Webb Institute<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Rensselaer at Hartford","targets":2},{"name":"International Technological U.","targets":3},{"name":"Neumont College of Computer Science","targets":4},{"name":"California Aeronautical U.","targets":5},{"name":"Academy College","targets":6},{"name":"Rose-Hulman Institute of Technology","targets":7},{"name":"Franklin W Olin College of Engineering","targets":8},{"name":"Webb Institute","targets":9}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="financial-aid" class="section level1">
+<h1>Financial Aid</h1>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-476a442ee181bd3ddbd6" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-476a442ee181bd3ddbd6">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","",""],["Average net price (for students awarded aid)","Undergrads getting federal aid","Undergrads getting any aid","Undergrads getting Pell grants"],[null,null,null,null],[null,null,null,null],["<span style=\"color:#5100AD;\">$28,592</span> ↑<br />+$542/y","<span style=\"color:#0200FC;\">66.0%</span>","<span style=\"color:#82007C;\">99.0%</span>","<span style=\"color:#0200FC;\">66.0%</span> ↑<br />+1.60%/y"],["<span style=\"color:#A80056;\">$36,328</span>","<span style=\"color:#0200FC;\">66.0%</span>","<span style=\"color:#AD0051;\">94.0%</span>","<span style=\"color:#0200FC;\">66.0%</span> ↓<br />-4.40%/y"],["<span style=\"color:#7C0082;\">$29,280</span>","<span style=\"color:#5600A8;\">58.0%</span>","<span style=\"color:#D60028;\">89.0%</span>","<span style=\"color:#5600A8;\">58.0%</span>"],["<span style=\"color:#FC0002;\">$44,016</span>","<span style=\"color:#D60028;\">12.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#AD0051;\">12.0%</span>"],["<span style=\"color:#D1002D;\">$40,370</span> ↑<br />+$853/y","<span style=\"color:#AD0051;\">13.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#82007C;\">13.0%</span>"],["<span style=\"color:#2800D6;\">$21,488</span>","<span style=\"color:#82007C;\">15.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#AD0051;\">12.0%</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Rensselaer at Hartford<\/th>\n      <th>International Technological U.<\/th>\n      <th>Neumont College of Computer Science<\/th>\n      <th>California Aeronautical U.<\/th>\n      <th>Academy College<\/th>\n      <th>Rose-Hulman Institute of Technology<\/th>\n      <th>Franklin W Olin College of Engineering<\/th>\n      <th>Webb Institute<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Rensselaer at Hartford","targets":2},{"name":"International Technological U.","targets":3},{"name":"Neumont College of Computer Science","targets":4},{"name":"California Aeronautical U.","targets":5},{"name":"Academy College","targets":6},{"name":"Rose-Hulman Institute of Technology","targets":7},{"name":"Franklin W Olin College of Engineering","targets":8},{"name":"Webb Institute","targets":9}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="graduation" class="section level1">
+<h1>Graduation</h1>
+<p>Note these are bachelors graduation rates in six years, not four
+(this is standard). Sample sizes can be small for some demographic
+groups with few individuals in a school, leading to large year-to-year
+fluctuations and often extreme values for those groups (if there are two
+individuals in the class with a given identity, the possible graduation
+rates are 0%, 50%, or 100% depending on whether zero, one, or both
+students graduate within six years).</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-62dd3fe2015dab783d9c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-62dd3fe2015dab783d9c">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","","","","","","","","","","","",""],["Total","Men","Women","American Indian or Alaska Native men","American Indian or Alaska Native women","Asian men","Asian women","Black or African American men","Black or African American women","Hispanic men","Hispanic women","Native Hawaiian or other Pacific Islander men","Native Hawaiian or other Pacific Islander women","White men","White women","Two or more races men","Two or more races women","Nonresident alien men","Nonresident alien women"],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",""],["<span style=\"color:#70008E;\">57.5%</span>","<span style=\"color:#750089;\">55.0%</span>","<span style=\"color:#4400BA;\">73.9%</span>","<span style=\"color:;\">0.0%</span>","<span style=\"color:;\">0.0%</span>","<span style=\"color:#4200BC;\">75.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#82007C;\">50.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#7A0084;\">52.6%</span> ↑<br />+4.95%/y","<span style=\"color:;\">0.0%</span>","","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#70008E;\">56.6%</span>","<span style=\"color:#4200BC;\">75.0%</span>","<span style=\"color:#82007C;\">50.0%</span>","<span style=\"color:#4200BC;\">75.0%</span>","",""],["<span style=\"color:#5600A8;\">66.7%</span>","<span style=\"color:#5600A8;\">66.7%</span>","","","","","","","","<span style=\"color:#0200FC;\">100.0%</span>","","","","<span style=\"color:#82007C;\">50.0%</span>","","","","",""],["<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","","","","","","","","","","","","<span style=\"color:#0200FC;\">100.0%</span>","","","","",""],["<span style=\"color:#3200CC;\">80.8%</span> ↑<br />+0.78%/y","<span style=\"color:#3500C9;\">79.8%</span>","<span style=\"color:#2D00D1;\">83.1%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#4200BC;\">75.0%</span>","<span style=\"color:#1900E5;\">90.9%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#5600A8;\">66.7%</span>","<span style=\"color:#2800D6;\">84.6%</span> ↑<br />+4.14%/y","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#3D00C1;\">76.7%</span>","<span style=\"color:#3200CC;\">80.6%</span>","<span style=\"color:#1100ED;\">93.8%</span>","<span style=\"color:#2100DD;\">87.5%</span>","",""],["<span style=\"color:#1100ED;\">93.7%</span>","<span style=\"color:#2100DD;\">88.1%</span>","<span style=\"color:#0200FC;\">100.0%</span>","","","<span style=\"color:#5600A8;\">66.7%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#82007C;\">50.0%</span>","","<span style=\"color:#4200BC;\">75.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","","","<span style=\"color:#1600E8;\">91.7%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","<span style=\"color:#0200FC;\">100.0%</span>","",""],["<span style=\"color:#1E00E0;\">89.3%</span>","<span style=\"color:#2600D8;\">86.4%</span>","<span style=\"color:#0200FC;\">100.0%</span>","","","<span style=\"color:#0200FC;\">100.0%</span>","","","","<span style=\"color:#0200FC;\">100.0%</span>","","","","<span style=\"color:#3000CE;\">82.4%</span>","<span style=\"color:#0200FC;\">100.0%</span>","","<span style=\"color:#0200FC;\">100.0%</span>","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Rensselaer at Hartford<\/th>\n      <th>International Technological U.<\/th>\n      <th>Neumont College of Computer Science<\/th>\n      <th>California Aeronautical U.<\/th>\n      <th>Academy College<\/th>\n      <th>Rose-Hulman Institute of Technology<\/th>\n      <th>Franklin W Olin College of Engineering<\/th>\n      <th>Webb Institute<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Rensselaer at Hartford","targets":2},{"name":"International Technological U.","targets":3},{"name":"Neumont College of Computer Science","targets":4},{"name":"California Aeronautical U.","targets":5},{"name":"Academy College","targets":6},{"name":"Rose-Hulman Institute of Technology","targets":7},{"name":"Franklin W Olin College of Engineering","targets":8},{"name":"Webb Institute","targets":9}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="library" class="section level1">
+<h1>Library</h1>
+<p>Libraries are changing rapidly. Note that how institutions count
+digital collections may vary.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-4d73572a5e9f30a88958" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-4d73572a5e9f30a88958">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","",""],["Number of physical books","Physical library circulations per students and faculty","Digital library circulations per students and faculty"],["<span style=\"color:#2100DD;\">40,000</span>",null,null],["<span style=\"color:#82007C;\">3,972</span> ↑<br />+456/y",null,null],["<span style=\"color:#E2001C;\">25</span>",null,null],["<span style=\"color:#C1003D;\">820</span>","<span style=\"color:#82007C;\">0.1</span>","<span style=\"color:#82007C;\">1.5</span>"],["<span style=\"color:#A0005E;\">1,200</span> ↓<br />-101/y",null,null],["<span style=\"color:#4200BC;\">27,925</span> ↓<br />-1,699/y","<span style=\"color:#0200FC;\">1.6</span>","<span style=\"color:#0200FC;\">97</span>"],["<span style=\"color:#63009B;\">7,894</span> ↓<br />-1,787/y",null,null],["<span style=\"color:#0200FC;\">49,850</span>",null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Rensselaer at Hartford<\/th>\n      <th>International Technological U.<\/th>\n      <th>Neumont College of Computer Science<\/th>\n      <th>California Aeronautical U.<\/th>\n      <th>Academy College<\/th>\n      <th>Rose-Hulman Institute of Technology<\/th>\n      <th>Franklin W Olin College of Engineering<\/th>\n      <th>Webb Institute<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Rensselaer at Hartford","targets":2},{"name":"International Technological U.","targets":3},{"name":"Neumont College of Computer Science","targets":4},{"name":"California Aeronautical U.","targets":5},{"name":"Academy College","targets":6},{"name":"Rose-Hulman Institute of Technology","targets":7},{"name":"Franklin W Olin College of Engineering","targets":8},{"name":"Webb Institute","targets":9}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="diversity" class="section level1">
+<h1>Diversity</h1>
+<p>The US Census Bureau has a <a
+href="https://www.census.gov/library/visualizations/interactive/racial-and-ethnic-diversity-in-the-united-states-2010-and-2020-census.html">diversity
+index</a> that goes from 0 to 1. In their words, “A 0-value indicates
+that everyone in the population has the same racial and ethnic
+characteristics. A value close to 1 indicates that everyone in the
+population has different racial and ethnic characteristics.” This uses
+their formula, but with the resolution available for the federal IPEDS
+data (which does not separate for a given demographic group whether
+members identify as Hispanic or not). This metric is about heterogeneity
+within the population, not the proportion of the population that comes
+from historically excluded groups.</p>
+<p>Following the practice of the census, the index is multiplied by 100
+to give the percentage probability a random pair of individuals will
+have a different background. Most institutions argue that diversity is a
+benefit, so by default a higher number is listed as better, but there
+may be cases where this measure does not reflect the mission of a
+college (for example, 70% of the students at a <a
+href="https://www.aihec.org/tribal-colleges-universities/">tribal
+college or university</a> may be American Indian: that could be
+low-scoring by this metric but should not be read as “bad” given the
+institution’s mission).</p>
+<p>These numbers are based on the most recent year available, generally
+2022, which predates effects of the US Supreme Court’s striking down of
+<a href="https://en.wikipedia.org/wiki/Affirmative_action">affirmative
+action</a>. This has often <a
+href="https://www.insidehighered.com/news/admissions/traditional-age/2024/09/06/early-look-racial-diversity-post-affirmative-action">changed</a>,
+sometimes dramatically, the incoming student demographics at some
+institutions.</p>
+</div>
+<div id="overall-diversity" class="section level1">
+<h1>Overall diversity</h1>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-c5c4100fb0920864fd84" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-c5c4100fb0920864fd84">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","",""],["Freshman diversity","Tenure-stream diversity","Non-tenure-track diversity"],[null,null,"<span style=\"color:#72008C;\">56.0%</span>"],[null,null,"<span style=\"color:#72008C;\">56.0%</span>"],["<span style=\"color:#770087;\">53.7%</span>",null,"<span style=\"color:#DB0023;\">15.3%</span>"],["<span style=\"color:#5B00A3;\">64.9%</span> ↑<br />+1.98%/y",null,"<span style=\"color:#84007A;\">49.1%</span>"],["<span style=\"color:#5600A8;\">66.7%</span>",null,null],["<span style=\"color:#8E0070;\">44.7%</span>","<span style=\"color:#A0005E;\">37.7%</span> ↑<br />+1.31%/y","<span style=\"color:#4400BA;\">74.3%</span>"],["<span style=\"color:#5600A8;\">67.2%</span>",null,"<span style=\"color:#9B0063;\">39.9%</span>"],["<span style=\"color:#93006B;\">42.7%</span>",null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Rensselaer at Hartford<\/th>\n      <th>International Technological U.<\/th>\n      <th>Neumont College of Computer Science<\/th>\n      <th>California Aeronautical U.<\/th>\n      <th>Academy College<\/th>\n      <th>Rose-Hulman Institute of Technology<\/th>\n      <th>Franklin W Olin College of Engineering<\/th>\n      <th>Webb Institute<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Rensselaer at Hartford","targets":2},{"name":"International Technological U.","targets":3},{"name":"Neumont College of Computer Science","targets":4},{"name":"California Aeronautical U.","targets":5},{"name":"Academy College","targets":6},{"name":"Rose-Hulman Institute of Technology","targets":7},{"name":"Franklin W Olin College of Engineering","targets":8},{"name":"Webb Institute","targets":9}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="freshman-profile" class="section level1">
+<h1>Freshman profile</h1>
+<p>Demographic data for first time degree-seeking students. Note that
+this uses US federal demographic data: it only has two genders and a
+specified set of ethnicities and races.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-97e6025096700300862a" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-97e6025096700300862a">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","","","","","","","","","","","","",""],["Men","Women","American Indian or Alaska Native men","American Indian or Alaska Native women","Asian men","Asian women","Black or African American men","Black or African American women","Hispanic men","Hispanic women","Native Hawaiian or Other Pacific Islander men","Native Hawaiian or Other Pacific Islander women","White men","White women","Two or more races men","Two or more races women","Race ethnicity unknown men","Race ethnicity unknown women","Nonresident alien men","Nonresident alien women"],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],["<span style=\"color:#1EA139;\">81.2%</span> ↓<br />-1.20%/y","<span style=\"color:#16AC2A;\">18.8%</span> ↑<br />+1.20%/y","<span style=\"color:#2D8B56;\">1.5%</span> ↑<br />+0.22%/y","<span style=\"color:#2D8B56;\">1.0%</span>","<span style=\"color:#16AC2A;\">3.6%</span>","<span style=\"color:#1EA139;\">1.0%</span>","<span style=\"color:#259647;\">1.5%</span>","<span style=\"color:#2D8B56;\">2.5%</span>","<span style=\"color:#1EA139;\">11.2%</span> ↑<br />+0.76%/y","<span style=\"color:#259647;\">2.5%</span> ↑<br />+0.34%/y","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.5%</span>","<span style=\"color:#1EA139;\">47.7%</span>","<span style=\"color:#16AC2A;\">8.1%</span> ↑<br />+0.64%/y","<span style=\"color:#1EA139;\">3.6%</span>","<span style=\"color:#1EA139;\">0.5%</span>","<span style=\"color:#259647;\">12.2%</span>","<span style=\"color:#1EA139;\">2.5%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>"],["<span style=\"color:#259647;\">93.1%</span> ↑<br />+7.12%/y","<span style=\"color:#0EB71B;\">6.9%</span> ↓<br />-7.12%/y","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">6.9%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#2D8B56;\">13.8%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#2D8B56;\">24.1%</span>","<span style=\"color:#16AC2A;\">0.0%</span> ↓<br />-4.61%/y","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#16AC2A;\">44.8%</span> ↑<br />+4.04%/y","<span style=\"color:#0EB71B;\">6.9%</span>","<span style=\"color:#16AC2A;\">3.4%</span> ↑<br />+0.52%/y","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span> ↓<br />-1.11%/y","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>"],["<span style=\"color:#2D8B56;\">94.4%</span>","<span style=\"color:#07C20D;\">5.6%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#07C20D;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#07C20D;\">5.6%</span>","<span style=\"color:#07C20D;\">0.0%</span>","<span style=\"color:#07C20D;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#2D8B56;\">88.9%</span> ↑<br />+11.34%/y","<span style=\"color:#259647;\">5.6%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>"],["<span style=\"color:#16AC2A;\">79.1%</span>","<span style=\"color:#1EA139;\">20.9%</span>","<span style=\"color:#259647;\">0.2%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#259647;\">7.0%</span> ↑<br />+0.55%/y","<span style=\"color:#16AC2A;\">1.0%</span>","<span style=\"color:#16AC2A;\">1.0%</span>","<span style=\"color:#1EA139;\">0.2%</span>","<span style=\"color:#0EB71B;\">2.7%</span>","<span style=\"color:#1EA139;\">1.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">56.9%</span>","<span style=\"color:#1EA139;\">15.7%</span>","<span style=\"color:#259647;\">4.0%</span>","<span style=\"color:#259647;\">1.7%</span>","<span style=\"color:#16AC2A;\">1.0%</span>","<span style=\"color:#16AC2A;\">0.3%</span>","<span style=\"color:#2D8B56;\">3.6%</span> ↓<br />-1.04%/y","<span style=\"color:#259647;\">0.9%</span>"],["<span style=\"color:#07C20D;\">57.3%</span>","<span style=\"color:#2D8B56;\">42.7%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">14.7%</span>","<span style=\"color:#2D8B56;\">8.0%</span>","<span style=\"color:#1EA139;\">1.3%</span>","<span style=\"color:#259647;\">1.3%</span>","<span style=\"color:#16AC2A;\">6.7%</span>","<span style=\"color:#2D8B56;\">4.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#0EB71B;\">30.7%</span>","<span style=\"color:#259647;\">16.0%</span> ↓<br />-1.27%/y","<span style=\"color:#0EB71B;\">1.3%</span>","<span style=\"color:#2D8B56;\">5.3%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#2D8B56;\">6.7%</span>","<span style=\"color:#259647;\">2.2%</span>","<span style=\"color:#2D8B56;\">3.3%</span>"],["<span style=\"color:#0EB71B;\">76.0%</span>","<span style=\"color:#259647;\">24.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span> ↓<br />-1.61%/y","<span style=\"color:#259647;\">4.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#259647;\">12.0%</span> ↑<br />+1.50%/y","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#259647;\">48.0%</span>","<span style=\"color:#2D8B56;\">20.0%</span>","<span style=\"color:#2D8B56;\">8.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#1EA139;\">8.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Rensselaer at Hartford<\/th>\n      <th>International Technological U.<\/th>\n      <th>Neumont College of Computer Science<\/th>\n      <th>California Aeronautical U.<\/th>\n      <th>Academy College<\/th>\n      <th>Rose-Hulman Institute of Technology<\/th>\n      <th>Franklin W Olin College of Engineering<\/th>\n      <th>Webb Institute<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Rensselaer at Hartford","targets":2},{"name":"International Technological U.","targets":3},{"name":"Neumont College of Computer Science","targets":4},{"name":"California Aeronautical U.","targets":5},{"name":"Academy College","targets":6},{"name":"Rose-Hulman Institute of Technology","targets":7},{"name":"Franklin W Olin College of Engineering","targets":8},{"name":"Webb Institute","targets":9}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="freshman-geography" class="section level1">
+<h1>Freshman geography</h1>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-45457159a91ad1bfc396" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-45457159a91ad1bfc396">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","District of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Outlying areas total","Pennsylvania","Puerto Rico","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming","Virgin Islands","Northern Marianas","Guam","American Samoa","Marshall Islands","Federated States of Micronesia","Palau","Foreign countries","Residence not reported"],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,""],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,""],["<span style=\"color:#259647;\">0.5%</span>","<span style=\"color:#2D8B56;\">1.0%</span>","<span style=\"color:#259647;\">8.0%</span>","<span style=\"color:#2D8B56;\">2.0%</span>","<span style=\"color:#0EB71B;\">4.5%</span>","<span style=\"color:#16AC2A;\">0.5%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.5%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#259647;\">1.5%</span>","<span style=\"color:#259647;\">2.0%</span>","<span style=\"color:#1EA139;\">0.5%</span>","<span style=\"color:#2D8B56;\">2.5%</span>","<span style=\"color:#259647;\">2.0%</span>","<span style=\"color:#259647;\">2.0%</span>","<span style=\"color:#1EA139;\">0.5%</span>","<span style=\"color:#2D8B56;\">2.5%</span>","<span style=\"color:#259647;\">1.0%</span>","<span style=\"color:#2D8B56;\">3.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.5%</span>","<span style=\"color:#259647;\">1.0%</span>","<span style=\"color:#16AC2A;\">1.0%</span>","<span style=\"color:#1EA139;\">1.0%</span>","<span style=\"color:#2D8B56;\">2.0%</span> ↑<br />+0.30%/y","<span style=\"color:#1EA139;\">2.5%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.5%</span>","<span style=\"color:#259647;\">1.0%</span> ↓<br />-0.24%/y","<span style=\"color:#259647;\">0.5%</span>","<span style=\"color:#1EA139;\">2.0%</span>","<span style=\"color:#2D8B56;\">2.5%</span>","<span style=\"color:#16AC2A;\">1.0%</span>","<span style=\"color:#16AC2A;\">1.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">3.5%</span>","<span style=\"color:#2D8B56;\">2.5%</span> ↑<br />+0.26%/y","<span style=\"color:#1EA139;\">1.0%</span>","","<span style=\"color:#1EA139;\">2.0%</span>","<span style=\"color:#2D8B56;\">0.5%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">2.0%</span>","<span style=\"color:#2D8B56;\">1.0%</span>","<span style=\"color:#2D8B56;\">2.5%</span>","<span style=\"color:#2D8B56;\">8.0%</span>","<span style=\"color:#2D8B56;\">23.0%</span> ↑<br />+1.84%/y","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">1.0%</span>","<span style=\"color:#1EA139;\">0.5%</span> ↓<br />-0.35%/y","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.5%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>",""],["<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">17.2%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#2D8B56;\">75.9%</span> ↓<br />-2.44%/y","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#259647;\">3.4%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#07C20D;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#2D8B56;\">3.4%</span>","","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#07C20D;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>",""],["<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">5.6%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#07C20D;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#2D8B56;\">66.7%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#2D8B56;\">5.6%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">22.2%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>",""],["<span style=\"color:#2D8B56;\">0.5%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#07C20D;\">1.5%</span>","<span style=\"color:#259647;\">0.2%</span>","<span style=\"color:#16AC2A;\">5.7%</span>","<span style=\"color:#259647;\">1.5%</span>","<span style=\"color:#16AC2A;\">0.5%</span>","<span style=\"color:#259647;\">0.3%</span>","<span style=\"color:#2D8B56;\">0.2%</span>","<span style=\"color:#2D8B56;\">2.2%</span>","<span style=\"color:#1EA139;\">1.3%</span> ↑<br />+0.15%/y","<span style=\"color:#259647;\">0.8%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">11.0%</span>","<span style=\"color:#2D8B56;\">28.8%</span>","<span style=\"color:#259647;\">1.2%</span>","<span style=\"color:#259647;\">0.3%</span>","<span style=\"color:#2D8B56;\">2.8%</span>","<span style=\"color:#1EA139;\">0.3%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.8%</span>","<span style=\"color:#1EA139;\">0.2%</span>","<span style=\"color:#259647;\">2.0%</span>","<span style=\"color:#259647;\">1.8%</span>","<span style=\"color:#259647;\">0.5%</span>","<span style=\"color:#16AC2A;\">0.7%</span>","<span style=\"color:#2D8B56;\">0.7%</span>","<span style=\"color:#259647;\">0.2%</span>","<span style=\"color:#1EA139;\">0.5%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.8%</span>","<span style=\"color:#259647;\">0.3%</span>","<span style=\"color:#1EA139;\">1.0%</span>","<span style=\"color:#0EB71B;\">0.7%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">7.4%</span>","<span style=\"color:#1EA139;\">0.5%</span>","<span style=\"color:#16AC2A;\">0.5%</span>","","<span style=\"color:#259647;\">2.2%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">0.3%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#259647;\">1.7%</span>","<span style=\"color:#16AC2A;\">3.2%</span>","<span style=\"color:#259647;\">0.2%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#259647;\">3.0%</span> ↑<br />+0.15%/y","<span style=\"color:#259647;\">1.3%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">1.7%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.2%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">8.5%</span>",""],["<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#0EB71B;\">2.7%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">12.0%</span>","<span style=\"color:#1EA139;\">1.3%</span>","<span style=\"color:#1EA139;\">2.7%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">1.3%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#2D8B56;\">1.3%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#2D8B56;\">1.3%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">1.3%</span>","<span style=\"color:#259647;\">1.3%</span>","<span style=\"color:#2D8B56;\">4.0%</span>","<span style=\"color:#2D8B56;\">12.0%</span>","<span style=\"color:#1EA139;\">1.3%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">2.7%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#2D8B56;\">2.7%</span> ↑<br />+0.26%/y","<span style=\"color:#2D8B56;\">2.7%</span>","<span style=\"color:#259647;\">6.7%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">2.7%</span>","<span style=\"color:#1EA139;\">1.3%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">1.3%</span>","<span style=\"color:#259647;\">2.7%</span>","","<span style=\"color:#2D8B56;\">5.3%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span> ↓<br />-0.16%/y","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">4.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#2D8B56;\">1.3%</span>","<span style=\"color:#2D8B56;\">5.3%</span>","<span style=\"color:#2D8B56;\">8.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#16AC2A;\">1.3%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">9.3%</span>",""],["<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#16AC2A;\">4.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">12.0%</span>","<span style=\"color:#2D8B56;\">4.0%</span>","<span style=\"color:#2D8B56;\">4.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#2D8B56;\">4.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#2D8B56;\">4.0%</span>","<span style=\"color:#2D8B56;\">4.0%</span> ↓<br />-1.80%/y","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#2D8B56;\">4.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#2D8B56;\">4.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#2D8B56;\">16.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#2D8B56;\">28.0%</span>","<span style=\"color:#259647;\">4.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#0EB71B;\">0.0%</span>","","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">4.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#16AC2A;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">4.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#259647;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#2D8B56;\">0.0%</span>","<span style=\"color:#1EA139;\">0.0%</span>",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Rensselaer at Hartford<\/th>\n      <th>International Technological U.<\/th>\n      <th>Neumont College of Computer Science<\/th>\n      <th>California Aeronautical U.<\/th>\n      <th>Academy College<\/th>\n      <th>Rose-Hulman Institute of Technology<\/th>\n      <th>Franklin W Olin College of Engineering<\/th>\n      <th>Webb Institute<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Rensselaer at Hartford","targets":2},{"name":"International Technological U.","targets":3},{"name":"Neumont College of Computer Science","targets":4},{"name":"California Aeronautical U.","targets":5},{"name":"Academy College","targets":6},{"name":"Rose-Hulman Institute of Technology","targets":7},{"name":"Franklin W Olin College of Engineering","targets":8},{"name":"Webb Institute","targets":9}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="test-scores" class="section level1">
+<h1>Test scores</h1>
+</div>
+<div id="sat-scores" class="section level1">
+<h1>SAT scores</h1>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-a7485e0b6c0a275ddb13" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-a7485e0b6c0a275ddb13">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","",""],["Applicants submitting SAT","SAT Evidence Based Reading and Writing 25th percentile score","SAT Evidence Based Reading and Writing 75th percentile score","SAT Math 25th percentile score","SAT Math 75th percentile score"],[null,null,null,null,null],[null,null,null,null,null],["<span style=\"color:#0BBD14;\">27.0%</span>","<span style=\"color:#0BBD14;\">500</span>","<span style=\"color:#0BBD14;\">599</span>","<span style=\"color:#0BBD14;\">500</span>","<span style=\"color:#0BBD14;\">650</span>"],[null,null,null,null,null],[null,null,null,null,null],["<span style=\"color:#16AC2A;\">42.0%</span>","<span style=\"color:#16AC2A;\">620</span>","<span style=\"color:#16AC2A;\">720</span> ↑<br />+5.1/y","<span style=\"color:#16AC2A;\">670</span> ↑<br />+3.3/y","<span style=\"color:#16AC2A;\">763</span>"],["<span style=\"color:#229C40;\">48.0%</span> ↓<br />-3.43%/y","<span style=\"color:#2D8B56;\">720</span>","<span style=\"color:#2D8B56;\">770</span>","<span style=\"color:#2D8B56;\">770</span> ↑<br />+6.7/y","<span style=\"color:#2D8B56;\">790</span>"],["<span style=\"color:#2D8B56;\">56.0%</span> ↓<br />-3.92%/y","<span style=\"color:#229C40;\">680</span>","<span style=\"color:#229C40;\">740</span>","<span style=\"color:#229C40;\">720</span>","<span style=\"color:#229C40;\">770</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Rensselaer at Hartford<\/th>\n      <th>International Technological U.<\/th>\n      <th>Neumont College of Computer Science<\/th>\n      <th>California Aeronautical U.<\/th>\n      <th>Academy College<\/th>\n      <th>Rose-Hulman Institute of Technology<\/th>\n      <th>Franklin W Olin College of Engineering<\/th>\n      <th>Webb Institute<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Rensselaer at Hartford","targets":2},{"name":"International Technological U.","targets":3},{"name":"Neumont College of Computer Science","targets":4},{"name":"California Aeronautical U.","targets":5},{"name":"Academy College","targets":6},{"name":"Rose-Hulman Institute of Technology","targets":7},{"name":"Franklin W Olin College of Engineering","targets":8},{"name":"Webb Institute","targets":9}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="act-scores" class="section level1">
+<h1>ACT scores</h1>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-345371f86c7a0ded5775" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-345371f86c7a0ded5775">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["","","","","","",""],["Applicants submitting ACT","ACT Composite 25th percentile score","ACT Composite 75th percentile score","ACT English 25th percentile score","ACT English 75th percentile score","ACT Math 25th percentile score","ACT Math 75th percentile score"],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null],["<span style=\"color:#2D8B56;\">63.0%</span>","<span style=\"color:#0BBD14;\">19</span>","<span style=\"color:#0BBD14;\">25</span>","<span style=\"color:#0BBD14;\">18</span>","<span style=\"color:#0BBD14;\">24</span>","<span style=\"color:#0BBD14;\">17</span>","<span style=\"color:#0BBD14;\">26</span>"],[null,null,null,null,null,null,null],[null,null,null,null,null,null,null],["<span style=\"color:#229C40;\">31.0%</span> ↓<br />-5.73%/y","<span style=\"color:#16AC2A;\">27</span>","<span style=\"color:#16AC2A;\">33</span> ↑<br />+0.2/y","<span style=\"color:#16AC2A;\">25</span>","<span style=\"color:#16AC2A;\">34</span> ↑<br />+0.2/y","<span style=\"color:#16AC2A;\">28</span>","<span style=\"color:#16AC2A;\">34</span>"],["<span style=\"color:#0BBD14;\">24.0%</span> ↓<br />-3.85%/y","<span style=\"color:#2D8B56;\">35</span> ↑<br />+0.4/y","<span style=\"color:#2D8B56;\">35</span>","<span style=\"color:#2D8B56;\">35</span> ↑<br />+0.3/y","<span style=\"color:#2D8B56;\">36</span> ↑<br />+0.2/y","<span style=\"color:#2D8B56;\">34</span> ↑<br />+0.3/y","<span style=\"color:#2D8B56;\">36</span> ↑<br />+0.2/y"],["<span style=\"color:#16AC2A;\">28.0%</span>","<span style=\"color:#229C40;\">33</span>","<span style=\"color:#2D8B56;\">35</span> ↑<br />+0.3/y","<span style=\"color:#229C40;\">31</span>","<span style=\"color:#229C40;\">35</span>","<span style=\"color:#2D8B56;\">34</span>","<span style=\"color:#229C40;\">35</span>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Measure<\/th>\n      <th>Rensselaer at Hartford<\/th>\n      <th>International Technological U.<\/th>\n      <th>Neumont College of Computer Science<\/th>\n      <th>California Aeronautical U.<\/th>\n      <th>Academy College<\/th>\n      <th>Rose-Hulman Institute of Technology<\/th>\n      <th>Franklin W Olin College of Engineering<\/th>\n      <th>Webb Institute<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":3},"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Measure","targets":1},{"name":"Rensselaer at Hartford","targets":2},{"name":"International Technological U.","targets":3},{"name":"Neumont College of Computer Science","targets":4},{"name":"California Aeronautical U.","targets":5},{"name":"Academy College","targets":6},{"name":"Rose-Hulman Institute of Technology","targets":7},{"name":"Franklin W Olin College of Engineering","targets":8},{"name":"Webb Institute","targets":9}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'vertical-align':'top'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'vertical-align':'top'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'vertical-align':'top'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'vertical-align':'top'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'vertical-align':'top'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'vertical-align':'top'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'vertical-align':'top'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'vertical-align':'top'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'vertical-align':'top'});\n}"},"selection":{"mode":"none","selected":null,"target":"row","selectable":null}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="majors" class="section level1">
+<h1>Majors</h1>
+<p>This presents information on the number of majors and the median
+earnings one and five years after graduation for people who got a degree
+from this institution in that field. The earnings are for those who are
+working and not enrolled in further education. The earnings data (from
+the federal college scorecard) also has information on earnings for
+those categorized as ‘MALE’ and ‘NOMALE’ – for readability, these are
+recategorized here as “Men” and “Women”, respectively, which adopts the
+gender binary used in other federal data. “W/M earnings ratio” is the
+median earnings of women divided by men, as a percentage.</p>
+</div>
+<div id="bachelors" class="section level1">
+<h1>Bachelors</h1>
+</div>
+<div id="masters" class="section level1">
+<h1>Masters</h1>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-0958cfb999a70483f715" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-0958cfb999a70483f715">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Masters_SystemsEngineering.html\">Systems Engineering</a>","<a href=\"majors_Masters_MechanicalEngineering.html\">Mechanical Engineering</a>","<a href=\"majors_Masters_EngineeringScience.html\">Engineering Science</a>"],[22,11,8],[53.659,26.829,19.512],[1.019,0.158,2.417],["Masters","Masters","Masters"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2022<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2022","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-30de8822ee2d419c8dd2" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-30de8822ee2d419c8dd2">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["Mechanical Engineering"],[85723],[null],[108034],[null],[null],[null],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Earnings 1 year all<\/th>\n      <th>W:M earning ratio 1 year<\/th>\n      <th>Earnings 5 year all<\/th>\n      <th>W:M earning ratio 5 year<\/th>\n      <th>Earnings 1 year men<\/th>\n      <th>Earnings 1 year women<\/th>\n      <th>Earnings 5 year men<\/th>\n      <th>Earnings 5 year women<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"targets":1,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":3,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":5,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":6,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":7,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":8,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatCurrency(data, \"$\", 0, 3, \",\", \".\", true, null);\n  }"},{"targets":2,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"targets":4,"render":"function(data, type, row, meta) {\n    return type !== 'display' ? data : DTWidget.formatPercentage(data, 1, 3, \",\", \".\", null);\n  }"},{"className":"dt-right","targets":[1,2,3,4,5,6,7,8]},{"name":"Field","targets":0},{"name":"Earnings 1 year all","targets":1},{"name":"W:M earning ratio 1 year","targets":2},{"name":"Earnings 5 year all","targets":3},{"name":"W:M earning ratio 5 year","targets":4},{"name":"Earnings 1 year men","targets":5},{"name":"Earnings 1 year women","targets":6},{"name":"Earnings 5 year men","targets":7},{"name":"Earnings 5 year women","targets":8}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":["options.columnDefs.0.render","options.columnDefs.1.render","options.columnDefs.2.render","options.columnDefs.3.render","options.columnDefs.4.render","options.columnDefs.5.render","options.columnDefs.6.render","options.columnDefs.7.render"],"jsHooks":[]}</script>
+</div>
+<div id="doctorate" class="section level1">
+<h1>Doctorate</h1>
+</div>
+<div id="certificate" class="section level1">
+<h1>Certificate</h1>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-14cb9c95690e27b96d94" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-14cb9c95690e27b96d94">{"x":{"filter":"none","vertical":false,"extensions":["FixedColumns","FixedHeader"],"data":[["<a href=\"majors_Certificate_ManagementScience.html\">Management Science</a>","<a href=\"majors_Certificate_Science_TechnologyManagement.html\">Science/Technology Management</a>","<a href=\"majors_Certificate_ResearchandDevelopmentManagement.html\">Research and Development Management</a>","<a href=\"majors_Certificate_ArtificialIntelligence.html\">Artificial Intelligence</a>","<a href=\"majors_Certificate_ManagementSciencesandQuantitativeMethods_Other.html\">Management Sciences and Quantitative Methods, Other</a>","<a href=\"majors_Certificate_SystemsEngineering.html\">Systems Engineering</a>"],[30,17,15,7,2,1],[41.667,23.611,20.833,9.722,2.778,1.389],[1.541,100,30.612,8.861000000000001,0.347,0.131],["Certificate","Certificate","Certificate","Certificate","Certificate","Certificate"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Field<\/th>\n      <th>Degrees awarded 2022<\/th>\n      <th>Percent at Institution<\/th>\n      <th>Percent in Field<\/th>\n      <th>Degree<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"fixedColumns":{"leftColumns":1},"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"name":"Field","targets":0},{"name":"Degrees awarded 2022","targets":1},{"name":"Percent at Institution","targets":2},{"name":"Percent in Field","targets":3},{"name":"Degree","targets":4}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="associates" class="section level1">
+<h1>Associates</h1>
+</div>
+</div>
+
+   
+   
+            
+      
+
+  <script>
+    $(document).ready(function () {
+
+			
+ 		
+	    });
+  </script>
+
+
+
+    <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+	document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+  
+</body>
+</html>
