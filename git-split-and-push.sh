@@ -56,6 +56,7 @@ while [ "$staged_size" -gt 0 ]; do
   #echo "$message (chunk $COUNTER)"
   let COUNTER++
   git add -N .\/*
+  git push # added by Brian so we actually push
   staged_files=$(git diff --name-only)
 
   if [ -n "$staged_files" ]; then
